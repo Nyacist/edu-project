@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
 const optimization = () => {
-    const config ={
+    const config = {
         splitChunks: {
             chunks: 'all'
         }
@@ -33,11 +33,15 @@ const cssLoaders = extra => {
     return loaders
 }
 
+const fs = require('fs')
+const PAGES_DIR = path.resolve(__dirname, 'src/pug/pages')
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './index.js']
+        main: ['@babel/polyfill', './js/index.js']
     },
     output: {
         filename: filename('js'),
@@ -49,12 +53,13 @@ module.exports = {
         port: 4200
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './index.html',
+        ...PAGES.map(page => new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/${page}`,
+            filename: isDev ? `./${page.replace(/\.pug/, '.html')}` : `./${page.replace(/\.pug/, '[hash].html')}`,
             minify: {
                 collapseWhitespace: isProd
             }
-        }),
+        })),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: filename('css')
@@ -71,12 +76,25 @@ module.exports = {
                 use: cssLoaders('sass-loader')
             },
             {
+                test: /\.(pug)$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
+            },
+            {
                 test: /\.(png|jpg|svg)$/,
-                use: ['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                }
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                }
             },
             {
                 test: /\.m?js$/,
