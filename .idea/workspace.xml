@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Montserrat.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/font-arrow.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/font-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/font-arrow.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/font-arrow.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/font-arrow.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/font-arrow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Dropdown Default.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Group (1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Group.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Text Field Default.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery_dist_jquery_js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/scss.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +86,7 @@
       <workItem from="1616499036826" duration="10655000" />
       <workItem from="1616572911374" duration="8680000" />
       <workItem from="1616591811830" duration="474000" />
-      <workItem from="1616605409033" duration="14000" />
+      <workItem from="1616605409033" duration="717000" />
     </task>
     <servers />
   </component>
