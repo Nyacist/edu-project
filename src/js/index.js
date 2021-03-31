@@ -65,7 +65,6 @@ for (let btn of document.querySelectorAll('.dropdown__button')) {
         this.classList.toggle('dropdown__border');
         this.nextElementSibling.classList.toggle('show');
     })
-}
-;
+};
 
 
