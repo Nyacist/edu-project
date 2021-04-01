@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/svg/Group 8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Radio Buttons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/check.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
     </list>
@@ -105,7 +104,8 @@
       <workItem from="1616745045754" duration="20311000" />
       <workItem from="1617005999346" duration="10853000" />
       <workItem from="1617091429884" duration="7478000" />
-      <workItem from="1617175382427" duration="12740000" />
+      <workItem from="1617175382427" duration="13459000" />
+      <workItem from="1617270224130" duration="4016000" />
     </task>
     <servers />
   </component>

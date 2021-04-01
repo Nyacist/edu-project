@@ -85,6 +85,14 @@ html
                             +check('Можно с питомцами', 'pets')
                             +check('Можно пригласить гостей (до 10 человек)', 'guests')
 
-                    //span.checkmark
-                    //    .checkmark_stem
-                    //    .checkmark_kick
+                    mixin radio(title, id)
+                        .radiobuttons__item
+                            input(class='radiobuttons__input' id=id type='radio' name='radio')
+                            label(for=id)= title
+
+                    .radiobuttons
+                        label
+                            h3 radio buttons
+                        .radiobuttons__content
+                            +radio('Мужчина', 'man')
+                            +radio('Женщина', 'woman')
