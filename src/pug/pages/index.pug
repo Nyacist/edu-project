@@ -96,3 +96,16 @@ html
                         .radiobuttons__content
                             +radio('Мужчина', 'man')
                             +radio('Женщина', 'woman')
+
+
+                    mixin toggle(title, id)
+                        .toggle__item
+                            input(class='toggle__input' id= id type='checkbox')
+                            label(for=id)= title
+
+                    .toggle
+                        label
+                            h3 toggle
+                        .toggle__content
+                            +toggle('Получать спецпредложения', 'offers')
+                            +toggle('Получать спецпредложения', 'offers-disable')

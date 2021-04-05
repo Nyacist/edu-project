@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/svg/Radio Buttons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/font-arrow.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/font-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/font-arrow.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/font-arrow.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery_dist_jquery_js.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svg/Radio Buttons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svg/Radio Buttons.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +116,10 @@
       <workItem from="1617005999346" duration="10853000" />
       <workItem from="1617091429884" duration="7478000" />
       <workItem from="1617175382427" duration="13459000" />
-      <workItem from="1617270224130" duration="4016000" />
+      <workItem from="1617270224130" duration="4691000" />
+      <workItem from="1617287352513" duration="621000" />
+      <workItem from="1617353321380" duration="737000" />
+      <workItem from="1617611134955" duration="2447000" />
     </task>
     <servers />
   </component>
