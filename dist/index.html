@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+  <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery_dist_jquery_js.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <section class="inputs">
+        <form>
+          <div class="text-field">
+            <label>
+              <h3>text field</h3>
+            </label>
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="dropdown">
+            <label>
+              <h3>dropdown</h3>
+            </label>
+            <div class="dropdown__select">
+              <input type="button" value="Сколько гостей">
+            </div>
+          </div>
+          <div class="dropdown">
+            <label>
+              <h3>dropdown</h3>
+            </label>
+            <div class="dropdown__select">
+              <input class="dropdown__button" type="button" value="Комнаты">
+              <div class="dropdown__counter">
+                          <div class="dropdown__option">
+                            <h3>спальни</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+                          <div class="dropdown__option">
+                            <h3>кровати</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+                          <div class="dropdown__option">
+                            <h3>ванные комнаты</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown item_size_s">
+            <label>
+              <h3>dropdown</h3>
+            </label>
+            <div class="dropdown__select">
+              <input class="dropdown__button" style="text-overflow: ellipsis;" type="button" value="Комнаты">
+              <div class="dropdown__counter">
+                          <div class="dropdown__option">
+                            <h3>спальни</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+                          <div class="dropdown__option">
+                            <h3>кровати</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+                          <div class="dropdown__option">
+                            <h3>ванные комнаты</h3>
+                            <div class="dropdown__count">
+                              <input class="sign" type="button" value="-" data-action="minus">
+                              <h3 data-action="content">0</h3>
+                              <input class="sign" type="button" value="+" data-action="plus">
+                            </div>
+                          </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscription">
+            <div class="text-field item_size_s subscription__text-field">
+              <label>
+                <h3>subscription text field</h3>
+              </label>
+              <div class="subscription__input">
+                <input type="text" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="date-column">
+            <div class="dropdown item_size_xs">
+              <label>
+                <h3>date Dropdown</h3>
+              </label>
+              <div class="dropdown__select">
+                <input class="dropdown__button" type="button" value="ДД.ММ.ГГГГ">
+                <div class="dropdown__counter"></div>
+              </div>
+            </div>
+            <div class="dropdown item_size_xs">
+              <label>
+                <h3>date Dropdown</h3>
+              </label>
+              <div class="dropdown__select">
+                <input class="dropdown__button" type="button" value="19.08.2019">
+                <div class="dropdown__counter"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown filter-date__dropdown item_size_s">
+            <label>
+              <h3>date Dropdown</h3>
+            </label>
+            <div class="dropdown__select">
+              <input class="dropdown__button" type="button" value="19.08.2019">
+              <div class="dropdown__counter"></div>
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <h3>checkbox buttons</h3>
+            </label>
+            <div class="checkbox__content">
+                        <div class="checkbox__item">
+                          <input class="checkbox__input" id="smoke" type="checkbox">
+                          <label for="smoke">Можно курить</label>
+                        </div>
+                        <div class="checkbox__item">
+                          <input class="checkbox__input" id="pets" type="checkbox">
+                          <label for="pets">Можно с питомцами</label>
+                        </div>
+                        <div class="checkbox__item">
+                          <input class="checkbox__input" id="guests" type="checkbox">
+                          <label for="guests">Можно пригласить гостей (до 10 человек)</label>
+                        </div>
+            </div>
+          </div>
+          <div class="radiobuttons">
+            <label>
+              <h3>radio buttons</h3>
+            </label>
+            <div class="radiobuttons__content">
+                        <div class="radiobuttons__item">
+                          <input class="radiobuttons__input" id="man" type="radio" name="radio">
+                          <label for="man">Мужчина</label>
+                        </div>
+                        <div class="radiobuttons__item">
+                          <input class="radiobuttons__input" id="woman" type="radio" name="radio">
+                          <label for="woman">Женщина</label>
+                        </div>
+            </div>
+          </div>
+          <div class="toggle">
+            <label>
+              <h3>toggle</h3>
+            </label>
+            <div class="toggle__content">
+                        <div class="toggle__item">
+                          <input class="toggle__input" id="offers" type="checkbox">
+                          <label for="offers">Получать спецпредложения</label>
+                        </div>
+                        <div class="toggle__item">
+                          <input class="toggle__input" id="offers-disable" type="checkbox">
+                          <label for="offers-disable">Получать спецпредложения</label>
+                        </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
