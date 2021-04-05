@@ -17,9 +17,7 @@
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery_dist_jquery_js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svg/Radio Buttons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svg/Radio Buttons.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1617270224130" duration="4691000" />
       <workItem from="1617287352513" duration="621000" />
       <workItem from="1617353321380" duration="737000" />
-      <workItem from="1617611134955" duration="2447000" />
+      <workItem from="1617611134955" duration="3062000" />
     </task>
     <servers />
   </component>

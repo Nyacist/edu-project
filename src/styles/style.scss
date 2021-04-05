@@ -337,9 +337,11 @@ h3 {
     width: 100%;
     margin-top: 8px;
 
-    .toggle__item {
-      margin-bottom: 10px;
+    .toggle__item + .toggle__item {
+      margin-top: 10px;
+    }
 
+    .toggle__item {
       .toggle__input {
         position: absolute;
         z-index: -1;
@@ -378,10 +380,11 @@ h3 {
         }
 
         &:checked + label {
-          &:before{
+          &:before {
             border: 1px solid $purple;
           }
-          &:after{
+
+          &:after {
             left: 24px;
             background: $gradient-purple;
           }
