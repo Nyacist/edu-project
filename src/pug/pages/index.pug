@@ -44,20 +44,20 @@ html
                                 +count('ванные комнаты')
 
                     .subscription
-                        .text-field.item_size_s.subscription__text-field
-                            label
-                                h3 subscription text field
-                            .subscription__input
-                                input(type='text' placeholder='Email')
-                    .date-column
-                        .dropdown.item_size_xs
+                        label
+                            h3 subscription text field
+                        .subscription__input
+                            input(type='text' placeholder='Email')
+
+                    .dropdown
+                        .dropdown_column
                             label
                                 h3 date Dropdown
                             .dropdown__select
                                 input(class='dropdown__button' type='button' value='ДД.ММ.ГГГГ')
                                 .dropdown__counter
 
-                        .dropdown.item_size_xs
+                        .dropdown_column
                             label
                                 h3 date Dropdown
                             .dropdown__select
@@ -88,7 +88,7 @@ html
                     mixin radio(title, id)
                         .radiobuttons__item
                             input(class='radiobuttons__input' id=id type='radio' name='radio')
-                            label(for=id)= title
+                            label(for=id)=title
 
                     .radiobuttons
                         label
@@ -96,7 +96,6 @@ html
                         .radiobuttons__content
                             +radio('Мужчина', 'man')
                             +radio('Женщина', 'woman')
-
 
                     mixin toggle(title, id)
                         .toggle__item
@@ -109,3 +108,28 @@ html
                         .toggle__content
                             +toggle('Получать спецпредложения', 'offers')
                             +toggle('Получать спецпредложения', 'offers-disable')
+
+
+                    mixin like(value)
+                        .like-button__item
+                            input(class='like-button__input' type='button' value=value data-action='disable')
+
+                    .like-button
+                        label
+                            h3 like button
+                        .like-button__content
+                            +like(2)
+                            +like(11)
+
+                    mixin rate(number)
+                        input(class='rate-button__input' type='radio' id='star-' + number name='rating' value=number)
+                        label(class='rate-button__label' for='star-' + number)
+                    .rate-button
+                        label
+                            h3 rate button
+                        .rate-button__content
+                            +rate(5)
+                            +rate(4)
+                            +rate(3)
+                            +rate(2)
+                            +rate(1)

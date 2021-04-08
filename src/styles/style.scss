@@ -1,6 +1,6 @@
 @import "~normalize.css";
 @import "fonts.scss";
-@import "font-arrow.css";
+@import "material-icons.css";
 @import "colors.scss";
 
 $bold: 700;
@@ -21,6 +21,7 @@ body {
 %bold {
   color: $dark-shade;
   font-weight: $bold;
+  line-height: normal;
 }
 
 h1 {
@@ -50,7 +51,8 @@ h3 {
 
   label {
     h3 {
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 5px;
       text-transform: uppercase;
     }
   }
@@ -77,12 +79,6 @@ h3 {
   }
 }
 
-.item_size_xs {
-  max-width: 150px;
-  display: inline-block;
-  margin: 0;
-}
-
 .item_size_s {
   max-width: 266px;
 }
@@ -93,6 +89,16 @@ h3 {
 
 .dropdown {
   @extend %input-item;
+
+  .dropdown_column{
+    max-width: 150px;
+    width: 100%;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  .dropdown_column + .dropdown_column{
+    margin-left: 20px;
+  }
 
   input {
     background-color: transparent;
@@ -189,45 +195,50 @@ h3 {
   border-bottom-left-radius: 0 !important;
 }
 
-.date-column {
+.subscription {
   @extend %input-item;
-  display: flex;
-  justify-content: space-between;
-}
 
-.subscription__input {
-  position: relative;
+  .subscription__input {
 
-  input {
-    padding-right: 44px;
-  }
+    position: relative;
+    margin-top: 5px;
 
-  &:after {
-    position: absolute;
-    content: "\e900";
-    display: block;
-    font-family: 'icomoon';
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-    font-size: 24px;
-    background: $gradient-purple;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    input {
+      padding-right: 44px;
+      margin-top: 0;
+    }
+
+    &:after {
+      position: absolute;
+      content: "\e900";
+      display: block;
+      font-family: 'icomoon';
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      font-size: 24px;
+      background: $gradient-purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
 .checkbox {
   @extend %input-item;
-  position: relative;
   max-width: 225px;
   width: 100%;
 
   .checkbox__content {
-    margin-top: 2px;
+    margin-top: 16px;
+    position: relative;
+
+    .checkbox__item + .checkbox__item {
+      margin-top: 12px;
+    }
 
     .checkbox__item {
-      //max-height: 30px;
+
       .checkbox__input {
         position: absolute;
         z-index: -1;
@@ -235,14 +246,14 @@ h3 {
       }
 
       .checkbox__input + label {
-        display: inline-flex;
+        display: block;
+        position: relative;
         user-select: none;
         color: $dark-shade-50;
         line-height: 19px;
-        position: relative;
         padding-left: 30px;
-        margin-top: 10px;
         word-wrap: break-word;
+        margin-top: 0;
 
         &:before {
           position: absolute;
@@ -273,18 +284,20 @@ h3 {
 .radiobuttons {
   @extend %input-item;
   position: relative;
-  max-width: 220px;
 
   .radiobuttons__content {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 9px;
+    display: flex;
+    margin-top: 16px;
+
+    .radiobuttons__item + .radiobuttons__item {
+      margin-left: 20px;
+    }
 
     .radiobuttons__item {
       .radiobuttons__input {
         position: absolute;
         z-index: -1;
+        width: auto;
         opacity: 0;
 
         & + label {
@@ -299,7 +312,7 @@ h3 {
             left: 0;
             width: 18px;
             height: 18px;
-            border: 1px solid $purple;
+            border: 1px solid $dark-shade-25;
             border-radius: 50%;
             //background: #FFF;
           }
@@ -319,8 +332,14 @@ h3 {
         }
       }
 
-      .radiobuttons__input:checked + label:after {
-        opacity: 1;
+      .radiobuttons__input:checked + label {
+        &:after {
+          opacity: 1;
+        }
+
+        &:before {
+          border: 1px solid $purple;
+        }
       }
     }
   }
@@ -331,11 +350,9 @@ h3 {
   position: relative;
   max-width: 260px;
 
-
   .toggle__content {
-    margin-top: 2px;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 15px;
 
     .toggle__item + .toggle__item {
       margin-top: 10px;
@@ -348,15 +365,16 @@ h3 {
         opacity: 0;
 
         & + label {
+          display: block;
           position: relative;
-          padding: 0 0 0 50px;
+          padding: 0 0 4px 50px;
           user-select: none;
-          line-height: 24px;
+          line-height: 20px;
 
           &:before {
             content: '';
             position: absolute;
-            top: -1px;
+            top: 0;
             left: 0;
             width: 40px;
             height: 20px;
@@ -369,7 +387,7 @@ h3 {
           &:after {
             content: '';
             position: absolute;
-            top: 3px;
+            top: 4px;
             left: 4px;
             width: 12px;
             height: 12px;
@@ -391,5 +409,107 @@ h3 {
         }
       }
     }
+  }
+}
+
+.like-button {
+  @extend %input-item;
+
+  .like-button__content {
+    margin-top: 16px;
+    line-height: 14px;
+
+    .like-button__item + .like-button__item {
+      margin-left: 6px;
+    }
+
+    .like-button__item {
+      display: inline-block;
+      position: relative;
+      box-sizing: inherit;
+      width: 40px;
+      height: 20px;
+      border: 1px solid $dark-shade-25;
+      border-radius: 10px;
+
+      &:after {
+        position: absolute;
+        content: '\e905';
+        font-family: 'icomoon';
+        top: -1px;
+        left: 4px;
+        z-index: -1;
+        font-size: 10px;
+        line-height: 20px;
+        color: $dark-shade-25;
+      }
+
+      .like-button__input {
+        display: block;
+        background-color: transparent;
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px 10px 0 20px;
+        font-size: 10px;
+        color: $dark-shade-25;
+        border: none;
+      }
+    }
+
+    .like-button__item_enable {
+      border: 1px solid $purple;
+
+      &:after {
+        content: '\e904';
+        background: linear-gradient(to bottom, #bc9cff, #8BA4F9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .like-button__input {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.rate-button {
+  @extend %input-item;
+
+  .rate-button__content {
+    position: relative;
+    margin-top: 16px;
+    font-size: 24px;
+    max-width: 120px;
+    font-family: 'icomoon' !important;
+
+    .rate-button__input {
+      position: absolute;
+      z-index: -1;
+      width: auto;
+      opacity: 0;
+      margin: 0;
+    }
+
+    .rate-button__label {
+      float: right;
+    }
+
+    .rate-button__label:before {
+      content: "\e903";
+      color: $purple;
+    }
+
+    .rate-button__input:checked ~ .rate-button__label:before {
+      content: "\e902";
+      background: $gradient-purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .rate-button__label:active {
+      position: relative;
+    }
+
   }
 }
