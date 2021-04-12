@@ -135,9 +135,13 @@ html
                             +rate(1)
 
 
-                    .range-slider
-                        .range-slider__title
-                            label
-                                h3 range slider
-                            input(type='text' class='range-slider__amount' readonly)
-                        .range-slider__item
+                    mixin range-slider()
+                        .range-slider
+                            .range-slider__title
+                                label
+                                    h3 range slider
+                                input(type='text' class='range-slider__amount' readonly)
+                            .range-slider__item
+                    .range-sliders
+                        +range-slider()
+

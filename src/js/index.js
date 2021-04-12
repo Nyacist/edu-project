@@ -49,7 +49,7 @@ $( function() {
         max: 15000,
         values: [ 5000, 10000 ],
         slide: function( event, ui ) {
-            $( ".range-slider__amount" ).val(space(ui.values[ 0 ]) + "₽" + " - " + space(ui.values[ 1 ]) + "₽" );
+            $(event.target).prev().children(".range-slider__amount").val(space(ui.values[ 0 ]) + "₽" + " - " + space(ui.values[ 1 ]) + "₽" );
         }
     });
 
