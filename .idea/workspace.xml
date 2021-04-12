@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/Material-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Material-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Material-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Material-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Material-Icons.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/material-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Group 11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Radio Buttons (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Group 2.6.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/font-arrow.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/font-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/font-arrow.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/font-arrow.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/font-arrow.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/font-arrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svg/Radio Buttons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svg/Radio Buttons.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +116,8 @@
       <workItem from="1617692725399" duration="6251000" />
       <workItem from="1617881698074" duration="8124000" />
       <workItem from="1617911236398" duration="3064000" />
+      <workItem from="1618219128056" duration="16000" />
+      <workItem from="1618219150915" duration="15582000" />
     </task>
     <servers />
   </component>

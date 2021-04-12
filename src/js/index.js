@@ -6,6 +6,7 @@
 // import './styles/scss.scss'
 
 import * as $ from 'jquery'
+import slider from 'jquery-ui/ui/widgets/slider'
 import '../styles/style.scss'
 
 function resultStr(counter) {
@@ -37,6 +38,24 @@ function resultStr(counter) {
     str+= '...';
     counter.previousElementSibling.value = str;
 }
+
+$( function() {
+
+    const space = (num) => String(num).replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+    $( ".range-slider__item" ).slider({
+        range: true,
+        min: 0,
+        max: 15000,
+        values: [ 5000, 10000 ],
+        slide: function( event, ui ) {
+            $( ".range-slider__amount" ).val(space(ui.values[ 0 ]) + "₽" + " - " + space(ui.values[ 1 ]) + "₽" );
+        }
+    });
+
+    $( ".range-slider__amount" ).val(space($( ".range-slider__item" ).slider( "values", 0 )) + "₽" +
+        " - " + space($( ".range-slider__item" ).slider( "values", 1 )) + "₽");
+} );
 
 for (let counter of document.querySelectorAll('.dropdown__counter')) {
     counter.addEventListener('click', function (e) {
