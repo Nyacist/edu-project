@@ -90,13 +90,14 @@ h3 {
 .dropdown {
   @extend %input-item;
 
-  .dropdown_column{
+  .dropdown_column {
     max-width: 150px;
     width: 100%;
     display: inline-block;
     margin-right: -4px;
   }
-  .dropdown_column + .dropdown_column{
+
+  .dropdown_column + .dropdown_column {
     margin-left: 20px;
   }
 
@@ -485,7 +486,7 @@ h3 {
     width: 120px;
     font-family: 'icomoon' !important;
 
-    &:after{
+    &:after {
       content: "";
       clear: both;
       display: block;
@@ -522,22 +523,24 @@ h3 {
   }
 }
 
-.range-slider{
+.range-slider {
   @extend %input-item;
   max-width: 266px;
-  .range-slider__title{
+
+  .range-slider__title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 
-    .range-slider__amount{
+    .range-slider__amount {
       max-width: 170px;
       text-align: right;
-      border:0;
+      border: 0;
       padding: 0;
       color: $dark-shade-50;
     }
   }
+
   .ui-slider {
     position: relative;
     text-align: left;
@@ -557,7 +560,7 @@ h3 {
     border-radius: 3px;
   }
 
-  .ui-slider-handle{
+  .ui-slider-handle {
     border: 2px solid #fff;
     background: $gradient-green;
     border-radius: 8px;
@@ -570,13 +573,105 @@ h3 {
     top: -6px;
     margin-left: -.6em;
   }
+
   .ui-state-hover,
   .ui-state-focus,
-  .ui-state-active{
+  .ui-state-active {
     outline: none;
   }
 }
 
-.buttons{
+.buttons-block {
+  @extend %input-item;
 
+  .buttons-block__content {
+    margin-top: 16px;
+    & > div {
+      display: flex;
+    }
+  }
+  .buttons-block__buttons + .buttons-block__buttons{
+    margin-top: 30px;
+  }
+
+  .buttons-block__button {
+    height: 44px;
+    max-width: 99px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0;
+    background: $gradient-purple;
+    border-radius: 22px;
+    border-color: transparent;
+
+    button{
+      height: 40px;
+      border-color: transparent;
+      border-radius: 22px;
+      width: 100%;
+      z-index: 1;
+
+      h3 {
+        margin: 0;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .buttons-block__button_background {
+      background: transparent;
+      h3 {
+        color: #ffffff;
+      }
+    }
+
+    .buttons-block__button_border {
+      background: white;
+      h3 {
+        color: $purple;
+      }
+    }
+  }
+
+  .buttons-block__button + .buttons-block__button,
+  .buttons-block__button_link + .buttons-block__button_link{
+    margin-left: 20px;
+  }
+
+  .buttons-block__button_link{
+    text-decoration: none;
+    line-height: 15px;
+
+    button{
+      border: none;
+      outline: none;
+      padding: 0;
+      background: none;
+    }
+
+    button[disabled]{
+      h3{
+        color: $dark-shade-50;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $purple;
+      margin: 0;
+    }
+  }
+}
+
+.button-disable{
+  background: $gradient-purple-50 !important;
 }

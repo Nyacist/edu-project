@@ -145,3 +145,32 @@ html
                     .range-sliders
                         +range-slider()
 
+
+
+                    .buttons-block
+                        label
+                            h3 buttons
+                        .buttons-block__content
+                            .buttons-block__buttons
+                                .buttons-block__button
+                                    button(class='buttons-block__button_background')
+                                        h3 click me
+                                .buttons-block__button
+                                    button(class='buttons-block__button_background' disabled)
+                                        h3 click me
+
+                            .buttons-block__buttons
+                                .buttons-block__button
+                                    button(class='buttons-block__button_border')
+                                        h3 click me
+                                .buttons-block__button
+                                    button(class='buttons-block__button_border' disabled)
+                                        h3 click me
+
+                            .buttons-block__buttons
+                                .buttons-block__button_link
+                                    button
+                                        h3 click me
+                                .buttons-block__button_link
+                                    button(disabled)
+                                        h3 click me
