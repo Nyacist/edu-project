@@ -593,10 +593,28 @@ h3 {
   .buttons-block__buttons + .buttons-block__buttons{
     margin-top: 30px;
   }
+  .buttons-block__button_example{
+    max-width: 99px;
+  }
+
+  .buttons-block__button_payment{
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "\e900";
+      display: block;
+      font-family: 'icomoon';
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 
   .buttons-block__button {
     height: 44px;
-    max-width: 99px;
     width: 100%;
     box-sizing: border-box;
     padding: 2px;
@@ -606,10 +624,12 @@ h3 {
     border-color: transparent;
 
     button{
+      position: relative;
       height: 40px;
       border-color: transparent;
       border-radius: 22px;
       width: 100%;
+      user-select: none;
       z-index: 1;
 
       h3 {
