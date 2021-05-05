@@ -4,6 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+//const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -34,14 +35,14 @@ const cssLoaders = extra => {
 }
 
 const fs = require('fs')
-const PAGES_DIR = path.resolve(__dirname, 'src/pug/pages')
+const PAGES_DIR = path.resolve(__dirname, 'src/pages')
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './js/index.js']
+        main: ['@babel/polyfill', './index.js']
     },
     output: {
         filename: filename('js'),
@@ -73,7 +74,24 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                use: cssLoaders('sass-loader')
+                //use: cssLoaders('sass-loader')
+                use:[
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
+                        loader:'css-loader',
+                        options:{sourceMap:true}
+                    },
+                    {
+                        loader:'resolve-url-loader',
+                        options:{sourceMap:true}
+                    },
+                    {
+                        loader:'sass-loader',
+                        options:{sourceMap:true}
+                    }
+                ]
             },
             {
                 test: /\.(pug)$/,
@@ -83,18 +101,19 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpg|svg)$/,
+                test: /\.(png|jpg)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
                 }
             },
             {
-                test: /\.(ttf|woff|woff2|eot)$/,
+                test: /\.(ttf|woff|svg|eot)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
-                }
+                    outputPath: 'fonts/'
+                },
             },
             {
                 test: /\.m?js$/,

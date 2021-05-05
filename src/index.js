@@ -7,7 +7,8 @@
 
 import * as $ from 'jquery'
 import slider from 'jquery-ui/ui/widgets/slider'
-import '../styles/style.scss'
+import './pages/style.scss'
+import './components/dropdown/dropdown'
 
 //range slider
 $(function () {

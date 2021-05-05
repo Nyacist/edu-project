@@ -1,77 +1,30 @@
-doctype html
-html
-    head
-        title Project
-    body
-        .container
-            section.inputs
-                form
-                    .text-field
-                        label
-                            h3 text field
-                        input(type='text' placeholder='Email')
-                    .dropdown
-                        label
-                            h3 dropdown
-                        .dropdown__select
-                            input(type='button' value='Сколько гостей')
+extends ../components/base/base
+block content
+    .container
+        section
+            form.form-elements
+                .form-column
+                    include ../components/item/item
 
-                    mixin count(title)
-                        .dropdown__option
-                            h3= title
-                            .dropdown__count
-                                input(type='button' value='-' class='sign' data-action='minus')
-                                h3(data-action='content') 0
-                                input(type='button' value='+' class='sign' data-action='plus')
-                    .dropdown
-                        label
-                            h3 dropdown
-                        .dropdown__select
-                            input(class='dropdown__button' type='button' value='Комнаты')
-                            .dropdown__counter
-                                +count('спальни')
-                                +count('кровати')
-                                +count('ванные комнаты')
+                    include ../components/textField/textField_default
 
-                    .dropdown.item_size_s
-                        label
-                            h3 dropdown
-                        .dropdown__select
-                            input(style="text-overflow: ellipsis;" class='dropdown__button' type='button' value='Комнаты')
-                            .dropdown__counter
-                                +count('спальни')
-                                +count('кровати')
-                                +count('ванные комнаты')
+                    include ../components/textField/textField_hover
 
-                    .subscription
-                        label
-                            h3 subscription text field
-                        .subscription__input
-                            input(type='text' placeholder='Email')
+                    include ../components/dropdown/dropdown
 
-                    .dropdown
-                        .dropdown_column
-                            label
-                                h3 date Dropdown
-                            .dropdown__select
-                                input(class='dropdown__button' type='button' value='ДД.ММ.ГГГГ')
-                                .dropdown__counter
+                    include ../components/textField/textField_masked
 
-                        .dropdown_column
-                            label
-                                h3 date Dropdown
-                            .dropdown__select
-                                input(class='dropdown__button' type='button' value='19.08.2019')
-                                .dropdown__counter
+                    .date-column__dropdown
+                        include ../components/dropdown/dropdown_date
 
-                    .dropdown.filter-date__dropdown.item_size_s
-                        label
-                            h3 date Dropdown
-                        .dropdown__select
-                            input(class='dropdown__button' type='button' value='19.08.2019')
-                            .dropdown__counter
+                    .filter-date__dropdown.item_size_s
+                        include ../components/dropdown/dropdown_filter-date
+
+                    .subscription__text-field.item_size_s
+                        include ../components/textField/textField_subscription
 
 
+                .form-column.item_size_s
                     mixin check(title, id)
                         .checkbox__item
                             input(class='checkbox__input' id= id type='checkbox')
@@ -134,7 +87,7 @@ html
                             +rate(2)
                             +rate(1)
 
-
+                .form-column
                     mixin range-slider()
                         .range-slider
                             .range-slider__title
@@ -179,3 +132,48 @@ html
                                 .buttons-block__button.buttons-block__button_payment
                                     button(class='buttons-block__button_background')
                                         h3 перейти к оплате
+
+
+                            //.dropdown
+                                            //    label.block-title
+                                            //        h3 dropdown
+                                            //    .dropdown__select
+                                            //        input(class='dropdown__button' type='button' value='Комнаты')
+                                            //        .dropdown__counter
+                                            //            +count('спальни')
+                                            //            +count('кровати')
+                                            //            +count('ванные комнаты')
+
+                                            //.dropdown.item_size_s
+                                            //    label.block-title
+                                            //        h3 dropdown
+                                            //    .dropdown__select
+                                            //        input(style="text-overflow: ellipsis;" class='dropdown__button' type='button' value='Комнаты')
+                                            //        .dropdown__counter
+                                            //            +count('спальни')
+                                            //            +count('кровати')
+                                            //            +count('ванные комнаты')
+
+
+
+                                            //.dropdown
+                                            //    .dropdown_column
+                                            //        label
+                                            //            h3 date Dropdown
+                                            //        .dropdown__select
+                                            //            input(class='dropdown__button' type='button' value='ДД.ММ.ГГГГ')
+                                            //            .dropdown__counter
+                                            //
+                                            //    .dropdown_column
+                                            //        label
+                                            //            h3 date Dropdown
+                                            //        .dropdown__select
+                                            //            input(class='dropdown__button' type='button' value='19.08.2019')
+                                            //            .dropdown__counter
+
+                                            //.dropdown.filter-date__dropdown.item_size_s
+                                            //    label
+                                            //        h3 date Dropdown
+                                            //    .dropdown__select
+                                            //        input(class='dropdown__button' type='button' value='19.08.2019')
+                                            //        .dropdown__counter

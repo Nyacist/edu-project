@@ -5,10 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/svg/Button Default.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_checkboxButtons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_components.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_likeButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_radioButtons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_rangeSlider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_rateButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_toggle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/base.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_date.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_filter-date.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item/_item.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item/item.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField/_textField.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField/textField_default.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField/textField_hover.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField/textField_masked.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textField/textField_subscription.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Form Elements.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Material-Icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Material-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Material-Icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Material-Icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Material-Icons.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/material-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +58,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Sass File" />
+        <option value="SCSS File" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,6 +77,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1oBvw4LkwCPEIJvAoQ809m3LMfu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -49,23 +95,29 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/textField" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/styles/layout/_textField.scss" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\dist" />
+      <recent name="D:\project\src\components\textField" />
+      <recent name="D:\project\src\components\dropdown" />
+      <recent name="D:\project\src\components" />
+      <recent name="D:\project\src\styles\layout" />
+      <recent name="D:\project\src\styles\vendors" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\src\js" />
-      <recent name="D:\project\src\pug\pages" />
-      <recent name="D:\project\src\fonts" />
+      <recent name="D:\project\src\components\dropdown" />
+      <recent name="D:\project\src\components\base" />
+      <recent name="D:\project\src\components\textField" />
       <recent name="D:\project\src" />
+      <recent name="D:\project\src\pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,7 +168,12 @@
       <workItem from="1618219150915" duration="19461000" />
       <workItem from="1618480573409" duration="12568000" />
       <workItem from="1618567210590" duration="2164000" />
-      <workItem from="1618578842845" duration="4477000" />
+      <workItem from="1618578842845" duration="4525000" />
+      <workItem from="1618819947737" duration="15348000" />
+      <workItem from="1618911869226" duration="2196000" />
+      <workItem from="1619266316009" duration="596000" />
+      <workItem from="1619424093607" duration="9334000" />
+      <workItem from="1620199300858" duration="7979000" />
     </task>
     <servers />
   </component>

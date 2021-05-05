@@ -1,0 +1,77 @@
+@import "fonts";
+@import "colors";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-shade-75;
+}
+
+%bold {
+  color: $dark-shade;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 24px;
+  @extend %bold;
+}
+
+h2 {
+  font-size: 19px;
+  @extend %bold;
+}
+
+h3 {
+  font-size: 12px;
+  @extend %bold;
+}
+
+
+
+%input-item {
+  display: block;
+  width: 100%;
+
+  .block-title {
+    h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 14px;
+    border: $dark-shade-25 solid 1px;
+    border-radius: 4px;
+    line-height: 18px;
+
+    &::placeholder {
+      color: $dark-shade-25;
+    }
+
+    &:hover, &:focus {
+      border-color: $dark-shade-50;
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+

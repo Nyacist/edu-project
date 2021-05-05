@@ -1,0 +1,23 @@
+
+.text-field {
+  display: block;
+  width: 100%;
+}
+
+.text-field__subscription {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "\e900";
+      display: block;
+      font-family: 'icomoon';
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      font-size: 24px;
+      background: $gradient-purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }

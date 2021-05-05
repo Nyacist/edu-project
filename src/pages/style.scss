@@ -1,0 +1,54 @@
+@import "../../node_modules/normalize.css";
+
+@import "../components/base/base";
+@import "../components/components";
+
+.container {
+  padding: 40px;
+}
+
+.form-elements{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1158px;
+  min-width: 920px;
+}
+
+.form-column {
+  max-width: 320px;
+  width: 100%;
+  &>div + div{
+    margin-top: 20px;
+  }
+}
+
+//.form-column + .form-column{
+//  margin-left: 126px;
+//}
+
+.item_size_s {
+  max-width: 266px;
+}
+
+.date-column__dropdown{
+  display: flex;
+  justify-content: space-between;
+  &>div + div{
+    margin-left: 20px;
+  }
+}
+
+.date-column__dropdown,
+.filter-date__dropdown,
+.subscription__text-field {
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
