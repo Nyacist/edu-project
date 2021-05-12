@@ -1,0 +1,31 @@
+mixin button(value, button_class, disabled)
+
+    if button_class == 'btn_link'
+        .btn__btn-link
+            button(class='btn_default ' + button_class, disabled= disabled)
+                h3= value
+    else
+        .btn_background
+            button(class='btn_default ' + button_class, disabled= disabled)
+                h3= value
+
+
+.btn-group
+    +item-title('buttons')
+
+    .btn-group__content
+
+        .btn-group__btn_background
+            +button('click me', '')
+            +button('click me', '', 'disable')
+
+        .btn-group__btn_border
+            +button('click me', 'btn_border')
+            +button('click me', 'btn_border', 'disable')
+
+        .btn-group__btn-link
+            +button('click me', 'btn_link')
+            +button('click me', 'btn_link', 'disable')
+
+        .btn-group__btn-payment
+            +button('перейти к оплате', '')

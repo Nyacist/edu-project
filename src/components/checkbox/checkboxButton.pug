@@ -1,0 +1,11 @@
+mixin check(title, id)
+    .checkbox__item
+        input(class='checkbox__input' id=id type='checkbox')
+        label(for=id)= title
+
+.checkbox
+    +item-title('checkbox buttons')
+    .checkbox__content
+        +check('Можно курить', 'smoke')
+        +check('Можно с питомцами', 'pets')
+        +check('Можно пригласить гостей (до 10 человек)', 'guests')

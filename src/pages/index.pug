@@ -25,113 +25,22 @@ block content
 
 
                 .form-column.item_size_s
-                    mixin check(title, id)
-                        .checkbox__item
-                            input(class='checkbox__input' id= id type='checkbox')
-                            label(for=id)= title
 
-                    .checkbox
-                        label
-                            h3 checkbox buttons
-                        .checkbox__content
-                            +check('Можно курить', 'smoke')
-                            +check('Можно с питомцами', 'pets')
-                            +check('Можно пригласить гостей (до 10 человек)', 'guests')
+                    include  ../components/checkbox/checkboxButton
 
-                    mixin radio(title, id)
-                        .radiobuttons__item
-                            input(class='radiobuttons__input' id=id type='radio' name='radio')
-                            label(for=id)=title
+                    include ../components/radiobutton/radioButton
 
-                    .radiobuttons
-                        label
-                            h3 radio buttons
-                        .radiobuttons__content
-                            +radio('Мужчина', 'man')
-                            +radio('Женщина', 'woman')
+                    include ../components/toggle/toggle
 
-                    mixin toggle(title, id)
-                        .toggle__item
-                            input(class='toggle__input' id= id type='checkbox')
-                            label(for=id)= title
+                    include ../components/likeButton/likeButton
 
-                    .toggle
-                        label
-                            h3 toggle
-                        .toggle__content
-                            +toggle('Получать спецпредложения', 'offers')
-                            +toggle('Получать спецпредложения', 'offers-disable')
-
-
-                    mixin like(value)
-                        .like-button__item
-                            input(class='like-button__input' type='button' value=value data-action='disable')
-
-                    .like-button
-                        label
-                            h3 like button
-                        .like-button__content
-                            +like(2)
-                            +like(11)
-
-                    mixin rate(number)
-                        input(class='rate-button__input' type='radio' id='star-' + number name='rating' value=number)
-                        label(class='rate-button__label' for='star-' + number)
-                    .rate-button
-                        label
-                            h3 rate button
-                        .rate-button__content
-                            +rate(5)
-                            +rate(4)
-                            +rate(3)
-                            +rate(2)
-                            +rate(1)
+                    include ../components/rateButton/rateButton
 
                 .form-column
-                    mixin range-slider()
-                        .range-slider
-                            .range-slider__title
-                                label
-                                    h3 range slider
-                                input(type='text' class='range-slider__amount' readonly)
-                            .range-slider__item
-                    .range-sliders
-                        +range-slider()
 
+                    include ../components/rangeSlider/rangeSlider
 
-
-                    .buttons-block
-                        label
-                            h3 buttons
-                        .buttons-block__content
-                            .buttons-block__buttons
-                                .buttons-block__button.buttons-block__button_example
-                                    button(class='buttons-block__button_background')
-                                        h3 click me
-                                .buttons-block__button.buttons-block__button_example
-                                    button(class='buttons-block__button_background' disabled)
-                                        h3 click me
-
-                            .buttons-block__buttons
-                                .buttons-block__button.buttons-block__button_example
-                                    button(class='buttons-block__button_border')
-                                        h3 click me
-                                .buttons-block__button.buttons-block__button_example
-                                    button(class='buttons-block__button_border' disabled)
-                                        h3 click me
-
-                            .buttons-block__buttons
-                                .buttons-block__button_link
-                                    button
-                                        h3 click me
-                                .buttons-block__button_link
-                                    button(disabled)
-                                        h3 click me
-
-                            .buttons-block__buttons
-                                .buttons-block__button.buttons-block__button_payment
-                                    button(class='buttons-block__button_background')
-                                        h3 перейти к оплате
+                    include ../components/button/button
 
 
                             //.dropdown

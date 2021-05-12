@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 
+
 function resultStr(counter) {
     let div = counter.querySelectorAll('.dropdown__count>h3');
     let str = div[0].textContent + ' ';

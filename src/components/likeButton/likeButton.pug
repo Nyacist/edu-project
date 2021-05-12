@@ -1,0 +1,9 @@
+mixin like(value)
+    .like-button__item
+        input(class='like-button__input' type='button' value=value data-action='disable')
+
+.like-button
+    +item-title('like button')
+    .like-button__content
+        +like(2)
+        +like(11)

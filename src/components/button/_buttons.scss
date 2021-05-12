@@ -1,0 +1,113 @@
+
+.btn-group {
+  @extend %input-item;
+  margin-bottom: 40px;
+}
+
+.btn-group__content {
+  margin-top: 11px;
+}
+
+.btn-group__btn_background,
+.btn-group__btn_border {
+  max-width: 218px;
+  display: flex;
+
+  & > div + div {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.btn-group__btn-link {
+  display: flex;
+  line-height: 15px;
+  margin-bottom: 30px;
+
+  .btn__btn-link + .btn__btn-link {
+    margin-left: 20px;
+  }
+}
+
+.btn_background {
+  height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 0;
+  background: $gradient-purple;
+  border-radius: 22px;
+}
+
+.btn_default {
+  position: relative;
+  height: 40px;
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 22px;
+  width: 100%;
+  user-select: none;
+  z-index: 1;
+  padding: 0;
+
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn_border {
+  background: white;
+
+  h3 {
+    color: $purple;
+  }
+}
+
+.btn_link {
+  text-decoration: none;
+  line-height: 15px;
+  height: auto;
+  padding: 0;
+  border: 0;
+
+  &:disabled {
+    h3 {
+      color: $dark-shade-50;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $purple;
+    margin: 0;
+  }
+}
+
+.btn-group__btn-payment {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "\e900";
+    display: block;
+    font-family: 'icomoon';
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn-disable {
+  background: $gradient-purple-50 !important;
+}
