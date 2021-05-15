@@ -1,0 +1,16 @@
+mixin page(href, value, active)
+    .pagination__button(class=active)
+        a(href= href)= value
+
+.pagination
+    +item-title('pagination')
+    .pagination__content
+        .pagination__wrapper
+            +page('#', '1', 'pagination__button_active')
+            +page('#', '2')
+            +page('#', '3')
+            +page('', '...')
+            +page('#', '15')
+            +page('#', '', 'pagination__button-next')
+
+        p 1 – 12 из 100+ вариантов аренды

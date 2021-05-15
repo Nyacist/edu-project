@@ -34,42 +34,10 @@ h3 {
   @extend %bold;
 }
 
-%input-item {
-  display: block;
-  width: 100%;
-
-  .block-title {
-    h3 {
-      margin-top: 0;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-    }
-  }
-
-  input {
-    width: 100%;
-    padding: 12px 14px;
-    border: $dark-shade-25 solid 1px;
-    border-radius: 4px;
-    line-height: 18px;
-
-    &::placeholder {
-      color: $dark-shade-25;
-    }
-
-    &:hover, &:focus {
-      border-color: $dark-shade-50;
-      outline: none;
-    }
-
-    &:focus::placeholder {
-      color: transparent;
-    }
-  }
-}
-
 .show {
   display: block !important;
 }
 
-
+.section__base-elements{
+  margin-bottom: 100px;
+}

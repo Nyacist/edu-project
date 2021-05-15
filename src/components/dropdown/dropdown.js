@@ -1,5 +1,35 @@
 import * as $ from "jquery";
 
+//show
+for (let btn of document.querySelectorAll('.dropdown__input')) {
+    btn.addEventListener('click', function (e) {
+        this.classList.toggle('dropdown__border');
+        this.nextElementSibling.classList.toggle('show');
+    })
+}
+
+//counter
+for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
+    counter.addEventListener('click', function (e) {
+        let sign = e.target.getAttribute('data-action');
+        if (sign == 'minus') {
+            let number = $(e.target).next().text();
+            if (number > 0) {
+                number--;
+                $(e.target).next().html(number);
+                resultStr(counter);
+            }
+        }
+        if (sign == 'plus') {
+            let number = $(e.target).prev().text();
+            if (number < 5) {
+                number++;
+                $(e.target).prev().html(number);
+                resultStr(counter);
+            }
+        }
+    })
+}
 
 function resultStr(counter) {
     let div = counter.querySelectorAll('.dropdown__count>h3');
@@ -33,25 +63,4 @@ function resultStr(counter) {
     counter.previousElementSibling.value = str;
 }
 
-//counter
-for (let counter of document.querySelectorAll('.dropdown__counter')) {
-    counter.addEventListener('click', function (e) {
-        let sign = e.target.getAttribute('data-action');
-        if (sign == 'minus') {
-            let number = $(e.target).next().text();
-            if (number > 0) {
-                number--;
-                $(e.target).next().html(number);
-                resultStr(counter);
-            }
-        }
-        if (sign == 'plus') {
-            let number = $(e.target).prev().text();
-            if (number < 5) {
-                number++;
-                $(e.target).prev().html(number);
-                resultStr(counter);
-            }
-        }
-    })
-}
+

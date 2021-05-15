@@ -1,0 +1,16 @@
+mixin count(title, value)
+    .dropdown__option
+        h3= title
+        .dropdown__count
+            input(type='button' value='-' class='sign' data-action='minus')
+            h3(data-action='content')= value
+            input(type='button' value='+' class='sign' data-action='plus')
+
+.dropdown
+    +item-title('dropdown', 'expanded')
+    .dropdown__select
+        input(class='dropdown__input dropdown__border item-input' type='button' value='Комнаты')
+        .dropdown__wrapper.show
+            +count('спальни', '2')
+            +count('кровати', '2')
+            +count('ванные комнаты', '0')

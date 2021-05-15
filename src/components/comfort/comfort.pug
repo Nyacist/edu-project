@@ -1,0 +1,12 @@
+mixin comfort__element(img_url, title, text)
+    .comfort__element
+        div(class=`comfort__img_${img_url}`)
+        .comfort__description
+            h3= title
+            label= text
+        hr
+
+
+.comfort
+    +comfort__element('emoticon', 'Комфорт', 'Шумопоглощающие стены')
+    +comfort__element('location-city', 'Удобство', 'Окно в каждой из спален')

@@ -12,17 +12,12 @@ import './components/dropdown/dropdown'
 import './components/likeButton/likeButton'
 import './components/rangeSlider/rangeSlider'
 import './components/button/button'
+import './components/checkbox/checkbox'
 
 
 
 
-//show
-for (let btn of document.querySelectorAll('.dropdown__button')) {
-    btn.addEventListener('click', function (e) {
-        this.classList.toggle('dropdown__border');
-        this.nextElementSibling.classList.toggle('show');
-    })
-}
+
 
 
 

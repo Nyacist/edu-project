@@ -1,7 +1,7 @@
 extends ../components/base/base
 block content
     .container
-        section
+        section.section__base-elements
             form.form-elements
                 .form-column
                     include ../components/item/item
@@ -25,8 +25,8 @@ block content
 
 
                 .form-column.item_size_s
-
-                    include  ../components/checkbox/checkboxButton
+                    .checkbox_default
+                        include  ../components/checkbox/checkboxButton
 
                     include ../components/radiobutton/radioButton
 
@@ -42,47 +42,18 @@ block content
 
                     include ../components/button/button
 
-
-                            //.dropdown
-                                            //    label.block-title
-                                            //        h3 dropdown
-                                            //    .dropdown__select
-                                            //        input(class='dropdown__button' type='button' value='Комнаты')
-                                            //        .dropdown__counter
-                                            //            +count('спальни')
-                                            //            +count('кровати')
-                                            //            +count('ванные комнаты')
-
-                                            //.dropdown.item_size_s
-                                            //    label.block-title
-                                            //        h3 dropdown
-                                            //    .dropdown__select
-                                            //        input(style="text-overflow: ellipsis;" class='dropdown__button' type='button' value='Комнаты')
-                                            //        .dropdown__counter
-                                            //            +count('спальни')
-                                            //            +count('кровати')
-                                            //            +count('ванные комнаты')
+                    include ../components/pagination/pagination
 
 
-
-                                            //.dropdown
-                                            //    .dropdown_column
-                                            //        label
-                                            //            h3 date Dropdown
-                                            //        .dropdown__select
-                                            //            input(class='dropdown__button' type='button' value='ДД.ММ.ГГГГ')
-                                            //            .dropdown__counter
-                                            //
-                                            //    .dropdown_column
-                                            //        label
-                                            //            h3 date Dropdown
-                                            //        .dropdown__select
-                                            //            input(class='dropdown__button' type='button' value='19.08.2019')
-                                            //            .dropdown__counter
-
-                                            //.dropdown.filter-date__dropdown.item_size_s
-                                            //    label
-                                            //        h3 date Dropdown
-                                            //    .dropdown__select
-                                            //        input(class='dropdown__button' type='button' value='19.08.2019')
-                                            //        .dropdown__counter
+        section
+            form.form-elements
+                .form-column
+                    .dropdown_expanded.item_size_s
+                        include ../components/dropdown/dropdown_default
+                        include ../components/dropdown/dropdown_expanded
+                    .checkbox-list_expandable.item_size_s
+                        include ../components/checkbox/checkboxList_expandable
+                    .comfort__wrapper
+                        include ../components/comfort/comfort
+                .form-column
+                .form-column
