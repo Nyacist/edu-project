@@ -39,6 +39,13 @@
   padding-top: 20px;
 }
 
+.dropdown_expanded{
+  margin-bottom: 40px;
+  .dropdown + .dropdown{
+    margin-top: 20px;
+  }
+}
+
 .checkbox_default{
   max-width: 225px;
   margin-bottom: 40px;
@@ -54,3 +61,4 @@
 .comfort__wrapper{
   margin-top: 100px !important;
 }
+

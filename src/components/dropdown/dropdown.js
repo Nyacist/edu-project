@@ -17,7 +17,6 @@ for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
             if (number > 0) {
                 number--;
                 $(e.target).next().html(number);
-                resultStr(counter);
             }
         }
         if (sign == 'plus') {
@@ -25,10 +24,42 @@ for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
             if (number < 5) {
                 number++;
                 $(e.target).prev().html(number);
+            }
+        }
+        switch (counter.getAttribute('data-action')){
+            case 'guestsNumbers': {
+                guestsCount(counter);
+                break;
+            }
+            case 'rooms': {
                 resultStr(counter);
+                break;
             }
         }
     })
+}
+
+function guestsCount(counter){
+    let guestsNumber = 0;
+    for (let div of counter.querySelectorAll('.dropdown__count>h3')){
+        guestsNumber+= +$(div).text();
+    }
+    let str = guestsNumber + ' ';
+    switch (guestsNumber) {
+        case 1: {
+            str += 'гость';
+            break;
+        }
+        case 2:
+        case 3:
+        case 4:{
+            str += 'гостя';
+            break;
+        }
+        default:
+            str += 'гостей';
+    }
+    counter.previousElementSibling.value = str;
 }
 
 function resultStr(counter) {

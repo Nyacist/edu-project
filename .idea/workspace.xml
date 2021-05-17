@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/checkbox/checkbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/checkbox/checkboxList_expandable.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comfort/_comfort.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comfort/comfort.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_default.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_expanded.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/pagination.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown__button_apply.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown__button_clear.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Material-Icons.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/_checkboxButtons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/_checkboxButtons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/checkboxButton.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/checkboxButton.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_date.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_date.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_filter-date.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_filter-date.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_expanded.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown_expanded.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/_item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/_item.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/likeButton/_likeButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/likeButton/_likeButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radiobutton/_radioButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radiobutton/_radioButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/toggle/_toggle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toggle/_toggle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/style.scss" afterDir="false" />
     </list>
@@ -69,9 +44,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1oBvw4LkwCPEIJvAoQ809m3LMfu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -87,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/checkbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/dropdown" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -97,8 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\src\components\checkbox" />
       <recent name="D:\project\src\components\dropdown" />
+      <recent name="D:\project\src\components\checkbox" />
       <recent name="D:\project\src\components" />
       <recent name="D:\project\src\components\textField" />
       <recent name="D:\project\src\styles\layout" />
@@ -175,6 +147,9 @@
       <workItem from="1620906542940" duration="5444000" />
       <workItem from="1620981838945" duration="9659000" />
       <workItem from="1621075298448" duration="5879000" />
+      <workItem from="1621111696195" duration="490000" />
+      <workItem from="1621245820371" duration="5414000" />
+      <workItem from="1621283622144" duration="3204000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,11 @@
   label{
     text-transform: uppercase;
   }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 }
 
 .item__status{
@@ -14,10 +19,7 @@
   }
 }
 
-h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
+
 
 .item-input{
   width: 100%;

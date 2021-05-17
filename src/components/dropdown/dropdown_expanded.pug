@@ -10,7 +10,7 @@ mixin count(title, value)
     +item-title('dropdown', 'expanded')
     .dropdown__select
         input(class='dropdown__input dropdown__border item-input' type='button' value='Комнаты')
-        .dropdown__wrapper.show
+        .dropdown__wrapper.show(data-action='rooms')
             +count('спальни', '2')
             +count('кровати', '2')
             +count('ванные комнаты', '0')
