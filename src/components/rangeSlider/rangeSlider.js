@@ -7,7 +7,7 @@ $(function () {
 
     $(".range-slider__item").slider({
         range: true,
-        min: 0,
+        min: 500,
         max: 15000,
         values: [5000, 10000],
         slide: function (event, ui) {

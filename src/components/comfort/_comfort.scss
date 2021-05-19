@@ -20,8 +20,6 @@
     position: absolute;
     content: $name;
     font-family: 'icomoon';
-    //top: 0px;
-    //left: 0px;
     font-size: 48px;
     line-height: 48px;
     background: $gradient-purple;
@@ -41,8 +39,10 @@
 .comfort__description{
   margin-left: 48px;
   padding-left: 10px;
+  padding-bottom: 4px;
 
   h3, label{
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
     color: $dark-shade-75;

@@ -1,0 +1,30 @@
+.comment {
+  display: grid;
+  grid-template-rows: 48px 72px;
+  grid-template-columns: 48px 653px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.comment__img {
+  height: 48px;
+  width: 48px;
+  border: #fff solid 2px;
+  border-radius: 32px;
+  background-image: url("../../assets/images/photo.png");
+}
+
+.comment__name {
+  font-weight: 700;
+}
+
+.comment__like {
+  display: flex;
+  justify-content: center;
+}
+
+.comment__text {
+  p {
+    margin: 0;
+  }
+}

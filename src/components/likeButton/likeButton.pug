@@ -1,9 +1,13 @@
-mixin like(value)
-    .like-button__item
-        input(class='like-button__input' type='button' value=value data-action='disable')
+mixin like(value, status)
+    if status == 'disable'
+        .like-button__item
+            input(class='like-button__input' type='button' value=value data-action=status)
+    else
+        .like-button__item.like-button__item_enable
+            input(class='like-button__input' type='button' value=value data-action=status)
 
 .like-button
     +item-title('like button')
     .like-button__content
-        +like(2)
-        +like(11)
+        +like(2, 'disable')
+        +like(12, 'enable')

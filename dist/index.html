@@ -194,8 +194,8 @@
                             <div class="like-button__item">
                               <input class="like-button__input" type="button" value="2" data-action="disable">
                             </div>
-                            <div class="like-button__item">
-                              <input class="like-button__input" type="button" value="11" data-action="disable">
+                            <div class="like-button__item like-button__item_enable">
+                              <input class="like-button__input" type="button" value="12" data-action="enable">
                             </div>
               </div>
             </div>
@@ -238,20 +238,22 @@
             <!--разобраться с id. в идеале переписать на js с ограничением на контейнер-->
           </div>
           <div class="form-column">
-                        <div class="range-slider">
-                          <div class="range-slider__title">
-                                        <div class="item__title">
-                                          <label>
-                                            <h3>range slider</h3>
-                                          </label>
-                                          <label class="item__status">
-                                            <h3></h3>
-                                          </label>
-                                        </div>
-                            <input class="range-slider__amount" type="text" readonly="readonly">
-                          </div>
-                          <div class="range-slider__item"></div>
-                        </div>
+            <div class="item_size_s">
+                            <div class="range-slider">
+                              <div class="range-slider__title">
+                                            <div class="item__title">
+                                              <label>
+                                                <h3>range slider</h3>
+                                              </label>
+                                              <label class="item__status">
+                                                <h3></h3>
+                                              </label>
+                                            </div>
+                                <input class="range-slider__amount" type="text" readonly="readonly">
+                              </div>
+                              <div class="range-slider__item"></div>
+                            </div>
+            </div>
             <div class="btn-group">
                           <div class="item__title">
                             <label>
@@ -595,6 +597,28 @@
           </div>
           <div class="form-column form-column_extended">
             <div class="comment__wrapper">
+              <div class="comment">
+                <div class="comment__img">
+                  <!--img(src='./img/photo.png')-->
+                </div>
+                <div class="comment__title">
+                  <div class="comment__name">Мурад Сарафанов</div>
+                  <div class="comment__date">5 дней назад</div>
+                </div>
+                <div class="comment__like">
+                              <div class="like-button__item like-button__item_enable">
+                                <input class="like-button__input" type="button" value="12" data-action="enable">
+                              </div>
+                </div>
+                <div class="comment__text">
+                  <p>
+                    Великолепный матрас на кровати в основной спальне!
+                    А пуфик вообще потрясающий.
+                    И стены, действительно, шумоподавляющие.
+                    Выкрикивал комплименты повару — никто не жаловался из соседей.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </form>
