@@ -1,7 +1,7 @@
 extends ../components/base/base
 block content
     .container
-        section.section__base-elements
+        section
             form.form-elements
                 .form-column
                     include ../components/item/item
@@ -53,12 +53,23 @@ block content
                         include ../components/dropdown/dropdown_expanded
                     .checkbox-list_expandable.item_size_s
                         include ../components/checkbox/checkboxList_expandable
-                    .comfort__wrapper
-                        include ../components/comfort/comfort
-                .form-column
-                    .dropdown_expanded
-                        include ../components/dropdown/dropdown__button_apply
 
                 .form-column
                     .dropdown_expanded
+                        include ../components/dropdown/dropdown__button_apply
+                    .checkbox_rich.item_size_s
+                        include ../components/checkbox/checkboxButton_rich
+                .form-column
+                    .dropdown_expanded
                         include ../components/dropdown/dropdown__button_clear
+                    .bullet-list__wrapper.item_size_s
+                        include ../components/bulletList/bulletList
+
+        section
+            form.form-elements
+                .form-column
+                    .comfort__wrapper
+                        include ../components/comfort/comfort
+                .form-column.form-column_extended
+                    .comment__wrapper
+                        include ../components/comment/comment

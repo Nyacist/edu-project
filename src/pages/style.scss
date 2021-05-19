@@ -21,6 +21,10 @@
   }
 }
 
+.form-column_extended{
+  max-width: 712px;
+}
+
 .item_size_s {
   max-width: 266px;
 }
@@ -58,7 +62,7 @@
   }
 }
 
-.comfort__wrapper{
-  margin-top: 100px !important;
+section + section{
+  margin-top: 100px;
 }
 

@@ -62,25 +62,29 @@
   max-width: 92px;
   width: 100%;
   text-align: center;
+}
 
-  // button "+" and "-"
-  input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: $dark-shade-25 solid 1px;
-    border-radius: 15px;
-    background-color: transparent;
-    max-width: 30px;
-    max-height: 30px;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 18px;
-    color: $dark-shade-75;
-  }
+// button "+" and "-"
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $dark-shade-25 solid 1px;
+  border-radius: 15px;
+  background-color: transparent;
+  max-width: 30px;
+  max-height: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  color: $dark-shade-75;
+}
+
+.sign_disable{
+  opacity: 0.38;
 }
 
 .dropdown__border {
@@ -88,17 +92,19 @@
   border-bottom-left-radius: 0 !important;
 }
 
-.dropdown__button{
+.dropdown__button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 19px;
-  button{
+
+  button {
     padding: 0;
     margin-bottom: 6px;
     border: none;
     background-color: transparent;
-    h3{
+
+    h3 {
       color: $purple;
       text-transform: uppercase;
       margin: 0;
@@ -107,7 +113,7 @@
   }
 }
 
-.dropdown__button_one{
+.dropdown__button_one {
   display: flex;
   justify-content: flex-end;
 }

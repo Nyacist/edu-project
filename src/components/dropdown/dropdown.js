@@ -8,6 +8,14 @@ for (let btn of document.querySelectorAll('.dropdown__input')) {
     })
 }
 
+//disable "+" and "-"
+for (let dropdownCount of document.querySelectorAll('.dropdown__count>h3')) {
+    disableSign(dropdownCount);
+}
+
+
+
+
 //counter
 for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
     counter.addEventListener('click', function (e) {
@@ -18,6 +26,7 @@ for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
                 number--;
                 $(e.target).next().html(number);
             }
+            disableSign($(e.target).next());
         }
         if (sign == 'plus') {
             let number = $(e.target).prev().text();
@@ -25,24 +34,25 @@ for (let counter of document.querySelectorAll('.dropdown__wrapper')) {
                 number++;
                 $(e.target).prev().html(number);
             }
+            disableSign($(e.target).prev());
         }
-        switch (counter.getAttribute('data-action')){
+        switch (counter.getAttribute('data-action')) {
             case 'guestsNumbers': {
-                guestsCount(counter);
+                totalGuests(counter);
                 break;
             }
             case 'rooms': {
-                resultStr(counter);
+                roomsNumber(counter);
                 break;
             }
         }
     })
 }
 
-function guestsCount(counter){
+function totalGuests(counter) {
     let guestsNumber = 0;
-    for (let div of counter.querySelectorAll('.dropdown__count>h3')){
-        guestsNumber+= +$(div).text();
+    for (let div of counter.querySelectorAll('.dropdown__count>h3')) {
+        guestsNumber += +$(div).text();
     }
     let str = guestsNumber + ' ';
     switch (guestsNumber) {
@@ -52,7 +62,7 @@ function guestsCount(counter){
         }
         case 2:
         case 3:
-        case 4:{
+        case 4: {
             str += 'гостя';
             break;
         }
@@ -62,7 +72,7 @@ function guestsCount(counter){
     counter.previousElementSibling.value = str;
 }
 
-function resultStr(counter) {
+function roomsNumber(counter) {
     let div = counter.querySelectorAll('.dropdown__count>h3');
     let str = div[0].textContent + ' ';
     switch (div[0].textContent) {
@@ -94,4 +104,22 @@ function resultStr(counter) {
     counter.previousElementSibling.value = str;
 }
 
+function disableSign(dropdownCount) {
+
+    switch ($(dropdownCount).text()) {
+        case '0': {
+            $(dropdownCount).prev().addClass('sign_disable');
+            break;
+        }
+        case '5': {
+            $(dropdownCount).next().addClass('sign_disable');
+            break;
+        }
+        default : {
+            $(dropdownCount).prev().removeClass('sign_disable');
+            $(dropdownCount).next().removeClass('sign_disable');
+            break;
+        }
+    }
+}
 

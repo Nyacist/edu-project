@@ -1,0 +1,28 @@
+.bullet-list{
+  ul{
+    margin-top: 6px;
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+  li{
+    list-style-type: none;
+    position: relative;
+    line-height: 24px;
+    white-space: pre-wrap;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $dark-shade-25;
+    }
+  }
+  li + li{
+    margin-top: 10px;
+  }
+}
+
