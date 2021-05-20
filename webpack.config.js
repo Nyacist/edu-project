@@ -35,8 +35,28 @@ const cssLoaders = extra => {
 }
 
 const fs = require('fs')
-const PAGES_DIR = path.resolve(__dirname, 'src/pages')
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+// const PAGES_DIR = path.resolve(__dirname, 'src/pages/')
+// const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+
+const pages = [];
+
+fs
+    .readdirSync(path.resolve(__dirname, 'src', 'pages'))
+    .filter((file) => {
+        return file.indexOf('base') !== 0;
+    })
+    .forEach((file) => {
+        pages.push(file.split('/', 2));
+    });
+
+const htmlPlugins = pages.map(fileName => new HtmlWebpackPlugin({
+    filename: `${fileName}.html`,
+    template: `./pages/${fileName}/${fileName}.pug`,
+    alwaysWriteToDisk: true,
+    inject: 'body',
+    hash: true,
+}));
+
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -54,18 +74,19 @@ module.exports = {
         port: 4200
     },
     plugins: [
-        ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: isDev ? `./${page.replace(/\.pug/, '.html')}` : `./${page.replace(/\.pug/, '[hash].html')}`,
-            minify: {
-                collapseWhitespace: isProd
-            }
-        })),
+        //  ...PAGES.map(page => new HtmlWebpackPlugin({
+        //      //template: `${PAGES_DIR}/${page.replace(/\.pug/, '')}/${page}`,
+        //      template: `${PAGES_DIR}/${page}`,
+        //      filename: isDev ? `./${page.replace(/\.pug/, '.html')}` : `./${page.replace(/\.pug/, '[hash].html')}`,
+        //      minify: {
+        //          collapseWhitespace: isProd
+        //      }
+        // })),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: filename('css')
         })
-    ],
+    ].concat(htmlPlugins),
     module: {
         rules: [
             {
@@ -74,7 +95,6 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                //use: cssLoaders('sass-loader')
                 use:[
                     {
                         loader: MiniCssExtractPlugin.loader

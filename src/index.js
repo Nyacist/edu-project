@@ -7,12 +7,8 @@
 
 import * as $ from 'jquery'
 import slider from 'jquery-ui/ui/widgets/slider'
-import './pages/style.scss'
-import './components/dropdown/dropdown'
-import './components/likeButton/likeButton'
-import './components/rangeSlider/rangeSlider'
-import './components/button/button'
-import './components/checkbox/checkbox'
+import './pages/index/style.scss'
+import './pages/formElements/formElements'
 
 
 

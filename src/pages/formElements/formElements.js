@@ -1,0 +1,6 @@
+import '../../components/dropdown/dropdown'
+import '../../components/likeButton/likeButton'
+import '../../components/rangeSlider/rangeSlider'
+import '../../components/button/button'
+import '../../components/checkbox/checkbox'
+import './_formElements.scss'

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.eot" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.svg" beforeDir="false" />
@@ -14,20 +16,14 @@
       <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/fonts/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/photo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery-ui_ui_widgets_slider_js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/comfort/_comfort.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comfort/_comfort.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/comment/comment.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/comment.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/comment/comment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/comment.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/likeButton/_likeButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/likeButton/_likeButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/likeButton/likeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/likeButton/likeButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/likeButton/likeButton.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/likeButton/likeButton.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/_formElements.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,9 +37,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Sass File" />
-        <option value="JavaScript File" />
         <option value="Pug File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -90,11 +86,11 @@
       <recent name="D:\project\src\styles\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\src\pages\formElements" />
+      <recent name="D:\project\src\pages\index" />
+      <recent name="D:\project\src\pages" />
       <recent name="D:\project\src\components\button" />
       <recent name="D:\project\src\components\rangeSlider" />
-      <recent name="D:\project\src\components\rateButton" />
-      <recent name="D:\project\src\components\likeButton" />
-      <recent name="D:\project\src\components\toggle" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -165,7 +161,8 @@
       <workItem from="1621245820371" duration="5414000" />
       <workItem from="1621283622144" duration="3204000" />
       <workItem from="1621409067623" duration="14679000" />
-      <workItem from="1621434929861" duration="809000" />
+      <workItem from="1621434929861" duration="898000" />
+      <workItem from="1621500232363" duration="9938000" />
     </task>
     <servers />
   </component>

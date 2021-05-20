@@ -1,0 +1,74 @@
+extends ../../components/base/base
+block content
+    .container
+        section
+            form.form-elements
+                .form-column
+                    include ../../components/item/item
+
+                    include ../../components/textField/textField_default
+
+                    include ../../components/textField/textField_hover
+
+                    include ../../components/dropdown/dropdown
+
+                    include ../../components/textField/textField_masked
+
+                    .date-column__dropdown
+                        include ../../components/dropdown/dropdown_date
+
+                    .filter-date__dropdown.item_size_s
+                        include ../../components/dropdown/dropdown_filter-date
+
+                    .subscription__text-field.item_size_s
+                        include ../../components/textField/textField_subscription
+
+
+                .form-column.item_size_s
+                    .checkbox_default
+                        include  ../../components/checkbox/checkboxButton
+
+                    include ../../components/radiobutton/radioButton
+
+                    include ../../components/toggle/toggle
+
+                    include ../../components/likeButton/likeButton
+
+                    include ../../components/rateButton/rateButton
+
+                .form-column
+                    .item_size_s
+                        include ../../components/rangeSlider/rangeSlider
+
+                    include ../../components/button/button
+
+                    include ../../components/pagination/pagination
+
+        section
+            form.form-elements
+                .form-column
+                    .dropdown_expanded.item_size_s
+                        include ../../components/dropdown/dropdown_default
+                        include ../../components/dropdown/dropdown_expanded
+                    .checkbox-list_expandable.item_size_s
+                        include ../../components/checkbox/checkboxList_expandable
+
+                .form-column
+                    .dropdown_expanded
+                        include ../../components/dropdown/dropdown__button_apply
+                    .checkbox_rich.item_size_s
+                        include ../../components/checkbox/checkboxButton_rich
+                .form-column
+                    .dropdown_expanded
+                        include ../../components/dropdown/dropdown__button_clear
+                    .bullet-list__wrapper.item_size_s
+                        include ../../components/bulletList/bulletList
+
+        section
+            form.form-elements
+                .form-column
+                    .comfort__wrapper
+                        include ../../components/comfort/comfort
+                .form-column.form-column_extended
+                    .comment__wrapper
+                        include ../../components/comment/comment

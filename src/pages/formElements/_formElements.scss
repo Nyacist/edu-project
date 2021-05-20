@@ -1,9 +1,13 @@
-@import "../../node_modules/normalize.css";
-@import "../components/base/base";
-@import "../components/components";
+@import "../../../node_modules/normalize.css";
+@import "../../components/base/base";
+@import "../../components/components";
 
 .container {
   padding: 40px;
+}
+
+.item_size_s {
+  max-width: 266px;
 }
 
 .form-elements{
@@ -25,8 +29,8 @@
   max-width: 712px;
 }
 
-.item_size_s {
-  max-width: 266px;
+section + section{
+  margin-top: 100px;
 }
 
 .date-column__dropdown{
@@ -62,7 +66,5 @@
   }
 }
 
-section + section{
-  margin-top: 100px;
-}
+
 
