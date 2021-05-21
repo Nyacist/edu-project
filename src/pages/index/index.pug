@@ -1,6 +1,107 @@
 extends ../../components/base/base
+
+include ../../components/input/input
+
 block content
     .container
-        section.cards
-            form
-                .index Hello
+        section
+            form.form
+                .form__column
+                    .form__element
+                        +input({
+                            title: 'text field',
+                            type: 'email',
+                            placeholder: 'Email'
+                        })
+                    .form__element
+                        +input({
+                            title: 'text field',
+                            type: 'text',
+                            value: 'This is pretty awesome'
+                        })
+                    //.form__element
+                    //    +input({
+                    //        title: 'dropdown',
+                    //        type: 'text',
+                    //        value: 'Сколько гостей'
+                    //    })
+                    .form__element
+                        +input({
+                            title: 'masked text field',
+                            type: 'text',
+                            placeholder: 'ДД.ММ.ГГГГ'
+                        })
+                    .form__element
+                        +input({
+                            title: 'subscription text field',
+                            type: 'email',
+                            placeholder: 'email',
+                            arrow: true
+                        })
+
+                    .subscription__text-field.item_size_s
+                        //include ../../components/textField/textField_subscription
+
+                    include ../../components/item/item
+
+
+                    //include ../../components/dropdown/dropdown
+
+                    .date-column__dropdown
+                        include ../../components/dropdown/dropdown_date
+
+                    .filter-date__dropdown.item_size_s
+                        include ../../components/dropdown/dropdown_filter-date
+
+                    .subscription__text-field.item_size_s
+                        //include ../../components/textField/textField_subscription
+
+
+                .form__column.item_size_s
+                    .checkbox_default
+                        include  ../../components/checkbox/checkboxButton
+
+                    include ../../components/radiobutton/radioButton
+
+                    include ../../components/toggle/toggle
+
+                    include ../../components/likeButton/likeButton
+
+                    include ../../components/rateButton/rateButton
+
+                .form__column
+                    .item_size_s
+                        include ../../components/rangeSlider/rangeSlider
+
+                    include ../../components/button/button
+
+                    include ../../components/pagination/pagination
+
+        section
+            form.form
+                .form__column
+                    .dropdown_expanded.item_size_s
+                        include ../../components/dropdown/dropdown_default
+                        include ../../components/dropdown/dropdown_expanded
+                    .checkbox-list_expandable.item_size_s
+                        include ../../components/checkbox/checkboxList_expandable
+
+                .form__column
+                    .dropdown_expanded
+                        include ../../components/dropdown/dropdown__button_apply
+                    .checkbox_rich.item_size_s
+                        include ../../components/checkbox/checkboxButton_rich
+                .form__column
+                    .dropdown_expanded
+                        include ../../components/dropdown/dropdown__button_clear
+                    .bullet-list__wrapper.item_size_s
+                        include ../../components/bulletList/bulletList
+
+        section
+            form.form
+                .form__column
+                    .comfort__wrapper
+                        include ../../components/comfort/comfort
+                .form__column.form-column_extended
+                    .comment__wrapper
+                        include ../../components/comment/comment

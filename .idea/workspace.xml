@@ -5,26 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_jquery-ui_ui_widgets_slider_js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/_item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/_item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/item.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField/_textField.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_default.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_hover.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_masked.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_subscription.pug" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/_formElements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/formElements/_formElements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/formElements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/style.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,8 @@
       <workItem from="1621283622144" duration="3204000" />
       <workItem from="1621409067623" duration="14679000" />
       <workItem from="1621434929861" duration="898000" />
-      <workItem from="1621500232363" duration="9938000" />
+      <workItem from="1621500232363" duration="12527000" />
+      <workItem from="1621581289470" duration="10792000" />
     </task>
     <servers />
   </component>

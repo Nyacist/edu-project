@@ -4,20 +4,20 @@
 
 .container {
   padding: 40px;
+  max-width: 1440px;
+  min-width: 1040px;
 }
 
 .item_size_s {
   max-width: 266px;
 }
 
-.form-elements{
+.form{
   display: flex;
   justify-content: space-between;
-  max-width: 1158px;
-  min-width: 920px;
 }
 
-.form-column {
+.form__column {
   max-width: 320px;
   width: 100%;
   &>div + div{

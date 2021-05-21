@@ -1,0 +1,51 @@
+//-
+  options.title - заголовок элемента
+  options.type - input type
+  options.placeholder - input placeholder
+  options.value - input value
+
+  options.pattern - input pattern
+  options.tabindex - input tabindex
+  options.required - input required
+  options.label - подпись к checkbox и radio
+
+mixin input(options)
+    if !options
+        - options = {}
+
+    -
+        let classes = '';
+        if (options.arrow === true)
+        classes += 'input__arrow'
+
+
+    label.title
+        h3= options.title
+
+    .input
+        .input__wrapper(class=classes)
+            - if (options.type === 'text' || options.type === 'email' || options.type === 'password')
+                input.input__element(
+                    type = options.type
+                    placeholder = options.placeholder
+                    value = options.value
+                )
+
+        // - if (options.type === 'checkbox' || options.type === 'radio')
+        //     label.input__label
+        //         input.input__element(
+        //             type = options.type
+        //             name = options.name
+        //             tabindex = options.tabindex
+        //             required = options.required
+        //         )
+        //         if options.type === 'checkbox'
+        //             +toggle({mix: 'input__toggle'})
+        //         else
+        //             +tick-box({mix: 'input__tick-box'})
+        //         if options.label
+        //             .input__label-text=options.label
+        //                 block
+        //         else
+        //             block
+
