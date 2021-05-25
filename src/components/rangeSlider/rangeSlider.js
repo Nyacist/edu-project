@@ -1,3 +1,5 @@
+import './_rangeSlider.scss';
+
 //range slider
 import * as $ from "jquery";
 
@@ -5,7 +7,7 @@ $(function () {
 
     const space = (num) => String(num).replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
 
-    $(".range-slider__item").slider({
+    $(".range-slider__scroll").slider({
         range: true,
         min: 500,
         max: 15000,
@@ -15,6 +17,6 @@ $(function () {
         }
     });
 
-    $(".range-slider__amount").val(space($(".range-slider__item").slider("values", 0)) + "₽" +
-        " - " + space($(".range-slider__item").slider("values", 1)) + "₽");
+    $(".range-slider__amount").val(space($(".range-slider__scroll").slider("values", 0)) + "₽" +
+        " - " + space($(".range-slider__scroll").slider("values", 1)) + "₽");
 });

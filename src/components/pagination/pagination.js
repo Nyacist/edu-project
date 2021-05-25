@@ -1,0 +1,2 @@
+import './_pagination.scss';
+

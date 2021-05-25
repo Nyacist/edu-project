@@ -1,0 +1,12 @@
+
+//-
+  options.title - заголовок элемента
+
+mixin title(options)
+    if !options
+        - options = {}
+
+    - if (options.title)
+        .title
+            label
+                h3= options.title

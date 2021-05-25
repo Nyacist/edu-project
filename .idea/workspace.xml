@@ -5,28 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/img/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pagination/pagination-data.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pagination/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/rateButton/rateButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/img/photo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_components.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item/_item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/_item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item/item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/item.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField/_textField.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_default.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_hover.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_masked.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/textField/textField_subscription.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/_checkboxButtons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/checkboxButton.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/checkboxButton_rich.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/checkboxList_expandable.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment/comment.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/comment.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment/comment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/comment.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/dropdown.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/input.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/_item.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item/item.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/likeButton/_likeButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/likeButton/likeButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/likeButton/likeButton.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/pagination.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/pagination.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/radiobutton/_radioButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/radiobutton/radioButton.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/rangeSlider.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toggle/_toggle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toggle/toggle.pug" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/_formElements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/formElements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/formElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/formElements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +65,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Sass File" />
-        <option value="Pug File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -71,7 +97,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/checkbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/input" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -81,18 +107,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\src\components\input" />
       <recent name="D:\project\src\components\checkbox" />
       <recent name="D:\project\src\components\dropdown" />
       <recent name="D:\project\src\components" />
       <recent name="D:\project\src\components\textField" />
-      <recent name="D:\project\src\styles\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\src\components\comment\img" />
+      <recent name="D:\project\src\components\checkbox\img" />
       <recent name="D:\project\src\pages\formElements" />
       <recent name="D:\project\src\pages\index" />
       <recent name="D:\project\src\pages" />
-      <recent name="D:\project\src\components\button" />
-      <recent name="D:\project\src\components\rangeSlider" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -165,7 +191,9 @@
       <workItem from="1621409067623" duration="14679000" />
       <workItem from="1621434929861" duration="898000" />
       <workItem from="1621500232363" duration="12527000" />
-      <workItem from="1621581289470" duration="10792000" />
+      <workItem from="1621581289470" duration="23258000" />
+      <workItem from="1621844712932" duration="16500000" />
+      <workItem from="1621925769532" duration="17140000" />
     </task>
     <servers />
   </component>

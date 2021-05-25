@@ -1,16 +1,26 @@
-mixin page(href, value, active)
-    .pagination__button(class=active)
-        a(href= href)= value
+//-
 
-.pagination
-    +item-title('pagination')
-    .pagination__content
-        .pagination__wrapper
-            +page('#', '1', 'pagination__button_active')
-            +page('#', '2')
-            +page('#', '3')
-            +page('', '...')
-            +page('#', '15')
-            +page('#', '', 'pagination__button-next')
+  options.number - количество страниц
+  options.classes - button class (определяет вид кнопки)
+  options.arrow - стрелка на кнопке
+  options.active - номер активной страницы
+
+  options.items - массив с элементами меню
+  options.items[0].name - имя элемента меню
+  options.items[0].href - ссылка элемента меню
+
+
+mixin page(options)
+    if !options
+        - options = {}
+
+    if !options.items
+        - options.items = []
+
+    .pagination
+        ul
+            each item in options.items
+                li(class='pagination__button pagination__button_'+item.classes)
+                    a(href='#')= item.value
 
         p 1 – 12 из 100+ вариантов аренды

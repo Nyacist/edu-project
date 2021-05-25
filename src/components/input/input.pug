@@ -1,13 +1,19 @@
 //-
-  options.title - заголовок элемента
+
+  options.classes - строка с классами
+  options.arrow - вид стрелки
   options.type - input type
   options.placeholder - input placeholder
   options.value - input value
+  options.label - подпись к checkbox и radio
+  options.name - input name (связь radio)
+  options.status - статус like кнопки
 
+  options.title - заголовок элемента
   options.pattern - input pattern
   options.tabindex - input tabindex
   options.required - input required
-  options.label - подпись к checkbox и radio
+
 
 mixin input(options)
     if !options
@@ -15,12 +21,10 @@ mixin input(options)
 
     -
         let classes = '';
-        if (options.arrow === true)
-        classes += 'input__arrow'
-
-
-    label.title
-        h3= options.title
+        classes += options.classes ? options.classes : ''
+        classes += options.arrow ? ' input__'+options.arrow : ''
+        if (options.status === 'like')
+            classes += ' like-button__enable'
 
     .input
         .input__wrapper(class=classes)
@@ -31,21 +35,30 @@ mixin input(options)
                     value = options.value
                 )
 
-        // - if (options.type === 'checkbox' || options.type === 'radio')
-        //     label.input__label
-        //         input.input__element(
-        //             type = options.type
-        //             name = options.name
-        //             tabindex = options.tabindex
-        //             required = options.required
-        //         )
-        //         if options.type === 'checkbox'
-        //             +toggle({mix: 'input__toggle'})
-        //         else
-        //             +tick-box({mix: 'input__tick-box'})
-        //         if options.label
-        //             .input__label-text=options.label
-        //                 block
-        //         else
-        //             block
+            - if (options.type === 'button')
+                input.input__element(
+                    type = options.type
+                    placeholder = options.placeholder
+                    value = options.value
+                    data-action = options.status
+                )
+
+            - if (options.type === 'checkbox' || options.type === 'radio')
+                 label.input__label.select
+                     input.input__element(
+                        type = options.type
+                        name = options.name
+                        checked=options.checked
+                     )
+                     span=options.label
+                 //-
+                    if options.type === 'checkbox'
+                        +toggle({mix: 'input__toggle'})
+                    else
+                        +tick-box({mix: 'input__tick-box'})
+                    if options.label
+                         .input__label-text=options.label
+                             block
+                    else
+                         block
 

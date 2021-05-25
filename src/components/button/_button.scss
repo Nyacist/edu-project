@@ -1,32 +1,4 @@
-
-.btn-group {
-  margin-bottom: 40px;
-}
-
-.btn-group__content {
-  margin-top: 11px;
-}
-
-.btn-group__btn_background,
-.btn-group__btn_border {
-  max-width: 218px;
-  display: flex;
-
-  & > div + div {
-    margin-left: 20px;
-    margin-bottom: 30px;
-  }
-}
-
-.btn-group__btn-link {
-  display: flex;
-  line-height: 15px;
-  margin-bottom: 30px;
-
-  .btn__btn-link + .btn__btn-link {
-    margin-left: 20px;
-  }
-}
+@import "../base/base";
 
 .btn_background {
   height: 44px;
@@ -36,6 +8,15 @@
   margin: 0;
   background: $gradient-purple;
   border-radius: 22px;
+}
+
+.btn_border {
+  button{
+    background: white;
+    h3 {
+      color: $purple;
+    }
+  }
 }
 
 .btn_default {
@@ -62,35 +43,30 @@
   }
 }
 
-.btn_border {
-  background: white;
-
-  h3 {
-    color: $purple;
-  }
-}
-
 .btn_link {
-  text-decoration: none;
   line-height: 15px;
-  height: auto;
-  padding: 0;
-  border: 0;
+  button{
+    text-decoration: none;
+    line-height: 15px;
+    height: auto;
+    padding: 0;
+    border: 0;
 
-  &:disabled {
+    &:disabled {
+      h3 {
+        color: $dark-shade-50;
+      }
+    }
+
     h3 {
-      color: $dark-shade-50;
+      text-transform: uppercase;
+      color: $purple;
+      margin: 0;
     }
   }
-
-  h3 {
-    text-transform: uppercase;
-    color: $purple;
-    margin: 0;
-  }
 }
 
-.btn-group__btn-payment {
+.btn__arrow_right {
   position: relative;
 
   &:after {
@@ -107,6 +83,6 @@
   }
 }
 
-.btn-disable {
+.btn_disable {
   background: $gradient-purple-50 !important;
 }

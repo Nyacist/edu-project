@@ -9,12 +9,3 @@ import * as $ from 'jquery'
 import slider from 'jquery-ui/ui/widgets/slider'
 import './pages/index/index.scss'
 import './pages/index/formElements'
-
-
-
-
-
-
-
-
-

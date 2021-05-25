@@ -1,82 +1,253 @@
 extends ../../components/base/base
 
+include ../../components/elementTitle/elementTitle
 include ../../components/input/input
+include ../../components/dropdown/dropdown
+include ../../components/rateButton/rateButton
+include ../../components/rangeSlider/rangeSlider
+include ../../components/button/button
+include ../../components/pagination/pagination
+
+
 
 block content
     .container
         section
             form.form
                 .form__column
+
                     .form__element
+                        +title({
+                            title: 'text field'
+                        })
                         +input({
-                            title: 'text field',
                             type: 'email',
                             placeholder: 'Email'
                         })
+
                     .form__element
+                        +title({
+                            title: 'text field'
+                        })
                         +input({
-                            title: 'text field',
                             type: 'text',
                             value: 'This is pretty awesome'
                         })
-                    //.form__element
-                    //    +input({
-                    //        title: 'dropdown',
-                    //        type: 'text',
-                    //        value: 'Сколько гостей'
-                    //    })
+
                     .form__element
+                        +title({
+                            title: 'dropdown'
+                        })
                         +input({
-                            title: 'masked text field',
+                            type: 'button',
+                            value: 'Сколько гостей',
+                            arrow: 'arrow_bottom',
+                            classes: 'dropdown'
+                        })
+
+                    .form__element
+                        +title({
+                            title: 'masked text field'
+                        })
+                        +input({
                             type: 'text',
                             placeholder: 'ДД.ММ.ГГГГ'
                         })
+
+                    .form__element.wrapper__column
+                        .column__dropdown
+                            +title({
+                                title: 'dropdown'
+                            })
+                            +input({
+                                type: 'button',
+                                value: 'ДД.ММ.ГГГГ',
+                                arrow: 'arrow_bottom'
+                            })
+                        .column__dropdown
+                            +title({
+                                title: 'dropdown'
+                            })
+                            +input({
+                                type: 'button',
+                                value: '19.08.2019',
+                                arrow: 'arrow_bottom'
+                            })
+
                     .form__element
-                        +input({
-                            title: 'subscription text field',
-                            type: 'email',
-                            placeholder: 'email',
-                            arrow: true
+                        +title({
+                            title: 'filter date dropdown'
                         })
+                        .wrapper_small
+                            +input({
+                                type: 'button',
+                                value: '19 авг - 23 авг',
+                                arrow: 'arrow_bottom'
+                            })
 
-                    .subscription__text-field.item_size_s
-                        //include ../../components/textField/textField_subscription
-
-                    include ../../components/item/item
-
-
-                    //include ../../components/dropdown/dropdown
-
-                    .date-column__dropdown
-                        include ../../components/dropdown/dropdown_date
-
-                    .filter-date__dropdown.item_size_s
-                        include ../../components/dropdown/dropdown_filter-date
-
-                    .subscription__text-field.item_size_s
-                        //include ../../components/textField/textField_subscription
-
-
-                .form__column.item_size_s
-                    .checkbox_default
-                        include  ../../components/checkbox/checkboxButton
-
-                    include ../../components/radiobutton/radioButton
-
-                    include ../../components/toggle/toggle
-
-                    include ../../components/likeButton/likeButton
-
-                    include ../../components/rateButton/rateButton
+                    .form__element
+                        +title({
+                            title: 'subscription text field'
+                        })
+                        .wrapper_small
+                            +input({
+                                type: 'email',
+                                placeholder: 'Email',
+                                arrow: 'arrow_right'
+                            })
 
                 .form__column
-                    .item_size_s
-                        include ../../components/rangeSlider/rangeSlider
+                    .form__element
+                        +title({
+                            title: 'checkbox buttons'
+                        })
+                        .wrapper
+                            +input({
+                                type: 'checkbox',
+                                classes: 'checkbox',
+                                label: 'Можно курить'
+                            })
+                            +input({
+                                type: 'checkbox',
+                                classes: 'checkbox',
+                                label: 'Можно с питомцами',
+                                checked: true
+                            })
+                            +input({
+                                type: 'checkbox',
+                                classes: 'checkbox',
+                                label: 'Можно пригласить гостей (до 10 человек)',
+                                checked: true
+                            })
 
-                    include ../../components/button/button
 
-                    include ../../components/pagination/pagination
+                    .form__element
+                        +title({
+                            title: 'radio buttons'
+                        })
+                        .wrapper.wrapper__radiobutton
+                            +input({
+                                type: 'radio',
+                                classes: 'radiobutton',
+                                name: 'radio',
+                                label: 'Мужчина',
+                                checked: true
+                            })
+                            +input({
+                                type: 'radio',
+                                classes: 'radiobutton',
+                                name: 'radio',
+                                label: 'Женщина'
+                            })
 
+                    .form__element
+                        +title({
+                            title: 'toggle'
+                        })
+                        .wrapper
+                            +input({
+                                type: 'checkbox',
+                                classes: 'toggle',
+                                label: 'Получать спецпредложения',
+                                checked: true
+                            })
+                            +input({
+                                type: 'checkbox',
+                                classes: 'toggle',
+                                label: 'Получать спецпредложения',
+                            })
+
+                    .form__element
+                        +title({
+                            title: 'like button'
+                        })
+                        .wrapper.wrapper__like-button
+                            +input({
+                                type: 'button',
+                                classes: 'like-button',
+                                value: '2'
+                            })
+                            +input({
+                                type: 'button',
+                                classes: 'like-button',
+                                value: '12',
+                                status: 'like'
+                            })
+                    .form__element
+                        +title({
+                            title: 'rate button'
+                        })
+                        .wrapper.wrapper__rate-button
+                            +rate({
+                                id: 'rate-button_left',
+                                checked: 4
+                            })
+                            +rate({
+                                id: 'rate-button_right',
+                                checked: 5
+                            })
+
+                .form__column
+                    .form__element
+                        .wrapper.wrapper_small
+                            +range-slider({
+                                title: 'range slider'
+                            })
+                    .form__element
+                        +title({
+                            title: 'buttons'
+                        })
+                        .wrapper
+                            .wrapper__button
+                                +button({
+                                    value: 'click me',
+                                    classes: 'background'
+                                })
+                                +button({
+                                    value: 'click me',
+                                    classes: 'background',
+                                    disable: true
+                                })
+                                +button({
+                                    value: 'click me',
+                                    classes: 'border'
+                                })
+                                +button({
+                                    value: 'click me',
+                                    classes: 'border',
+                                    disable: true
+                                })
+                            .wrapper__button_link
+                                +button({
+                                    value: 'click me',
+                                    classes: 'link'
+                                })
+                                +button({
+                                    value: 'click me',
+                                    classes: 'link',
+                                    disable: true
+                                })
+                            +button({
+                                value: 'перейти к оплате',
+                                classes: 'background',
+                                arrow: 'arrow_right'
+                            })
+
+                    .form__element
+                        +title({
+                            title: 'pagination'
+                        })
+                        .wrapper.wrapper__pagination
+                            include ../../components/pagination/pagination-data
+                            +page({
+                                items: locals.paginationItems
+                            })
+
+
+
+
+
+    // -
         section
             form.form
                 .form__column
@@ -84,13 +255,13 @@ block content
                         include ../../components/dropdown/dropdown_default
                         include ../../components/dropdown/dropdown_expanded
                     .checkbox-list_expandable.item_size_s
-                        include ../../components/checkbox/checkboxList_expandable
+
 
                 .form__column
                     .dropdown_expanded
                         include ../../components/dropdown/dropdown__button_apply
                     .checkbox_rich.item_size_s
-                        include ../../components/checkbox/checkboxButton_rich
+
                 .form__column
                     .dropdown_expanded
                         include ../../components/dropdown/dropdown__button_clear

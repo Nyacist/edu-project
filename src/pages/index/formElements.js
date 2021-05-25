@@ -1,9 +1,10 @@
 
+import '../../components/elementTitle/elementTitle'
 import '../../components/input/input'
-
 import '../../components/dropdown/dropdown'
-import '../../components/likeButton/likeButton'
+import '../../components/rateButton/rateButton'
 import '../../components/rangeSlider/rangeSlider'
 import '../../components/button/button'
-import '../../components/checkbox/checkbox'
+import '../../components/pagination/pagination'
+
 import './index.scss'

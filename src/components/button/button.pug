@@ -1,33 +1,32 @@
+//-
+
+  options.value - button value
+  options.classes - button class (определяет вид кнопки)
+  options.arrow - стрелка на кнопке
 
 
-mixin button(value, button_class, disabled)
+mixin button(options)
+    if !options
+        - options = {}
 
-    if button_class == 'btn_link'
-        .btn__btn-link
-            button(class='btn_default ' + button_class, disabled= disabled)
-                h3= value
-    else
-        .btn_background
-            button(class='btn_default ' + button_class, disabled= disabled)
-                h3= value
+    -
+        let wrapper__class = '';
+        wrapper__class += options.arrow ? ' btn__'+options.arrow : ''
+
+        if (options.classes === 'background' || options.classes === 'border'){
+            wrapper__class += ' btn_background'
+            wrapper__class += options.disable ? ' btn_disable' : ''
+        }
+
+        if (options.classes === 'border')
+            wrapper__class += ' btn_border'
+
+        if (options.classes === 'link')
+            wrapper__class += ' btn_link'
 
 
-.btn-group
-    +item-title('buttons')
+    div(class=wrapper__class)
+        button(class = 'btn_default', disabled = options.disable)
+            h3= options.value
 
-    .btn-group__content
 
-        .btn-group__btn_background
-            +button('click me', '')
-            +button('click me', '', 'disable')
-
-        .btn-group__btn_border
-            +button('click me', 'btn_border')
-            +button('click me', 'btn_border', 'disable')
-
-        .btn-group__btn-link
-            +button('click me', 'btn_link')
-            +button('click me', 'btn_link', 'disable')
-
-        .btn-group__btn-payment
-            +button('перейти к оплате', '')

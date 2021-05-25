@@ -1,52 +1,38 @@
+@import "../base/base";
+
 .rate-button {
-
-}
-
-.rate-button__content {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  margin-top: 11px;
+  flex-direction: row-reverse;
+  position: relative;
+  font-family: 'icomoon' !important;
   font-size: 24px;
   max-height: 24px;
   height: 100%;
   width: 120px;
-  font-family: 'icomoon' !important;
 
   &:after {
     content: "";
     clear: both;
     display: block;
   }
-}
 
-.rate-button__item{
-  display: flex;
-  flex-direction: row-reverse;
-}
+  &__input{
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    opacity: 0;
+    margin: 0;
 
-.rate-button__item + .rate-button__item{
-  margin-left: 20px;
-}
-
-.rate-button__input {
-  position: absolute;
-  z-index: -1;
-  width: auto;
-  opacity: 0;
-  margin: 0;
-}
-
-.rate-button__label {
-  &:before {
-    content: "\e903";
-    color: $purple;
+    &:checked ~ label:before {
+      content: "\e902";
+      background: $gradient-purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
-}
 
-.rate-button__input:checked ~ .rate-button__label:before {
-  content: "\e902";
-  background: $gradient-purple;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  &__label:before {
+      content: "\e903";
+      color: $purple;
+  }
 }

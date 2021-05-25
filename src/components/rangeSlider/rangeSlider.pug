@@ -1,9 +1,16 @@
-mixin range-slider()
+//-
+  options.title - title
+
+include ../../components/elementTitle/elementTitle
+
+mixin range-slider(options)
+    if !options
+        - options = {}
+
     .range-slider
         .range-slider__title
-            +item-title('range slider')
+            +title({
+                title: options.title
+            })
             input(type='text' class='range-slider__amount' readonly)
-        .range-slider__item
-
-
-+range-slider()
+        .range-slider__scroll

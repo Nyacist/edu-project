@@ -1,21 +1,25 @@
-mixin rate(id, number)
-    input(class='rate-button__input' type='radio' id=id + number name=id value=number)
-    label(class='rate-button__label' for=id + number)
+//-
 
-.rate-button
-    +item-title('rate button')
-    .rate-button__content
-        .rate-button__item
-            +rate('rate-button_left', 5)
-            +rate('rate-button_left', 4)
-            +rate('rate-button_left', 3)
-            +rate('rate-button_left', 2)
-            +rate('rate-button_left', 1)
-        .rate-button__item
-            +rate('rate-button_right', 5)
-            +rate('rate-button_right', 4)
-            +rate('rate-button_right', 3)
-            +rate('rate-button_right', 2)
-            +rate('rate-button_right', 1)
+  options.id - name и основа для id рейтинга
+  options.checked - количество выбранных звезд
 
-//разобраться с id. в идеале переписать на js с ограничением на контейнер
+mixin rate(options)
+    if !options
+        - options = {}
+    .rate-button
+        - for (let i=5; i>0; i--)
+            - let checked
+            if options.checked == i
+                - checked = true
+
+            input(
+                class='rate-button__input'
+                type='radio'
+                name=options.id
+                id=options.id + '__' + i
+                checked=checked
+            )
+            label(
+                class='rate-button__label'
+                for=options.id + '__' + i
+            )
