@@ -2,7 +2,6 @@ extends ../../components/base/base
 
 include ../../components/elementTitle/elementTitle
 include ../../components/input/input
-include ../../components/dropdown/dropdown
 include ../../components/rateButton/rateButton
 include ../../components/rangeSlider/rangeSlider
 include ../../components/button/button
@@ -42,6 +41,7 @@ block content
                             type: 'button',
                             value: 'Сколько гостей',
                             arrow: 'arrow_bottom',
+                            button: 'dropdown',
                             classes: 'dropdown'
                         })
 
@@ -62,6 +62,7 @@ block content
                             +input({
                                 type: 'button',
                                 value: 'ДД.ММ.ГГГГ',
+                                button: 'dropdown',
                                 arrow: 'arrow_bottom'
                             })
                         .column__dropdown
@@ -71,6 +72,7 @@ block content
                             +input({
                                 type: 'button',
                                 value: '19.08.2019',
+                                button: 'dropdown',
                                 arrow: 'arrow_bottom'
                             })
 
@@ -165,13 +167,15 @@ block content
                             +input({
                                 type: 'button',
                                 classes: 'like-button',
+                                button: 'like',
                                 value: '2'
                             })
                             +input({
                                 type: 'button',
                                 classes: 'like-button',
+                                button: 'like',
                                 value: '12',
-                                status: 'like'
+                                like: 'like'
                             })
                     .form__element
                         +title({
@@ -243,36 +247,62 @@ block content
                                 items: locals.paginationItems
                             })
 
-
-
-
-
-    // -
         section
             form.form
                 .form__column
-                    .dropdown_expanded.item_size_s
-                        include ../../components/dropdown/dropdown_default
-                        include ../../components/dropdown/dropdown_expanded
-                    .checkbox-list_expandable.item_size_s
+                    .form__element
+                        +title({
+                            title: 'dropdown'
+                        })
+                        .wrapper_small
+                            include ../../components/input/dropdown-data
+                            +input({
+                                type: 'button',
+                                value: '19 авг - 23 авг',
+                                arrow: 'arrow_bottom',
+                                classes: 'dropdown',
+                                button: 'dropdown'
+                            })
+
+                    .form__element
+                        +title({
+                            title: 'dropdown'
+                        })
+                        .wrapper_small
+                            include ../../components/input/dropdown-data
+                            +input({
+                                type: 'button',
+                                value: '19 авг - 23 авг',
+                                arrow: 'arrow_bottom',
+                                classes: 'dropdown',
+                                button: 'dropdown',
+                                show: 'show',
+                                items: locals.dropdownItems
+                            })
+
+                    .form__element
+                        .wrapper_small
+                            +input({
+                                type: 'button',
+                                value: 'expandable checkbox list',
+                                classes: 'checkbox-list',
+                                button: 'checkbox'
+                            })
+
+                    .form__element
+                        .wrapper_small
+                            include ../../components/input/checkbox-list-data
+                            +input({
+                                type: 'button',
+                                value: 'expandable checkbox list',
+                                classes: 'checkbox-list',
+                                button: 'checkbox',
+                                show: 'show',
+                                items: locals.checkboxListItems
+                            })
+
+                .form__column
 
 
                 .form__column
-                    .dropdown_expanded
-                        include ../../components/dropdown/dropdown__button_apply
-                    .checkbox_rich.item_size_s
 
-                .form__column
-                    .dropdown_expanded
-                        include ../../components/dropdown/dropdown__button_clear
-                    .bullet-list__wrapper.item_size_s
-                        include ../../components/bulletList/bulletList
-
-        section
-            form.form
-                .form__column
-                    .comfort__wrapper
-                        include ../../components/comfort/comfort
-                .form__column.form-column_extended
-                    .comment__wrapper
-                        include ../../components/comment/comment

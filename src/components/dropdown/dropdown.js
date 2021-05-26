@@ -4,7 +4,9 @@ import * as $ from "jquery";
 //show
 for (let btn of document.querySelectorAll('.dropdown__input')) {
     btn.addEventListener('click', function (e) {
-        this.classList.toggle('dropdown__border');
+        if ($(this.nextElementSibling).length){
+            this.classList.toggle('dropdown__border');
+        }
         this.nextElementSibling.classList.toggle('show');
     })
 }
@@ -13,8 +15,6 @@ for (let btn of document.querySelectorAll('.dropdown__input')) {
 for (let dropdownCount of document.querySelectorAll('.dropdown__count>h3')) {
     disableSign(dropdownCount);
 }
-
-
 
 
 //counter

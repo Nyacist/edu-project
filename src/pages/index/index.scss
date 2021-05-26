@@ -8,6 +8,23 @@
   min-width: 1040px;
 }
 
+.form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__column {
+  max-width: 320px;
+  width: 100%;
+  &>div + div{
+    margin-top: 20px;
+  }
+}
+
+.form-column_extended{
+  max-width: 712px;
+}
+
 .wrapper{
   margin-top: 16px;
   .checkbox{
@@ -74,40 +91,11 @@
 }
 
 
-.form{
-  display: flex;
-  justify-content: space-between;
-}
-
-.form__column {
-  max-width: 320px;
-  width: 100%;
-  &>div + div{
-    margin-top: 20px;
-  }
-}
-
-.form-column_extended{
-  max-width: 712px;
-}
-
 section + section{
   margin-top: 100px;
 }
 
-.date-column__dropdown{
-  display: flex;
-  justify-content: space-between;
-  &>div + div{
-    margin-left: 20px;
-  }
-}
 
-.date-column__dropdown,
-.filter-date__dropdown,
-.subscription__text-field {
-  padding-top: 20px;
-}
 
 .dropdown_expanded{
   margin-bottom: 40px;
@@ -116,10 +104,6 @@ section + section{
   }
 }
 
-.checkbox_default{
-  max-width: 225px;
-  margin-bottom: 40px;
-}
 
 
 .checkbox-list_expandable{

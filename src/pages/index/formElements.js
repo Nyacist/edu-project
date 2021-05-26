@@ -1,7 +1,6 @@
 
 import '../../components/elementTitle/elementTitle'
 import '../../components/input/input'
-import '../../components/dropdown/dropdown'
 import '../../components/rateButton/rateButton'
 import '../../components/rangeSlider/rangeSlider'
 import '../../components/button/button'
