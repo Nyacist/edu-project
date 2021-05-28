@@ -1,12 +1,18 @@
-mixin comfort__element(img_url, title, text)
+//-
+  options.img - пиктограмма
+  options.title - Заглавие
+  options.text - пояснение
+
+
+mixin comfort(options)
+    if !options
+        - options = {}
+
     .comfort__element
-        div(class=`comfort__img_${img_url}`)
+        div(class=`comfort__img_${options.img}`)
         .comfort__description
-            h3= title
-            label= text
+            h3= options.title
+            label= options.text
         hr
 
 
-.comfort
-    +comfort__element('emoticon', 'Комфорт', 'Шумопоглощающие стены')
-    +comfort__element('location-city', 'Удобство', 'Окно в каждой из спален')

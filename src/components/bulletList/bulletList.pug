@@ -1,8 +1,9 @@
 
+mixin bulletList(options)
+    if !options
+        - options = {}
 
-.bullet-list
-    +item-title('bullet list')
-    ul
-        li Нельзя с питомцами
-        li Без вечеринок и мероприятий
-        li Время прибытия — после 13:00,  а выезд до 12:00
+    .bullet-list
+        ul
+        each item in options.items
+            li= item.value

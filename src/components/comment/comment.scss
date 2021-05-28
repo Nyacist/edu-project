@@ -7,11 +7,12 @@
 }
 
 .comment__img {
-  height: 48px;
-  width: 48px;
-  border: #fff solid 2px;
-  border-radius: 32px;
-  background-image: url("img/photo.png");
+  img{
+    height: 48px;
+    width: 48px;
+    border: #fff solid 2px;
+    border-radius: 32px;
+  }
 }
 
 .comment__name {

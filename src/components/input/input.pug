@@ -1,5 +1,4 @@
 //-
-
   options.classes - строка с классами(wrapper)
   options.arrow - вид стрелки
   options.type - input type
@@ -27,7 +26,7 @@ mixin input(options)
 
         let inputClasses = '';
         if (options.show === 'show')
-            switch (options.button) {
+            switch (options.button_type) {
                 case 'dropdown': {
                     inputClasses += ' dropdown__border'
                     break
@@ -50,24 +49,31 @@ mixin input(options)
                 )
 
             - if (options.type === 'button')
-                - if (options.button === 'like')
+                - if (options.button_type === 'like')
                     input.input__element(
                         type = options.type
                         value = options.value
                         data-action = options.like
                     )
-                - if (options.button === 'dropdown')
+                - if (options.button_type === 'dropdown')
                     input.input__element.dropdown__input(
                         type = options.type
                         value = options.value
                         class=inputClasses
                     )
                     - if (options.items)
-                        .dropdown__wrapper(class=options.show data-action='rooms')
+                        .dropdown__wrapper(class=options.show data-action=options.counts)
                             each item in options.items
                                 +count(item)
+                            - if(options.button_apply || options.button_clear)
+                                .dropdown__button
+                                    - let btn = options.button_clear ? 'очистить':''
+                                    h3= btn
+                                    - btn = options.button_apply ? 'применить':''
+                                    h3= btn
 
-                - if (options.button === 'checkbox')
+
+                - if (options.button_type === 'checkbox')
                     input.input__element.checkbox-list__input(
                         type = options.type
                         value = options.value
@@ -86,7 +92,12 @@ mixin input(options)
                         name = options.name
                         checked=options.checked
                      )
-                     span=options.label
+                     - if (options.text)
+                         span
+                            h3=options.label
+                            p=options.text
+                     - else
+                        span=options.label
 
 
 

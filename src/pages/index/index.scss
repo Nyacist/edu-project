@@ -25,11 +25,8 @@
   max-width: 712px;
 }
 
-.wrapper{
+.wrapper {
   margin-top: 16px;
-  .checkbox{
-    max-width: 222px;
-  }
 }
 
 .wrapper_small{
@@ -43,6 +40,10 @@
   .column__dropdown {
     flex-basis: 150px;
   }
+}
+
+.wrapper__checkbox{
+  max-width: 222px;
 }
 
 .wrapper__radiobutton{
@@ -88,6 +89,10 @@
 
 .wrapper__pagination{
   max-width: 241px;
+}
+
+.wrapper__comfort{
+  max-width: 280px;
 }
 
 

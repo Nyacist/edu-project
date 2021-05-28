@@ -1,14 +1,30 @@
-.comment
-    .comment__img
+//-
+  options.name - имя автора
+  options.date - дата поста
+  options.img - src фото
+  options.like - количество лайков
+  options.like_status - like enable/disable
+  options.text - текст комментария
 
-    .comment__title
-        .comment__name Мурад Сарафанов
-        .comment__date 5 дней назад
-    .comment__like
-        +like(12, 'enable')
-    .comment__text
-        p.
-            Великолепный матрас на кровати в основной спальне!
-            А пуфик вообще потрясающий.
-            И стены, действительно, шумоподавляющие.
-            Выкрикивал комплименты повару — никто не жаловался из соседей.
+include ../input/input
+
+mixin comment(options)
+    if !options
+        - options = {}
+
+    .comment
+        .comment__img
+            img(src=require('../../assets/images/'+options.img).default)
+        .comment__title
+            .comment__name= options.name
+            .comment__date= options.date
+        .comment__like
+            +input({
+                type: 'button',
+                classes: 'like-button',
+                button_type: 'like',
+                value: options.like,
+                like: options.like_status
+            })
+        .comment__text
+            p= options.text
