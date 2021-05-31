@@ -14,7 +14,7 @@
     line-height: 18px;
     font-size: 14px;
     width: 100%;
-    margin-top: 5px;
+
     background: transparent;
     text-align: left;
 
@@ -167,6 +167,7 @@
 
 .radiobutton {
   padding-left: 30px;
+  padding-bottom: 4px;
 
   .input__element {
     position: absolute;
@@ -355,6 +356,7 @@
   }
 
   &__input {
+    z-index: 1;
     &:hover, &:focus {
       border-color: $dark-shade-50;
     }

@@ -1,0 +1,120 @@
+@import "../../../node_modules/normalize.css";
+@import "../../components/base/base";
+
+.container {
+  padding: 40px;
+  max-width: 1440px;
+  min-width: 1040px;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__column {
+  max-width: 320px;
+  width: 100%;
+  &>div + div{
+    margin-top: 20px;
+  }
+}
+
+.form-column_extended{
+  max-width: 712px;
+}
+
+.wrapper {
+  margin-top: 16px;
+}
+
+.wrapper_small{
+  max-width: 266px;
+}
+
+.wrapper__column {
+  display: flex;
+  justify-content: space-between;
+
+  .column__dropdown {
+    flex-basis: 150px;
+  }
+}
+
+.wrapper__checkbox{
+  max-width: 222px;
+}
+
+.wrapper__radiobutton{
+  display: flex;
+  .input + .input{
+    margin-left: 20px;
+  }
+}
+
+.wrapper__like-button{
+  display: flex;
+  .input{
+    line-height: 14px;
+    display: inline-block;
+  }
+  .input + .input{
+    margin-left: 10px;
+  }
+}
+
+.wrapper__rate-button{
+  display: flex;
+  .rate-button + .rate-button{
+    margin-left: 20px;
+  }
+}
+
+.wrapper__button{
+  display: grid;
+  grid-template-columns: 99px 99px;
+  grid-template-rows: 44px 44px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.wrapper__button_link{
+  display: flex;
+  margin: 30px 0;
+  .btn_link + .btn_link{
+    margin-left: 20px;
+  }
+}
+
+.wrapper__pagination{
+  max-width: 241px;
+}
+
+.wrapper__comfort{
+  max-width: 280px;
+}
+
+
+section + section{
+  margin-top: 100px;
+}
+
+
+
+.dropdown_expanded{
+  margin-bottom: 40px;
+  .dropdown + .dropdown{
+    margin-top: 20px;
+  }
+}
+
+
+
+.checkbox-list_expandable{
+  .checkbox + .checkbox{
+    margin-top: 20px;
+  }
+}
+
+
+

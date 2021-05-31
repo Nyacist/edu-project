@@ -3,403 +3,126 @@ extends ../../components/base/base
 include ../../components/elementTitle/elementTitle
 include ../../components/input/input
 include ../../components/rateButton/rateButton
-include ../../components/rangeSlider/rangeSlider
 include ../../components/button/button
-include ../../components/pagination/pagination
-include ../../components/comfort/comfort
-include ../../components/bulletList/bulletList
-include ../../components/comment/comment
-
 
 
 block content
-    .container
+    .container.container__background
         section
             form.form
                 .form__column
-
-                    .form__element
-                        +title({
-                            title: 'text field'
-                        })
-                        +input({
-                            type: 'email',
-                            placeholder: 'Email'
-                        })
-
-                    .form__element
-                        +title({
-                            title: 'text field'
-                        })
-                        +input({
-                            type: 'text',
-                            value: 'This is pretty awesome'
-                        })
-
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        +input({
-                            type: 'button',
-                            value: 'Сколько гостей',
-                            arrow: 'arrow_bottom',
-                            button_type: 'dropdown',
-                            classes: 'dropdown'
-                        })
-
-                    .form__element
-                        +title({
-                            title: 'masked text field'
-                        })
-                        +input({
-                            type: 'text',
-                            placeholder: 'ДД.ММ.ГГГГ'
-                        })
-
-                    .form__element.wrapper__column
-                        .column__dropdown
+                    .card
+                        .card__element
+                            h1 Найдём номера под ваши пожелания
+                        .card__element.wrapper__column
+                            .column__dropdown
+                                +title({
+                                    title: 'прибытие'
+                                })
+                                +input({
+                                    type: 'button',
+                                    value: 'ДД.ММ.ГГГГ',
+                                    button_type: 'dropdown',
+                                    arrow: 'arrow_bottom'
+                                })
+                            .column__dropdown
+                                +title({
+                                    title: 'выезд'
+                                })
+                                +input({
+                                    type: 'button',
+                                    value: 'ДД.ММ.ГГГГ',
+                                    button_type: 'dropdown',
+                                    arrow: 'arrow_bottom'
+                                })
+                        .card__element
                             +title({
-                                title: 'dropdown'
+                                title: 'гости'
                             })
-                            +input({
-                                type: 'button',
-                                value: 'ДД.ММ.ГГГГ',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-                        .column__dropdown
-                            +title({
-                                title: 'dropdown'
-                            })
-                            +input({
-                                type: 'button',
-                                value: '19.08.2019',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'filter date dropdown'
-                        })
-                        .wrapper_small
-                            +input({
-                                type: 'button',
-                                value: '19 авг - 23 авг',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'subscription text field'
-                        })
-                        .wrapper_small
-                            +input({
-                                type: 'email',
-                                placeholder: 'Email',
+                            div
+                                include ../../components/input/dropdown-guests-data
+                                +input({
+                                    type: 'button',
+                                    value: 'Сколько гостей',
+                                    arrow: 'arrow_bottom',
+                                    classes: 'dropdown',
+                                    button_type: 'dropdown',
+                                    button_apply: true,
+                                    button_clear: true,
+                                    counts: 'guestsNumbers',
+                                    items: [{
+                                        value: 'взрослые',
+                                        number: 0
+                                    }, {
+                                        value: 'дети',
+                                        number: 0
+                                    }, {
+                                        value: 'младенцы',
+                                        number: 0
+                                    }]
+                                })
+                        .card__element.card__button
+                            +button({
+                                value: 'подобрать номер',
+                                classes: 'background',
                                 arrow: 'arrow_right'
                             })
 
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'checkbox buttons'
-                        })
-                        .wrapper.wrapper__checkbox
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно курить'
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно с питомцами',
-                                checked: true
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно пригласить гостей (до 10 человек)',
-                                checked: true
-                            })
 
-
-                    .form__element
-                        +title({
-                            title: 'radio buttons'
-                        })
-                        .wrapper.wrapper__radiobutton
+                    .card
+                        .card__element
+                            h1 Регистрация аккаунта
+                        .card__element
                             +input({
-                                type: 'radio',
-                                classes: 'radiobutton',
-                                name: 'radio',
-                                label: 'Мужчина',
-                                checked: true
+                                type: 'text',
+                                placeholder: 'Имя'
                             })
                             +input({
-                                type: 'radio',
-                                classes: 'radiobutton',
-                                name: 'radio',
-                                label: 'Женщина'
+                                type: 'text',
+                                placeholder: 'Фамилия'
                             })
-
-                    .form__element
-                        +title({
-                            title: 'toggle'
-                        })
-                        .wrapper
+                            .wrapper__radiobutton
+                                +input({
+                                    type: 'radio',
+                                    classes: 'radiobutton',
+                                    name: 'radio',
+                                    label: 'Мужчина',
+                                    checked: true
+                                })
+                                +input({
+                                    type: 'radio',
+                                    classes: 'radiobutton',
+                                    name: 'radio',
+                                    label: 'Женщина'
+                                })
+                        .card__element
+                            +title({
+                                title: 'Дата рождения'
+                            })
                             +input({
-                                type: 'checkbox',
-                                classes: 'toggle',
-                                label: 'Получать спецпредложения',
-                                checked: true
+                                type: 'text',
+                                placeholder: 'ДД.ММ.ГГГГ'
+                            })
+                        .card__element
+                            +title({
+                                title: 'данные для входа в сервис'
+                            })
+                            +input({
+                                type: 'email',
+                                placeholder: 'Email'
+                            })
+                            +input({
+                                type: 'password',
+                                placeholder: 'Пароль'
                             })
                             +input({
                                 type: 'checkbox',
                                 classes: 'toggle',
-                                label: 'Получать спецпредложения',
+                                label: 'Получать спецпредложения'
                             })
-
-                    .form__element
-                        +title({
-                            title: 'like button'
-                        })
-                        .wrapper.wrapper__like-button
-                            +input({
-                                type: 'button',
-                                classes: 'like-button',
-                                button_type: 'like',
-                                value: '2'
-                            })
-                            +input({
-                                type: 'button',
-                                classes: 'like-button',
-                                button_type: 'like',
-                                value: '12',
-                                like: 'like'
-                            })
-                    .form__element
-                        +title({
-                            title: 'rate button'
-                        })
-                        .wrapper.wrapper__rate-button
-                            +rate({
-                                id: 'rate-button_left',
-                                checked: 4
-                            })
-                            +rate({
-                                id: 'rate-button_right',
-                                checked: 5
-                            })
-
-                .form__column
-                    .form__element
-                        .wrapper.wrapper_small
-                            +range-slider({
-                                title: 'range slider'
-                            })
-                    .form__element
-                        +title({
-                            title: 'buttons'
-                        })
-                        .wrapper
-                            .wrapper__button
-                                +button({
-                                    value: 'click me',
-                                    classes: 'background'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'background',
-                                    disable: true
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'border'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'border',
-                                    disable: true
-                                })
-                            .wrapper__button_link
-                                +button({
-                                    value: 'click me',
-                                    classes: 'link'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'link',
-                                    disable: true
-                                })
+                        .card__element
                             +button({
                                 value: 'перейти к оплате',
                                 classes: 'background',
                                 arrow: 'arrow_right'
                             })
-
-                    .form__element
-                        +title({
-                            title: 'pagination'
-                        })
-                        .wrapper.wrapper__pagination
-                            include ../../components/pagination/pagination-data
-                            +page({
-                                items: locals.paginationItems
-                            })
-
-        section
-            form.form
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        .wrapper_small
-                            include ../../components/input/dropdown-rooms-data
-                            +input({
-                                type: 'button',
-                                value: '19 авг - 23 авг',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        .wrapper_small
-                            include ../../components/input/dropdown-rooms-data
-                            +input({
-                                type: 'button',
-                                value: '2 спальни, 2 кровати...',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                counts: 'rooms',
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        .wrapper_small
-                            +input({
-                                type: 'button',
-                                value: 'expandable checkbox list',
-                                classes: 'checkbox-list',
-                                button_type: 'checkbox'
-                            })
-
-                    .form__element
-                        .wrapper_small
-                            include ../../components/input/checkbox-list-data
-                            +input({
-                                type: 'button',
-                                value: 'expandable checkbox list',
-                                classes: 'checkbox-list',
-                                button_type: 'checkbox',
-                                show: 'show',
-                                items: locals.checkboxListItems
-                            })
-
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        div
-                            include ../../components/input/dropdown-guests-data
-                            +input({
-                                type: 'button',
-                                value: 'Сколько гостей',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                counts: 'guestsNumbers',
-                                button_apply: true,
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'rich checkbox buttons'
-                        })
-                        .wrapper.wrapper_small
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Широкий коридор',
-                                text: 'Ширина коридоров в номере           не менее 91 см.'
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Помощник для инвалидов',
-                                text: 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                                checked: true
-                            })
-
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        div
-                            include ../../components/input/dropdown-guests-data
-                            +input({
-                                type: 'button',
-                                value: 'Сколько гостей',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                button_apply: true,
-                                button_clear: true,
-                                counts: 'guestsNumbers',
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'bullet list'
-                        })
-                        .wrapper.wrapper_small
-                            include ../../components/bulletList/bullet-list-data
-                            +bulletList({
-                                items: locals.bulletListItems
-                            })
-
-        section
-            form.form
-                .form__column
-                    .form__element
-                        .wrapper.wrapper__comfort
-                            +comfort({
-                                img: 'emoticon',
-                                title: 'Комфорт',
-                                text: 'Шумопоглощающие стены'
-                            })
-                            +comfort({
-                                img: 'location-city',
-                                title: 'Удобство',
-                                text: 'Окно в каждой из спален'
-                            })
-
-                .form-column_extended
-                    .form__element
-                        +comment({
-                            name: 'Мурад Сарафанов',
-                            date: '5 дней назад',
-                            img: 'photo.png',
-                            like: '12',
-                            like_status: 'like',
-                            text: 'Великолепный матрас на кровати в основной спальне! ' +
-                                'А пуфик вообще потрясающий. ' +
-                                'И стены, действительно, шумоподавляющие. ' +
-                                'Выкрикивал комплименты повару — никто не жаловался из соседей.'
-                        })
