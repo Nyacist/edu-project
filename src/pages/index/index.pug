@@ -126,3 +126,89 @@ block content
                                 classes: 'background',
                                 arrow: 'arrow_right'
                             })
+
+                    .card
+                        .card__element.room__title
+                            .room__number
+                                h3 №
+                                    h1 888
+                                    span люкс
+                            .room__cost
+                                h3= '9 990₽ '
+                                    span в сутки
+                        .card__element.wrapper__column
+                            .column__dropdown
+                                +title({
+                                    title: 'прибытие'
+                                })
+                                +input({
+                                    type: 'button',
+                                    value: '19.08.2019',
+                                    button_type: 'dropdown',
+                                    arrow: 'arrow_bottom'
+                                })
+                            .column__dropdown
+                                +title({
+                                    title: 'выезд'
+                                })
+                                +input({
+                                    type: 'button',
+                                    value: '23.08.2019',
+                                    button_type: 'dropdown',
+                                    arrow: 'arrow_bottom'
+                                })
+                        .card__element
+                            +title({
+                                title: 'гости'
+                            })
+                            div
+                                include ../../components/input/dropdown-guests-data
+                                +input({
+                                    type: 'button',
+                                    value: '3 гостя',
+                                    arrow: 'arrow_bottom',
+                                    classes: 'dropdown',
+                                    button_type: 'dropdown',
+                                    button_apply: true,
+                                    button_clear: true,
+                                    counts: 'guestsNumbers',
+                                    items: [{
+                                        value: 'взрослые',
+                                        number: 2
+                                    }, {
+                                        value: 'дети',
+                                        number: 1
+                                    }, {
+                                        value: 'младенцы',
+                                        number: 0
+                                    }]
+                                })
+                        .card__element.price
+                            .price__element
+                                .price__name
+                                    span= '9 990₽ х 4 суток'
+                                .price__cost
+                                    span= '39 960₽'
+                            .price__element
+                                .price__name
+                                    span= 'Сбор за услуги: скидка 2 179₽'
+                                    .price__info
+                                .price__cost
+                                    span= '0₽'
+                            .price__element
+                                .price__name
+                                    span= 'Сбор за дополнительные услуги'
+                                    .price__info
+                                .price__cost
+                                    span= '300₽'
+                        .card__element.total
+                            h2 Итого
+                            .total__line
+                            h2 38 081₽
+                        .card__element
+                            +button({
+                                value: 'забронировать',
+                                classes: 'background',
+                                arrow: 'arrow_right'
+                            })
+

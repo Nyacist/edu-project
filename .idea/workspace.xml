@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/bulletList/bulletList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comfort/comfort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Cards.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_components.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bulletList/bulletList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bulletList/bulletList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/comfort/_comfort.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comfort/_comfort.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown__button_apply.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown__button_clear.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_date.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_default.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_expanded.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/dropdown_filter-date.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/formElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
@@ -175,6 +154,9 @@
       <workItem from="1622197189852" duration="109000" />
       <workItem from="1622197306840" duration="12638000" />
       <workItem from="1622453165037" duration="8292000" />
+      <workItem from="1622533341062" duration="9173000" />
+      <workItem from="1622554370971" duration="595000" />
+      <workItem from="1622619835872" duration="4763000" />
     </task>
     <servers />
   </component>
