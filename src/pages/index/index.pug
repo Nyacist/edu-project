@@ -126,6 +126,14 @@ block content
                                 classes: 'background',
                                 arrow: 'arrow_right'
                             })
+                        .card__element.card__footer
+                            span Уже есть аккаунт на Toxin
+                            .card__footer-button
+                                +button({
+                                    value: 'войти',
+                                    classes: 'border',
+                                    arrow: 'arrow_right'
+                                })
 
                     .card
                         .card__element.room__title
@@ -212,3 +220,29 @@ block content
                                 arrow: 'arrow_right'
                             })
 
+                    .card
+                        .card__element
+                            h1 Войти
+                        .card__element
+                            +input({
+                                type: 'email',
+                                placeholder: 'Email'
+                            })
+                            +input({
+                                type: 'password',
+                                placeholder: 'Пароль'
+                            })
+                        .card__element
+                            +button({
+                                value: 'войти',
+                                classes: 'background',
+                                arrow: 'arrow_right'
+                            })
+                        .card__element.card__footer
+                            span Нет аккаунта на Toxin?
+                            .card__footer-button
+                                +button({
+                                    value: 'создать',
+                                    classes: 'border',
+                                    arrow: 'arrow_right'
+                                })
