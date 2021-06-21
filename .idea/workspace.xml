@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/_daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/calendar.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/daterangepicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/cards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
@@ -52,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/bulletList" />
+    <property name="last_opened_file_path" value="C:/MAMP/htdocs/work" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -62,11 +73,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\src\components\calendar" />
       <recent name="D:\project\src\components\bulletList" />
       <recent name="D:\project\src\components\input" />
       <recent name="D:\project\src\components\checkbox" />
       <recent name="D:\project\src\components\dropdown" />
-      <recent name="D:\project\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\src\assets\images" />
@@ -156,6 +167,20 @@
       <workItem from="1622533341062" duration="9173000" />
       <workItem from="1622554370971" duration="595000" />
       <workItem from="1622619835872" duration="5868000" />
+      <workItem from="1622632710140" duration="10092000" />
+      <workItem from="1622723792531" duration="127000" />
+      <workItem from="1622724384986" duration="956000" />
+      <workItem from="1622885836826" duration="2614000" />
+      <workItem from="1623055500185" duration="2513000" />
+      <workItem from="1623147540264" duration="630000" />
+      <workItem from="1623161760065" duration="2968000" />
+      <workItem from="1623230507788" duration="646000" />
+      <workItem from="1623318806387" duration="612000" />
+      <workItem from="1623746563264" duration="618000" />
+      <workItem from="1623835156355" duration="2643000" />
+      <workItem from="1624003958042" duration="649000" />
+      <workItem from="1624267502477" duration="14000" />
+      <workItem from="1624267523543" duration="11902000" />
     </task>
     <servers />
   </component>

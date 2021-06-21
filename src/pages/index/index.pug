@@ -4,6 +4,7 @@ include ../../components/elementTitle/elementTitle
 include ../../components/input/input
 include ../../components/rateButton/rateButton
 include ../../components/button/button
+include ../../components/calendar/calendar
 
 
 block content
@@ -131,10 +132,10 @@ block content
                             .card__footer-button
                                 +button({
                                     value: 'войти',
-                                    classes: 'border',
-                                    arrow: 'arrow_right'
+                                    classes: 'border'
                                 })
 
+                .form__column
                     .card
                         .card__element.room__title
                             .room__number
@@ -243,6 +244,9 @@ block content
                             .card__footer-button
                                 +button({
                                     value: 'создать',
-                                    classes: 'border',
-                                    arrow: 'arrow_right'
+                                    classes: 'border'
                                 })
+
+                    .card
+                        +calendar()
+

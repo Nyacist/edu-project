@@ -1,0 +1,121 @@
+@import '~jquery-ui/themes/base/datepicker.css';
+@import "../base/base";
+
+#input_to,
+#input_from{
+  margin-bottom: 20px;
+}
+
+.calendar{
+
+  max-width: 320px;
+  padding: 20px;
+
+  &__header{
+
+  }
+
+  &__prev-month,
+  &__next-month{
+    button{
+      height: 24px;
+      width: 24px;
+    }
+
+    .btn__arrow_right_purple,
+    .btn__arrow_left_purple{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:after {
+        top: 0px;
+        right: 0px;
+      }
+    }
+  }
+}
+
+
+
+.ui-datepicker{
+  width: 100%;
+  padding: 0;
+
+  &-header{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  & &-header{
+    padding: 0;
+  }
+
+  & &-title{
+    margin: 0;
+    line-height: 24px;
+    font-size: 19px;
+    @extend %bold;
+    margin-bottom: 30px;
+  }
+
+  & &-prev,
+  & &-next{
+    height: 24px;
+    width: 24px;
+    top: 0;
+
+    &:after {
+      position: absolute;
+      font-family: 'icomoon';
+      top: 0px;
+      right: 0;
+      font-size: 24px;
+      content: "\e900";
+      z-index: 1;
+      background: $gradient-purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span{
+      margin: 0;
+    }
+  }
+
+  & &-prev{
+    left: 0;
+    &:after{
+      left: 0px;
+      transform: rotate(0.5turn) translate(0, 0);
+    }
+  }
+
+  &-calendar{
+    span{
+      color: $purple;
+    }
+
+    tr{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  & th{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  & td span,
+  & td a{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

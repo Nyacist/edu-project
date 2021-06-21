@@ -1,88 +1,119 @@
 @import "../base/base";
 
-.btn_background {
-  height: 44px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 2px;
-  margin: 0;
-  background: $gradient-purple;
-  border-radius: 22px;
-}
+.btn {
 
-.btn_border {
-  button{
-    background: white;
-    h3 {
-      color: $purple;
-    }
-  }
-}
-
-.btn_default {
-  position: relative;
-  height: 40px;
-  border-width: 0;
-  background-color: transparent;
-  border-radius: 22px;
-  width: 100%;
-  user-select: none;
-  z-index: 1;
-  padding: 0;
-
-  h3 {
+  &_background {
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
     margin: 0;
-    text-transform: uppercase;
-    color: #ffffff;
+    background: $gradient-purple;
+    border-radius: 22px;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
-    outline: none;
-  }
-}
+  &_border {
+    button {
+      background: white;
 
-.btn_link {
-  line-height: 15px;
-  button{
-    text-decoration: none;
-    line-height: 15px;
-    height: auto;
-    padding: 0;
-    border: 0;
-
-    &:disabled {
       h3 {
-        color: $dark-shade-50;
+        color: $purple;
       }
     }
+  }
+
+  &_default {
+    position: relative;
+    height: 40px;
+    border-width: 0;
+    background-color: transparent;
+    border-radius: 22px;
+    width: 100%;
+    user-select: none;
+    z-index: 1;
+    padding: 0;
 
     h3 {
-      text-transform: uppercase;
-      color: $purple;
       margin: 0;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
     }
   }
-}
 
-.btn__arrow_right {
-  position: relative;
+  &_link {
+    line-height: 15px;
 
-  &:after {
-    position: absolute;
-    content: "\e900";
-    display: block;
-    font-family: 'icomoon';
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    background: #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    button {
+      text-decoration: none;
+      line-height: 15px;
+      height: auto;
+      padding: 0;
+      border: 0;
+
+      &:disabled {
+        h3 {
+          color: $dark-shade-50;
+        }
+      }
+
+      h3 {
+        text-transform: uppercase;
+        color: $purple;
+        margin: 0;
+      }
+    }
   }
-}
 
-.btn_disable {
-  background: $gradient-purple-50 !important;
+  &__arrow_right,
+  &__arrow_left{
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "\e900";
+      display: block;
+      font-family: 'icomoon';
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__arrow_left,
+  &__arrow_left_purple{
+    &:after{
+      transform: rotate(0.5turn) translate(0%, 0%);
+    }
+  }
+
+  &__arrow_right_purple,
+  &__arrow_left_purple{
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "\e900";
+      display: block;
+      font-family: 'icomoon';
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background: $purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &_disable {
+    background: $gradient-purple-50 !important;
+  }
 }
