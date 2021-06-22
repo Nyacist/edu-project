@@ -11,28 +11,6 @@
   max-width: 320px;
   padding: 20px;
 
-  &__header{
-
-  }
-
-  &__prev-month,
-  &__next-month{
-    button{
-      height: 24px;
-      width: 24px;
-    }
-
-    .btn__arrow_right_purple,
-    .btn__arrow_left_purple{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:after {
-        top: 0px;
-        right: 0px;
-      }
-    }
-  }
 }
 
 
@@ -108,14 +86,66 @@
     padding: 0;
   }
 
-  & td span,
-  & td a{
+  & td {
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    span,
+    a{
+      padding: 0;
+      line-height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-today{
+    position: relative;
+
+    a{
+      color: #fff;
+      background: $gradient-green;
+      font-weight: 700;
+      border-radius: 20px;
+    }
   }
 }
 
+.date-range {
+  background: $gradient-purple-25;
 
+  a{
+    color: $dark-shade-50;
+    background: transparent;
+    font-weight: 400;
+    border-radius: 0;
+  }
+}
 
+.date-select {
+  a{
+    position: relative;
+    background: $gradient-purple;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &_left,
+  &_right{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: $gradient-purple-25;
+    }
+  }
+
+  &_left{
+    background: $gradient-purple-25;
+    &:before{
+      background: #fff;
+    }
+  }
+}

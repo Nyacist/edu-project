@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calendar/_daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calendar/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calendar/calendar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calendar/daterangepicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/calendar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +171,7 @@
       <workItem from="1624003958042" duration="649000" />
       <workItem from="1624267502477" duration="14000" />
       <workItem from="1624267523543" duration="11902000" />
+      <workItem from="1624353955084" duration="8746000" />
     </task>
     <servers />
   </component>

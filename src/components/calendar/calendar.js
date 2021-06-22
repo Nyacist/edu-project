@@ -37,7 +37,19 @@ $(".datepicker").datepicker({
     beforeShowDay: function(date) {
         let date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input_to").val());
         let date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input_from").val());
-        return [true, date1 && ((date.getTime() == date1.getTime()) || (date2 && date >= date1 && date <= date2)) ? "dp-highlight" : ""];
+        let returnClass = ""
+        if(date1 && (date.getTime() == date1.getTime())){
+            returnClass = "date-select"
+            if (date2 !== null) returnClass += " date-select_left"
+        }
+        if(date2 && (date.getTime() == date2.getTime())){
+            returnClass = "date-select"
+            if (date1 !== null) returnClass += " date-select_right"
+        }
+        if(date1 && (date2 && (date > date1) && (date < date2))){
+            returnClass = "date-range"
+        }
+        return [true, returnClass];
     },
     onSelect: function(dateText, inst) {
         let date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input_to").val());
