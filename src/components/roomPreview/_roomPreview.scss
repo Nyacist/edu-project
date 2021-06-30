@@ -1,0 +1,143 @@
+@import "../base/base";
+@import "~@splidejs/splide/dist/css/splide.min.css";
+@import "~@splidejs/splide/dist/css/themes/splide-default.min.css";
+
+.room {
+  max-width: 270px;
+
+  &__slider {
+    position: relative;
+    height: 151px;
+    overflow: hidden;
+
+    &-arrow {
+      position: absolute;
+      z-index: 1;
+      width: 42px;
+      height: 100%;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      padding: 0;
+      opacity: 1;
+      background: transparent;
+
+      &_next:after,
+      &_prev:after {
+        position: absolute;
+        content: "\e901";
+        color: #fff;
+        font-family: 'icomoon';
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        top: 50%;
+
+      }
+
+      &_prev:after{
+        transform: translateY(-50%) rotate(0.25turn);
+      }
+
+      &_next:after {
+        transform: translateY(-50%) rotate(0.75turn);
+      }
+    }
+  }
+}
+
+.splide__arrow {
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.splide__pagination{
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7px;
+  padding-bottom: 7px;
+
+  &__page{
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+
+    &.is-active {
+      transform: scale(1.0);
+    }
+  }
+}
+
+.room-card{
+
+  .room-card__description{
+    padding: 20px 17px 19px 20px;
+
+    hr {
+      color: $dark-shade-10;
+      background-color: $dark-shade-10;
+      border: none;
+      height: 1px;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .room__title{
+    height: 24px;
+
+    h1{
+      font-size: 19px;
+    }
+    h3{
+      font-size: 14px;
+    }
+    span{
+      font-size: 12px;
+      padding-left: 1px;
+    }
+  }
+
+  .room__cost{
+    padding: 0;
+  }
+
+  &__rating{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__comments{
+    display: flex;
+    align-items: center;
+
+    h3 {
+      color: $dark-shade-50;
+      font-size: 14px;
+      line-height: 18px;
+      padding-right: 2px;
+      padding-top: 2px;
+    }
+
+    span {
+      font-weight: 400;
+      line-height: 18px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//-
+    options.number - номер комнаты
+    options.comfort - уровень комфорта в номере
+    options.price - цена в сутки
+    options.star - рейтинг
+    options.comment - количество отзывов
+
+
+mixin roomPreview(options)
+
+    if !options
+        - options = {}
+
+
+    .room-card
+        .room-card__slider.splide
+            .splide__track
+                ul.splide__list
+                    each item in options.image
+                        li.splide__slide
+                            .image_border
+                                img(style=item.style src=require('../../assets/images/' + item.src).default)
+        .room-card__description
+            .room__title
+                .room__number
+                    h3 №
+                    h1= options.number
+                    span= options.comfort
+                .room__cost
+                    h3= options.price + '₽'
+                    span= ' в сутки'
+            hr
+            .room-card__rating
+                +rate({
+                    id: options.number,
+                    checked: options.star
+                })
+                .room-card__comments
+                    h3= options.comment
+                        span= ' Отзывов'

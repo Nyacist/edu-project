@@ -1,5 +1,5 @@
-@import '~jquery-ui/themes/base/datepicker.css';
 @import "../base/base";
+@import '~jquery-ui/themes/base/datepicker.css';
 
 #input_to,
 #input_from{
@@ -7,12 +7,9 @@
 }
 
 .calendar{
-
   max-width: 320px;
   padding: 20px;
-
 }
-
 
 
 .ui-datepicker{

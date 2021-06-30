@@ -5,6 +5,7 @@ include ../../components/input/input
 include ../../components/rateButton/rateButton
 include ../../components/button/button
 include ../../components/calendar/calendar
+include ../../components/roomPreview/roomPreview
 
 
 block content
@@ -249,4 +250,71 @@ block content
 
                     .card
                         +calendar()
+
+                    .card.card__room
+                        +roomPreview({
+                            number: '888',
+                            comfort: 'люкс',
+                            price: '9 990',
+                            star: '5',
+                            comment: '145',
+                            image: [{
+                                src: 'roomPreview/room888lux-1.png',
+                                style: 'margin: -46px -44px -20px -10px;' +
+                                    'width: 324px;' +
+                                    'height: 217px;' +
+                                    'clip-path: inset(46px 44px 20px 10px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room888lux-1.png',
+                                style: 'margin: -46px -44px -20px -10px;' +
+                                    'width: 324px;' +
+                                    'height: 217px;' +
+                                    'clip-path: inset(46px 44px 20px 10px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room888lux-1.png',
+                                style: 'margin: -46px -44px -20px -10px;' +
+                                    'width: 324px;' +
+                                    'height: 217px;' +
+                                    'clip-path: inset(46px 44px 20px 10px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room888lux-1.png',
+                                style: 'margin: -46px -44px -20px -10px;' +
+                                    'width: 324px;' +
+                                    'height: 217px;' +
+                                    'clip-path: inset(46px 44px 20px 10px round 4px 4px 0 0);'
+                            }]
+                        })
+
+                    .card.card__room
+                        +roomPreview({
+                            number: '840',
+                            price: '9 900',
+                            star: '4',
+                            comment: '65',
+                            image: [{
+                                src: 'roomPreview/room840.png',
+                                style: 'margin: -13px -31px -25px -31px;' +
+                                    'width: 332px;' +
+                                    'height: 189px;' +
+                                    'clip-path: inset(13px 31px 25px 31px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room840.png',
+                                style: 'margin: -13px -31px -25px -31px;' +
+                                    'width: 332px;' +
+                                    'height: 189px;' +
+                                    'clip-path: inset(13px 31px 25px 31px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room840.png',
+                                style: 'margin: -13px -31px -25px -31px;' +
+                                    'width: 332px;' +
+                                    'height: 189px;' +
+                                    'clip-path: inset(13px 31px 25px 31px round 4px 4px 0 0);'
+                            }, {
+                                src: 'roomPreview/room840.png',
+                                style: 'margin: -13px -31px -25px -31px;' +
+                                    'width: 332px;' +
+                                    'height: 189px;' +
+                                    'clip-path: inset(13px 31px 25px 31px round 4px 4px 0 0);'
+                            }]
+                        })
 
