@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cards/cards.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/headersAndFooters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Headers &amp; Footers.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/roomPreview/_roomPreview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/roomPreview/_roomPreview.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/_menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +180,7 @@
       <workItem from="1625042883733" duration="7571000" />
       <workItem from="1625135709056" duration="1241000" />
       <workItem from="1625144530802" duration="598000" />
-      <workItem from="1625217777896" duration="5964000" />
+      <workItem from="1625217777896" duration="8674000" />
     </task>
     <servers />
   </component>

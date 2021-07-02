@@ -3,7 +3,7 @@
 .btn {
 
   &_background {
-    height: 44px;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     padding: 2px;
@@ -24,7 +24,7 @@
 
   &_default {
     position: relative;
-    height: 40px;
+    height: 100%;
     border-width: 0;
     background-color: transparent;
     border-radius: 22px;

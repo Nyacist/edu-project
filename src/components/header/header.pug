@@ -1,4 +1,5 @@
-include ../../components/menu/menu
+include ../menu/menu
+include ../button/button
 
 //-
     options.items - массив с элементами меню
@@ -50,4 +51,13 @@ mixin header(options)
                             }]
                         }]
                     })
-                    .header__buttons
+                    .header__enter
+                        .header__buttons
+                            +button({
+                                value: 'войти',
+                                classes: 'border'
+                            })
+                            +button({
+                                value: 'зарегистрироваться',
+                                classes: 'background'
+                            })
