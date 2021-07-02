@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cards/cards.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index/headersAndFooters.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/roomPreview/_roomPreview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/roomPreview/_roomPreview.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/MAMP/htdocs/work" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -61,18 +75,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\src\components" />
       <recent name="D:\project\src\components\calendar" />
       <recent name="D:\project\src\components\bulletList" />
       <recent name="D:\project\src\components\input" />
       <recent name="D:\project\src\components\checkbox" />
-      <recent name="D:\project\src\components\dropdown" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\src\pages\cards" />
       <recent name="D:\project\src\assets\images" />
       <recent name="D:\project\src\components\input" />
       <recent name="D:\project\src\components\dropdown" />
       <recent name="D:\project\src\components\comment\img" />
-      <recent name="D:\project\src\components\checkbox\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -173,7 +187,10 @@
       <workItem from="1624437358691" duration="522000" />
       <workItem from="1624873395320" duration="306000" />
       <workItem from="1624954927615" duration="16889000" />
-      <workItem from="1625042883733" duration="2425000" />
+      <workItem from="1625042883733" duration="7571000" />
+      <workItem from="1625135709056" duration="1241000" />
+      <workItem from="1625144530802" duration="598000" />
+      <workItem from="1625217777896" duration="5964000" />
     </task>
     <servers />
   </component>

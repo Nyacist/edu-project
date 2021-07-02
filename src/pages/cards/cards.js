@@ -5,4 +5,4 @@ import '../../components/button/button'
 import '../../components/calendar/calendar'
 import '../../components/roomPreview/roomPreview'
 
-import './index.scss'
+import './_cards.scss'

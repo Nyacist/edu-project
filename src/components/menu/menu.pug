@@ -1,0 +1,31 @@
+//-
+    options.items - массив с элементами меню
+    options.items[0].name - имя элемента меню
+    options.items[0].href - ссылка элемента меню
+
+mixin menu(options)
+
+    if !options
+        - options = {}
+    if !options.items
+        - options.items = []
+
+    nav.menu
+        ul
+            each item in options.items
+                li.menu__element(class=(item.dropdown ? ' menu__dropdown' : ''))
+                    a(href=item.href class=(item.dropdown ? ' menu__dropdown-button menu__dropdown-arrow' : ''))= item.name
+                    if(item.dropdown)
+                        +menuDropdown(item.dropdown)
+
+
+mixin menuDropdown(options)
+
+    if !options
+        - options = {}
+    if !options.items
+        - options.items = []
+
+    .menu__dropdown-block
+        each item in options
+            a(href=item.href)= item.name

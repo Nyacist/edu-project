@@ -1,0 +1,62 @@
+@import "../../../node_modules/normalize.css";
+@import "../../components/base/base";
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__element {
+    list-style-type: none;
+    height: 100%;
+    padding: 0 10px;
+
+    a {
+      text-decoration: none;
+      color: $dark-shade-50;
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+
+    &-arrow {
+      position: relative;
+      padding-right: 34px;
+
+      &:after {
+        position: absolute;
+        content: "\e901";
+        z-index: 1;
+        font-family: 'icomoon';
+        top: -3px;
+        right: 10px;
+        font-size: 24px;
+        color: $dark-shade-50;
+      }
+    }
+
+    &-block{
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      padding: 5px 0;
+      background: #fff;
+      box-shadow: 0px 10px 10px 0px rgba(31, 32, 65, 0.1);
+      border-radius: 4px;
+      min-width: 200px;
+
+      a{
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

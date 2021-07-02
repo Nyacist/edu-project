@@ -1,0 +1,37 @@
+@import "../../../node_modules/normalize.css";
+@import "../../components/base/base";
+
+.container{
+  &_vertical{
+    padding: 140px 0;
+    height: 100vh;
+  }
+
+  &_horizontal{
+    padding: 0px 40px;
+  }
+}
+
+
+header{
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  &__logo{
+    display: flex;
+    padding: 15px 0;
+    img{
+      height: 40px;
+    }
+  }
+
+  &__menu{
+
+  }
+}

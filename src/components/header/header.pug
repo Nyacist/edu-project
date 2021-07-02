@@ -1,0 +1,53 @@
+include ../../components/menu/menu
+
+//-
+    options.items - массив с элементами меню
+    options.items[0].name - имя элемента меню
+    options.items[0].href - ссылка элемента меню
+
+mixin header(options)
+
+    if !options
+        - options = {}
+
+
+    .container_vertical.container__background
+        header
+            .container_horizontal.header
+                .header__logo
+                    img(src=require('../../assets/images/Logo.png').default)
+
+                .header__menu
+                    +menu({
+                        items:[{
+                            name: 'О нас',
+                            href: '#'
+                        }, {
+                            name: 'Услуги',
+                            href: '#',
+                            dropdown: [{
+                                name: 'услуга 1',
+                                href: '#'
+                            }, {
+                                name: 'услуга 2',
+                                href: '#'
+                            }]
+                        }, {
+                            name: 'Вакансии',
+                            href: '#'
+                        }, {
+                            name: 'Новости',
+                            href: '#'
+                        }, {
+                            name: 'Соглашения',
+                            href: '#',
+                            dropdown: [{
+                                name: 'соглашение 1',
+                                href: '#'
+                            }, {
+                                name: 'соглашение 2',
+                                href: '#'
+                            }]
+                        }]
+                    })
+                    .header__buttons
