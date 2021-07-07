@@ -49,6 +49,29 @@ header{
   }
 }
 
-@media (max-width: 1199px) {
-  
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container_horizontal{
+    padding: 0 40px;
+  }
 }
+
+@media (max-width: 991px) {
+  .header{
+    position: relative;
+
+    &__enter{
+      display: none;
+    }
+  }
+
+  .container_horizontal{
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px){
+  .container_horizontal{
+    padding: 0 40px;
+  }
+}
+

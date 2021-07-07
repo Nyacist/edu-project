@@ -10,13 +10,17 @@ mixin menu(options)
     if !options.items
         - options.items = []
 
-    nav.menu
-        ul
-            each item in options.items
-                li.menu__element(class=(item.dropdown ? ' menu__dropdown' : ''))
-                    a(href=item.href class=(item.dropdown ? ' menu__dropdown-button menu__dropdown-arrow' : ''))= item.name
-                    if(item.dropdown)
-                        +menuDropdown(item.dropdown)
+    .menu__burger
+        span
+
+    .menu
+        nav
+            ul
+                each item in options.items
+                    li.menu__element(class=(item.dropdown ? ' menu__dropdown' : ''))
+                        a(href=item.href class=(item.dropdown ? ' menu__dropdown-button menu__dropdown-arrow' : ''))= item.name
+                        if(item.dropdown)
+                            +menuDropdown(item.dropdown)
 
 
 mixin menuDropdown(options)
@@ -26,6 +30,8 @@ mixin menuDropdown(options)
     if !options.items
         - options.items = []
 
-    .menu__dropdown-block
+    ul.menu__dropdown-block
         each item in options
-            a(href=item.href)= item.name
+            li
+
+                a(href=item.href)= item.name

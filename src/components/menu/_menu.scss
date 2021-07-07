@@ -2,14 +2,16 @@
 @import "../../components/base/base";
 
 .menu {
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  ul {
-    margin: 0;
-    padding: 0;
+  nav {
     display: flex;
+    align-items: center;
+    height: 100%;
+
+    & > ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
   }
 
   &__element {
@@ -42,7 +44,7 @@
       }
     }
 
-    &-block{
+    &-block {
       display: none;
       position: absolute;
       top: 50px;
@@ -53,10 +55,79 @@
       border-radius: 4px;
       min-width: 200px;
 
-      a{
+      li {
+        list-style-type: none;
         display: block;
         padding: 10px 20px;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .menu {
+    display: none;
+
+    &__burger {
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+
+        &:before {
+          position: absolute;
+          content: "\e908";
+          display: block;
+          font-family: 'icomoon';
+          font-size: 40px;
+          line-height: 40px;
+          color: $dark-shade-50;
+        }
+      }
+
+      &-block{
+        position: absolute;
+        width: 100%;
+        top: 75px;
+        right: 0px;
+        padding: 5px 0;
+        background: #fff;
+        box-shadow: 0px 10px 10px 0px rgba(31, 32, 65, 0.1);
+        border-radius: 4px;
+
+        nav{
+          justify-content: center;
+        }
+
+        li {
+          list-style-type: none;
+          display: block;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  nav ul{
+    flex-direction: column;
+  }
+  .menu__element{
+    text-align: center;
+  }
+
+  .menu__dropdown-arrow{
+    padding: 0;
+
+    &:after{
+      right: -24px;
     }
   }
 }
