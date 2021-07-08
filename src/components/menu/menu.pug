@@ -2,6 +2,7 @@
     options.items - массив с элементами меню
     options.items[0].name - имя элемента меню
     options.items[0].href - ссылка элемента меню
+    options.items[0].select - выбранный элемент меню
 
 mixin menu(options)
 
@@ -18,8 +19,10 @@ mixin menu(options)
             ul
                 each item in options.items
                     li.menu__element(class=(item.dropdown ? ' menu__dropdown' : ''))
-                        a(href=item.href class=(item.dropdown ? ' menu__dropdown-button menu__dropdown-arrow' : ''))= item.name
-                        if(item.dropdown)
+                        a(href=item.href
+                            class=(item.dropdown ? ' menu__dropdown-button menu__dropdown-arrow' : '')
+                                +(item.select ? ' menu__element_select' : ''))= item.name
+                        - if(item.dropdown)
                             +menuDropdown(item.dropdown)
 
 
@@ -33,5 +36,4 @@ mixin menuDropdown(options)
     ul.menu__dropdown-block
         each item in options
             li
-
                 a(href=item.href)= item.name

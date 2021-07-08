@@ -7,6 +7,11 @@
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +184,7 @@
       <workItem from="1625217777896" duration="8707000" />
       <workItem from="1625564250454" duration="3877000" />
       <workItem from="1625649671283" duration="10252000" />
-      <workItem from="1625733571632" duration="2171000" />
+      <workItem from="1625733571632" duration="8284000" />
     </task>
     <servers />
   </component>

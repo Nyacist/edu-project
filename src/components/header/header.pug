@@ -2,9 +2,7 @@ include ../menu/menu
 include ../button/button
 
 //-
-    options.items - массив с элементами меню
-    options.items[0].name - имя элемента меню
-    options.items[0].href - ссылка элемента меню
+    options.user - имя пользователя
 
 mixin header(options)
 
@@ -22,10 +20,11 @@ mixin header(options)
                     +menu({
                         items:[{
                             name: 'О нас',
-                            href: '#'
+                            href: '#',
+                            select: true
                         }, {
                             name: 'Услуги',
-                            href: '#',
+                            href: 'javascript:void(0);',
                             dropdown: [{
                                 name: 'услуга 1',
                                 href: '#'
@@ -41,7 +40,7 @@ mixin header(options)
                             href: '#'
                         }, {
                             name: 'Соглашения',
-                            href: '#',
+                            href: 'javascript:void(0);',
                             dropdown: [{
                                 name: 'соглашение 1',
                                 href: '#'
@@ -51,13 +50,17 @@ mixin header(options)
                             }]
                         }]
                     })
-                    .header__enter
-                        .header__buttons
-                            +button({
-                                value: 'войти',
-                                classes: 'border'
-                            })
-                            +button({
-                                value: 'зарегистрироваться',
-                                classes: 'background'
-                            })
+                    - if (options.user)
+                        .header__user
+                            span= options.user
+                    -else
+                        .header__enter
+                            .header__buttons
+                                +button({
+                                    value: 'войти',
+                                    classes: 'border'
+                                })
+                                +button({
+                                    value: 'зарегистрироваться',
+                                    classes: 'background'
+                                })

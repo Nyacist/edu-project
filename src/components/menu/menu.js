@@ -11,10 +11,12 @@ for (let btn of document.querySelectorAll('.menu__dropdown-button')) {
     })
 }
 
+//burger menu show
 
-for (let btn of document.querySelectorAll('.menu__burger span')) {
+for (let btn of document.querySelectorAll('.menu__burger')) {
     btn.addEventListener('click', function (e) {
-        let menu = document.querySelector('.menu')
+        //let menu = document.querySelector('.menu')
+        let menu = btn.nextElementSibling
         menu.classList.toggle('show')
         menu.classList.toggle('menu__burger-block')
         menu.classList.toggle('container_horizontal')
