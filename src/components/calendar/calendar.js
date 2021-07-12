@@ -1,14 +1,7 @@
 import './_calendar.scss'
 
 import * as $ from 'jquery'
-import moment from 'moment'
-//import './daterangepicker'
-import datepicker from 'jquery-ui/ui/widgets/datepicker'
 
-
-    // $('input[name="daterange"]').daterangepicker({
-    //
-    // });
 
 /* Локализация datepicker */
 $.datepicker.regional['ru'] = {

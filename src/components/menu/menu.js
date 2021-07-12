@@ -1,8 +1,6 @@
 
 import './_menu.scss'
 
-import * as $ from "jquery";
-
 
 //menu dropdown show
 for (let btn of document.querySelectorAll('.menu__dropdown-button')) {

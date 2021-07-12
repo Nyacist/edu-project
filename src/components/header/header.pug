@@ -10,57 +10,57 @@ mixin header(options)
         - options = {}
 
 
-    .container_vertical.container__background
-        header
-            .container_horizontal.header
-                .header__logo
-                    img(src=require('../../assets/images/Logo.png').default)
 
-                .header__menu
-                    +menu({
-                        items:[{
-                            name: 'О нас',
-                            href: '#',
-                            select: true
-                        }, {
-                            name: 'Услуги',
-                            href: 'javascript:void(0);',
-                            dropdown: [{
-                                name: 'услуга 1',
-                                href: '#'
-                            }, {
-                                name: 'услуга 2',
-                                href: '#'
-                            }]
-                        }, {
-                            name: 'Вакансии',
+    header
+        .container_horizontal.header
+            .header__logo
+                img(src=require('../../assets/images/Logo.png').default)
+
+            .header__menu
+                +menu({
+                    items:[{
+                        name: 'О нас',
+                        href: '#',
+                        select: true
+                    }, {
+                        name: 'Услуги',
+                        href: 'javascript:void(0);',
+                        dropdown: [{
+                            name: 'услуга 1',
                             href: '#'
                         }, {
-                            name: 'Новости',
+                            name: 'услуга 2',
                             href: '#'
-                        }, {
-                            name: 'Соглашения',
-                            href: 'javascript:void(0);',
-                            dropdown: [{
-                                name: 'соглашение 1',
-                                href: '#'
-                            }, {
-                                name: 'соглашение 2',
-                                href: '#'
-                            }]
                         }]
-                    })
-                    - if (options.user)
-                        .header__user
-                            span= options.user
-                    -else
-                        .header__enter
-                            .header__buttons
-                                +button({
-                                    value: 'войти',
-                                    classes: 'border'
-                                })
-                                +button({
-                                    value: 'зарегистрироваться',
-                                    classes: 'background'
-                                })
+                    }, {
+                        name: 'Вакансии',
+                        href: '#'
+                    }, {
+                        name: 'Новости',
+                        href: '#'
+                    }, {
+                        name: 'Соглашения',
+                        href: 'javascript:void(0);',
+                        dropdown: [{
+                            name: 'соглашение 1',
+                            href: '#'
+                        }, {
+                            name: 'соглашение 2',
+                            href: '#'
+                        }]
+                    }]
+                })
+                - if (options.user)
+                    .header__user
+                        span= options.user
+                -else
+                    .header__enter
+                        .header__buttons
+                            +button({
+                                value: 'войти',
+                                classes: 'border'
+                            })
+                            +button({
+                                value: 'зарегистрироваться',
+                                classes: 'background'
+                            })

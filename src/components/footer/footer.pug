@@ -1,0 +1,23 @@
+
+
+mixin footer(options)
+
+    if !options
+        - options = {}
+
+    footer.container_horizontal
+        .footer
+            .footer__logo
+                img(src=require('../../assets/images/Logo.png').default)
+                span= 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»'
+
+            .footer__nav
+                .footer__column
+
+                .footer__column
+
+                .footer__column
+
+            .footer__subscription
+
+        .footer__copyright

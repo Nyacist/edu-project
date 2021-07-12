@@ -1,3 +1,29 @@
-@import "../../../node_modules/normalize.css";
 @import "../../components/base/base";
 
+.container {
+  &_vertical {
+    padding: 140px 0;
+  }
+
+  &_horizontal {
+    padding: 0px 140px;
+  }
+}
+
+.wrapper{
+  header{
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container_horizontal {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 991px){
+  .container_horizontal {
+    padding: 0 40px;
+  }
+}
