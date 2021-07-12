@@ -6,7 +6,8 @@
   }
 
   &_horizontal {
-    padding: 0px 140px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 
@@ -16,14 +17,9 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .container_horizontal {
-    padding: 0 40px;
-  }
-}
-
-@media (max-width: 991px){
-  .container_horizontal {
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

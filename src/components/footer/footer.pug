@@ -1,19 +1,20 @@
-
+include ../input/input
 
 mixin footer(options)
 
     if !options
         - options = {}
 
-    footer.container_horizontal
-        .footer
+    footer
+        .footer.container_horizontal
+
             .footer__logo
                 img(src=require('../../assets/images/Logo.png').default)
                 span= 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»'
 
             .footer__nav
                 .footer__column
-                    h3= 'навигация'
+                    h3.footer__title= 'навигация'
                     ul
                         li
                             a(href='javascript:void(0);')= 'О нас'
@@ -25,7 +26,7 @@ mixin footer(options)
                             a(href='javascript:void(0);')= 'Услуги'
 
                 .footer__column
-                    h3= 'о нас'
+                    h3.footer__title= 'о нас'
                     ul
                         li
                             a(href='javascript:void(0);')= 'О сервисе'
@@ -37,7 +38,7 @@ mixin footer(options)
                             a(href='javascript:void(0);')= 'Инвесторы'
 
                 .footer__column
-                    h3= 'служба поддержки'
+                    h3.footer__title= 'служба поддержки'
                     ul
                         li
                             a(href='javascript:void(0);')= 'Соглашения'
@@ -47,5 +48,25 @@ mixin footer(options)
                             a(href='javascript:void(0);')= 'Связь с нами'
 
             .footer__subscription
+                h3.footer__title= 'подписка'
+                p= 'Получайте специальные предложения и новости сервиса'
+                +input({
+                    type: 'email',
+                    placeholder: 'Email',
+                    arrow: 'arrow_right'
+                })
 
-        .footer__copyright
+        .footer__copyright.container_horizontal
+            p= 'Copyright © 2018 Toxin отель. Все права зачищены.'
+
+            .footer__social-networks
+                svg(width="0px" height="0px")
+                    defs
+                        linearGradient(id="lgrad" x1="50%" y1="100%" x2="50%" y2="0%")
+                            stop(offset="0%" style="stop-color:rgb(188,156,255);stop-opacity:1.00")
+                            stop(offset="100%" style="stop-color:rgb(139,164,249);stop-opacity:1.00")
+
+                    rect(x="0" y="0" width="100%" height="100%" fill="url(#lgrad)")
+                i.fab.fa-twitter
+                i.fab.fa-facebook-square
+                i.fab.fa-instagram

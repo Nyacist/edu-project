@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/headersAndFooters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/headersAndFooters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +188,7 @@
       <workItem from="1625649671283" duration="10252000" />
       <workItem from="1625733571632" duration="9474000" />
       <workItem from="1625820435872" duration="4208000" />
-      <workItem from="1626077234411" duration="6358000" />
+      <workItem from="1626077234411" duration="13917000" />
     </task>
     <servers />
   </component>

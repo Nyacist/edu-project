@@ -39,13 +39,14 @@ footer{
     grid-column-gap: 50px;
   }
 
+  &__title{
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+
   &__column{
     padding-top: 4px;
 
-    h3{
-      text-transform: uppercase;
-      margin-bottom: 21px;
-    }
     ul {
       margin: 0;
       padding: 0;
@@ -63,11 +64,46 @@ footer{
   }
 
   &__subscription{
-    padding-left: 10px;
-  }
-}
 
-.footer__copyright{
-  height: 70px;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+    padding-left: 10px;
+    padding-top: 4px;
+
+    p{
+      margin: 0;
+      margin-top: -2px;
+      padding: 0;
+      line-height: 24px;
+    }
+
+    .input{
+      margin-top: 22px;
+    }
+  }
+
+  &__copyright{
+    margin-top: 1px;
+    height: 70px;
+    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-networks{
+
+    svg{
+      font-size: 24px;
+      margin-left: 20px;
+
+      &:not(:nth-child(1)){
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    svg * {
+      fill: url(#lgrad);
+    }
+  }
 }
