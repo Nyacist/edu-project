@@ -1,5 +1,6 @@
 //-
   options.classes - строка с классами(wrapper)
+  options.id - id элемента
   options.arrow - вид стрелки
   options.type - input type
   options.placeholder - input placeholder
@@ -43,6 +44,7 @@ mixin input(options)
         .input__wrapper(class=classes)
             - if (options.type === 'text' || options.type === 'email' || options.type === 'password')
                 input.input__element(
+                    id = options.id
                     type = options.type
                     placeholder = options.placeholder
                     value = options.value

@@ -1,0 +1,16 @@
+extends ../../components/base/base
+
+include ../../components/header/header
+include ../../components/footer/footer
+
+
+block content
+    section.container__background.container_vertical
+        .wrapper
+            +header()
+            +header({
+                user: 'Юлий Цезарь'
+            })
+
+            +footer()
+

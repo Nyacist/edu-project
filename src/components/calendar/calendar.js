@@ -3,6 +3,19 @@ import './_calendar.scss'
 import * as $ from 'jquery'
 
 
+$('#input_to').focus(function (){$('.calendar__wrapper').fadeIn()})
+$('#input_from').focus(function (){$('.calendar__wrapper').fadeIn()})
+
+$(document).click( function(e){
+    if ( $(e.target).closest('.calendar').length ) {
+        // клик внутри элемента
+        return;
+    }
+    // клик снаружи элемента
+    $('.calendar__wrapper').fadeOut();
+});
+
+
 /* Локализация datepicker */
 $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',
@@ -23,7 +36,7 @@ $.datepicker.regional['ru'] = {
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-$.datepicker._defaults.dateFormat = "dd-mm-yy"
+$.datepicker._defaults.dateFormat = "dd.mm.yy"
 
 $(".datepicker").datepicker({
 
@@ -63,3 +76,6 @@ $(".datepicker").datepicker({
         }
     }
 });
+
+
+

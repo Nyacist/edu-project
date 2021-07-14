@@ -1,14 +1,19 @@
 @import "../base/base";
 @import '~jquery-ui/themes/base/datepicker.css';
 
-#input_to,
-#input_from{
-  margin-bottom: 20px;
-}
-
 .calendar{
   max-width: 320px;
-  padding: 20px;
+
+  &__wrapper{
+    position: absolute;
+    background: #fff;
+    z-index: 11;
+    display: none;
+    margin-top: 5px;
+    padding: 20px;
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+  }
 }
 
 

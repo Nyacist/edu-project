@@ -329,7 +329,12 @@
 }
 
 .dropdown {
+
   &__wrapper {
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    width: 100%;
     margin-top: -1px;
     display: none;
     border: $dark-shade-50 solid 1px;
@@ -405,7 +410,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 13px;
+    margin-top: 20px;
     margin-bottom: 6px;
 
     h3 {

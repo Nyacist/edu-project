@@ -11,6 +11,7 @@ import datepicker from 'jquery-ui/ui/widgets/datepicker'
 
 import './pages/formElements/formElements'
 import './pages/cards/cards'
-import './pages/index/headersAndFooters'
+import './pages/headersAndFooters/headersAndFooters'
+import './pages/index/landing'
 
 
