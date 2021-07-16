@@ -13,5 +13,6 @@ import './pages/formElements/formElements'
 import './pages/cards/cards'
 import './pages/headersAndFooters/headersAndFooters'
 import './pages/index/landing'
+import './pages/registration/registration'
 
 

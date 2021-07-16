@@ -5,24 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/landing-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/headersAndFooters/headersAndFooters.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/headersAndFooters/headersAndFooters.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/landing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Guests Dropdown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Landing page.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/enter-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Registration.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Sign in.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/_calendar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/calendar.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/calendar.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/input.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/cards/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/headersAndFooters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/headersAndFooters/headersAndFooters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -78,11 +75,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\src\pages" />
       <recent name="D:\project\src\components" />
       <recent name="D:\project\src\components\calendar" />
       <recent name="D:\project\src\components\bulletList" />
       <recent name="D:\project\src\components\input" />
-      <recent name="D:\project\src\components\checkbox" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\src\pages\headersAndFooters" />
@@ -202,7 +199,9 @@
       <workItem from="1626120936855" duration="599000" />
       <workItem from="1626172464469" duration="1008000" />
       <workItem from="1626256829273" duration="9000" />
-      <workItem from="1626256844586" duration="9530000" />
+      <workItem from="1626256844586" duration="10358000" />
+      <workItem from="1626339940668" duration="3173000" />
+      <workItem from="1626427581546" duration="3890000" />
     </task>
     <servers />
   </component>

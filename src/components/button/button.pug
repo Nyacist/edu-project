@@ -3,6 +3,7 @@
   options.value - button value
   options.classes - button class (определяет вид кнопки)
   options.arrow - стрелка на кнопке
+  options.type - кнопка или ссылка
 
 
 mixin button(options)
@@ -26,7 +27,11 @@ mixin button(options)
 
 
     div(class=wrapper__class)
-        button(class = 'btn_default', disabled = options.disable)
-            h3= options.value
+        - if (options.href)
+            a(class = 'btn_default', disabled = options.disable, href = options.href)
+                h3= options.value
+        - else
+            button(class = 'btn_default', disabled = options.disable)
+                h3= options.value
 
 

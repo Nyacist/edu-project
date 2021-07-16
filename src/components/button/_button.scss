@@ -10,10 +10,13 @@
     margin: 0;
     background: $gradient-purple;
     border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &_border {
-    button {
+   .btn_default {
       background: white;
 
       h3 {
@@ -24,6 +27,10 @@
 
   &_default {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     height: 100%;
     border-width: 0;
     background-color: transparent;

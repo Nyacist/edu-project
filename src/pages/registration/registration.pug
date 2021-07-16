@@ -1,0 +1,86 @@
+extends ../../components/base/base
+
+include ../../components/header/header
+include ../../components/footer/footer
+
+include ../../components/elementTitle/elementTitle
+include ../../components/input/input
+include ../../components/button/button
+
+
+block content
+    section
+        +header()
+
+    section
+        main.enter.registrarion
+            img.enter__background(src=require('../../assets/images/enter-background.png').default)
+            form.registrarion__form
+                .card
+                    .card__element
+                        h1 Регистрация аккаунта
+                    .card__element
+                        +input({
+                            type: 'text',
+                            placeholder: 'Имя'
+                        })
+                        +input({
+                            type: 'text',
+                            placeholder: 'Фамилия'
+                        })
+                        .wrapper__radiobutton
+                            +input({
+                                type: 'radio',
+                                classes: 'radiobutton',
+                                name: 'radio',
+                                label: 'Мужчина',
+                                checked: true
+                            })
+                            +input({
+                                type: 'radio',
+                                classes: 'radiobutton',
+                                name: 'radio',
+                                label: 'Женщина'
+                            })
+                    .card__element
+                        +title({
+                            title: 'Дата рождения'
+                        })
+                        +input({
+                            type: 'text',
+                            placeholder: 'ДД.ММ.ГГГГ'
+                        })
+                    .card__element
+                        +title({
+                            title: 'данные для входа в сервис'
+                        })
+                        +input({
+                            type: 'email',
+                            placeholder: 'Email'
+                        })
+                        +input({
+                            type: 'password',
+                            placeholder: 'Пароль'
+                        })
+                        +input({
+                            type: 'checkbox',
+                            classes: 'toggle',
+                            label: 'Получать спецпредложения'
+                        })
+                    .card__element
+                        .card__button
+                            +button({
+                                value: 'зарегестрироваться',
+                                classes: 'background',
+                                arrow: 'arrow_right'
+                            })
+                    .card__element.card__footer
+                        span Уже есть аккаунт на Toxin
+                        .card__footer-button.card__button
+                            +button({
+                                value: 'войти',
+                                classes: 'border'
+                            })
+
+    section
+        +footer()
