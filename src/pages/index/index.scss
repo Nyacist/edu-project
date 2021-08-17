@@ -1,38 +1,47 @@
 @import "../../components/base/base";
 
 .landing {
-  position: relative;
-  overflow:hidden;
+  background: url("../../assets/images/landing-background.png");
+  background-position: center;
+  background-size: 1534px;
+  background-repeat: no-repeat;
   width: 100%;
   height: 830px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-
-  &__background{
-    height: 1022px;
-    width: 1534px;
-    position: absolute;
-    top: -131px;
-    left: -47px;
-    z-index: -1;
-    object-fit: cover;
-  }
+  flex-direction: column;
+  justify-content: space-between;
 
   &__form{
     max-width: 380px;
-    position: absolute;
-    top: 70px;
-    left: 140px;
+    padding-top: 70px;
+    .card{
+      //margin-top: 70px;
+    }
+
+    //position: absolute;
+    //top: 70px;
+    //left: 140px;
   }
 
   &__text{
-    margin: 0;
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 18px;
-    width: 300px;
-    text-align: right;
-    line-height: 24px;
-    font-size: 14px;
-    color: $dark-shade-75;
+
+    p{
+      width: 300px;
+      margin: 0;
+      text-align: right;
+      line-height: 24px;
+      font-size: 14px;
+      color: $dark-shade-75;
+    }
   }
+}
+
+@media (min-width: 1460px) {
+  .landing{
+    background-size: cover;
+  }
+
 }

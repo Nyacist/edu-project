@@ -5,5 +5,4 @@ import '../enter/enter'
 //components
 import '../cards/cards'
 
-
 import '@fortawesome/fontawesome-free/js/all'

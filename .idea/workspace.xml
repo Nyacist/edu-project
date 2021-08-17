@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/enter-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/enter/enter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/registration/registration.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Registration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Sign in.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cards/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/enter/enter.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/enter/enter.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/enter/enter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/enter/enter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/landing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Новая папка (3)" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -201,7 +196,15 @@
       <workItem from="1626256829273" duration="9000" />
       <workItem from="1626256844586" duration="10358000" />
       <workItem from="1626339940668" duration="3173000" />
-      <workItem from="1626427581546" duration="3890000" />
+      <workItem from="1626427581546" duration="7430000" />
+      <workItem from="1626688235072" duration="3323000" />
+      <workItem from="1626773718832" duration="1191000" />
+      <workItem from="1626783856454" duration="2832000" />
+      <workItem from="1627374723177" duration="1302000" />
+      <workItem from="1627469516482" duration="596000" />
+      <workItem from="1627641776565" duration="247000" />
+      <workItem from="1629187595734" duration="11000" />
+      <workItem from="1629187612624" duration="870000" />
     </task>
     <servers />
   </component>

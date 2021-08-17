@@ -14,7 +14,7 @@ block content
 
     section
         main.landing.container_horizontal
-            img.landing__background(src=require('../../assets/images/landing-background.png').default)
+
             form.landing__form
                 .card
                     .card__element
@@ -53,8 +53,8 @@ block content
                             classes: 'background',
                             arrow: 'arrow_right'
                         })
-
-            p.landing__text= 'Лучшие номера для вашей работы, отдыха и просто вдохновения'
+            .landing__text
+                p= 'Лучшие номера для вашей работы, отдыха и просто вдохновения'
     section
         +footer()
 

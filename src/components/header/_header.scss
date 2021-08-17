@@ -61,7 +61,10 @@ header {
       position: absolute;
       top: 18px;
       right: 100px;
+    }
 
+    &__margin{
+      margin-bottom: 64px;
     }
   }
 }
@@ -70,10 +73,15 @@ header {
   .container_horizontal {
     padding: 0 40px;
   }
+
+  .header__margin{
+    margin-bottom: 54px;
+  }
 }
 
 @media (max-width: 650px) {
   .header {
+    margin-bottom: 50px;
     &__enter {
       width: 100%;
       justify-content: center;
@@ -85,7 +93,8 @@ header {
       border-radius: 4px;
     }
 
-    &__buttons{
+    &__margin{
+      margin-bottom: 260px;
     }
   }
 }

@@ -1,6 +1,7 @@
 
 import './_menu.scss'
 
+import * as $ from 'jquery'
 
 //menu dropdown show
 for (let btn of document.querySelectorAll('.menu__dropdown-button')) {
@@ -18,5 +19,6 @@ for (let btn of document.querySelectorAll('.menu__burger')) {
         menu.classList.toggle('show')
         menu.classList.toggle('menu__burger-block')
         menu.classList.toggle('container_horizontal')
+        document.querySelector('.header').classList.toggle('header__margin')
     })
 }
