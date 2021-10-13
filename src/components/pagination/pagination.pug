@@ -20,7 +20,8 @@ mixin page(options)
     .pagination
         ul
             each item in options.items
-                li(class='pagination__button pagination__button_'+item.classes)
+                - let classes = item.classes ? 'pagination__button_'+item.classes : '';
+                li(class='pagination__button ' + classes)
                     a(href='#')= item.value
 
         p 1 – 12 из 100+ вариантов аренды

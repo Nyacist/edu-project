@@ -5,17 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room840.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/room/_room.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/room/room.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/room/room.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg/Room details.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room840.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/enter/enter.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/enter/enter.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/enter/enter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/enter/enter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/registration.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/input.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/pagination-data.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/pagination.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/pagination.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cards/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cards/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cards/cards.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +54,8 @@
         <option value="HTML File" />
         <option value="Sass File" />
         <option value="Pug File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -60,7 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Новая папка (3)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -204,7 +229,27 @@
       <workItem from="1627469516482" duration="596000" />
       <workItem from="1627641776565" duration="247000" />
       <workItem from="1629187595734" duration="11000" />
-      <workItem from="1629187612624" duration="870000" />
+      <workItem from="1629187612624" duration="8627000" />
+      <workItem from="1629447448565" duration="7643000" />
+      <workItem from="1629459467451" duration="4708000" />
+      <workItem from="1629795046150" duration="3402000" />
+      <workItem from="1629886862848" duration="1260000" />
+      <workItem from="1629964420575" duration="595000" />
+      <workItem from="1629986024594" duration="179000" />
+      <workItem from="1630058908219" duration="7362000" />
+      <workItem from="1630322787501" duration="597000" />
+      <workItem from="1630401076592" duration="8008000" />
+      <workItem from="1630921130767" duration="4274000" />
+      <workItem from="1631011556649" duration="5401000" />
+      <workItem from="1631262378416" duration="18000" />
+      <workItem from="1632390403654" duration="3212000" />
+      <workItem from="1632731567506" duration="4643000" />
+      <workItem from="1632825475977" duration="1983000" />
+      <workItem from="1632902636728" duration="596000" />
+      <workItem from="1633511861253" duration="631000" />
+      <workItem from="1633593594052" duration="1803000" />
+      <workItem from="1633941338469" duration="15000" />
+      <workItem from="1633956643204" duration="1606000" />
     </task>
     <servers />
   </component>

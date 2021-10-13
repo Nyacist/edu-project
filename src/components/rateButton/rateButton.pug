@@ -1,9 +1,9 @@
 //-
-
-  options.id - name и основа для id рейтинга
   options.checked - количество выбранных звезд
 
-mixin rate(options)
+  для выставления отметки
+
+  mixin rate(options)
     if !options
         - options = {}
     .rate-button
@@ -23,3 +23,13 @@ mixin rate(options)
                 class='rate-button__label'
                 for=options.id + '__' + i
             )
+
+mixin rate(options)
+    if !options
+        - options = {}
+
+    .rating
+        - for (let i = 1; i<=options.checked; i++)
+            .rating__star.rating__star_filled
+        - for (let i = options.checked+1; i<=5; i++)
+            .rating__star

@@ -3,9 +3,9 @@
 .input {
   position: relative;
 
-  &__wrapper {
-    width: 100%;
-  }
+  //&__wrapper {
+  //  width: 100%;
+  //}
 
   &__element {
     padding: 12px 14px;
@@ -31,9 +31,11 @@
       color: transparent;
     }
   }
+}
 
-  &__arrow_right,
-  &__arrow_bottom {
+.arrow{
+  &_right,
+  &_bottom {
     position: relative;
 
     &:after {
@@ -45,7 +47,7 @@
     }
   }
 
-  &__arrow_right {
+  &_right {
     &:after {
       content: "\e900";
       z-index: 1;
@@ -55,7 +57,7 @@
     }
   }
 
-  &__arrow_bottom {
+  &_bottom {
     &:after {
       content: "\e901";
       z-index: 1;
@@ -65,7 +67,7 @@
 
 .checkbox {
   padding-left: 30px;
-  margin-top: 10px;
+  //margin-top: 10px;
 
   .input__element {
     position: absolute;
@@ -158,9 +160,15 @@
 
   &__wrapper {
     display: none;
-    padding-top: 4px;
+    padding-top: 15px;
     &:nth-child(1){
       margin-top: 0;
+    }
+
+    &.show{
+      .input:not(:last-child){
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -406,12 +414,23 @@
     border-color: $dark-shade-50;
   }
 
-  &__button {
+  &__buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 6px;
+  }
+
+  .dropdown__button{
+
+    background: transparent;
+    border: none;
+
+    &_right{
+      display: flex;
+      justify-content: flex-end;
+    }
 
     h3 {
       text-transform: uppercase;

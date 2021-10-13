@@ -14,7 +14,8 @@ mixin header(options)
     header
         .container_horizontal.header
             .header__logo
-                img(src=require('../../assets/images/Logo.png').default)
+                a(href='./')
+                    img(src=require('../../assets/images/Logo.png').default)
 
             .header__menu
                 +menu({

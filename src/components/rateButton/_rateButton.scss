@@ -1,38 +1,63 @@
 @import "../base/base";
 
-.rate-button {
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
+.rating{
   font-family: 'icomoon' !important;
-  font-size: 24px;
-  max-height: 24px;
-  height: 100%;
-  width: 120px;
+  display: flex;
 
-  &:after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-
-  &__input{
-    position: absolute;
-    z-index: -1;
-    width: auto;
-    opacity: 0;
-    margin: 0;
-
-    &:checked ~ label:before {
-      content: "\e902";
+  &__star{
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    &:before{
+      content: "\e903";
       background: $gradient-purple;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-  }
 
-  &__label:before {
-      content: "\e903";
-      color: $purple;
+    &_filled:before {
+      content: "\e902";
+    }
   }
 }
+
+//выставление отметки
+
+//.rate-button {
+//  display: flex;
+//  flex-direction: row-reverse;
+//  position: relative;
+//  font-family: 'icomoon' !important;
+//  font-size: 24px;
+//  max-height: 24px;
+//  height: 100%;
+//  width: 120px;
+//
+//  &:after {
+//    content: "";
+//    clear: both;
+//    display: block;
+//  }
+//
+//  &__input{
+//    position: absolute;
+//    z-index: -1;
+//    width: auto;
+//    opacity: 0;
+//    margin: 0;
+//
+//    &:checked ~ label:before {
+//      content: "\e902";
+//      background: $gradient-purple;
+//      -webkit-background-clip: text;
+//      -webkit-text-fill-color: transparent;
+//    }
+//  }
+//
+//  &__label:before {
+//      content: "\e903";
+//      color: $purple;
+//  }
+//}
+
+

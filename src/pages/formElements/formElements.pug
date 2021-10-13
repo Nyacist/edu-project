@@ -14,365 +14,442 @@ include ../../components/comment/comment
 
 block content
     .container
-        section
-            form.form
-                .form__column
 
-                    .form__element
+        form.form-elements
+            .form-elements__column
+                .form-item
+                    .form-item__title-input
                         +title({
                             title: 'text field'
                         })
-                        +input({
-                            type: 'email',
-                            placeholder: 'Email'
-                        })
+                    +input({
+                        type: 'email',
+                        placeholder: 'Email'
+                    })
 
-                    .form__element
+                .form-item
+                    .form-item__title-input
                         +title({
                             title: 'text field'
                         })
-                        +input({
-                            type: 'text',
-                            value: 'This is pretty awesome'
-                        })
+                    +input({
+                        type: 'text',
+                        value: 'This is pretty awesome'
+                    })
 
-                    .form__element
+                .form-item
+                    .form-item__title-input
                         +title({
                             title: 'dropdown'
                         })
+                    +input({
+                        type: 'button',
+                        value: 'Сколько гостей',
+                        arrow: 'arrow_bottom',
+                        buttonType: 'dropdown',
+                        wrapperClasses: 'dropdown'
+                    })
+
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'masked text field'
+                        })
+                    +input({
+                        type: 'text',
+                        placeholder: 'ДД.ММ.ГГГГ'
+                    })
+
+                .form-item.form-item__wrapper
+                    .form-item__column
+                        .form-item__title-input
+                            +title({
+                                title: 'dropdown'
+                            })
+                        +input({
+                            type: 'button',
+                            value: 'ДД.ММ.ГГГГ',
+                            buttonType: 'dropdown',
+                            arrow: 'arrow_bottom',
+                            wrapperClasses: 'dropdown'
+                        })
+                    .form-item__column
+                        .form-item__title-input
+                            +title({
+                                title: 'dropdown'
+                            })
+                        +input({
+                            type: 'button',
+                            value: '19.08.2019',
+                            buttonType: 'dropdown',
+                            arrow: 'arrow_bottom',
+                            wrapperClasses: 'dropdown'
+                        })
+
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'filter date dropdown'
+                        })
+
+                    +input({
+                        type: 'button',
+                        value: '19 авг - 23 авг',
+                        buttonType: 'dropdown',
+                        arrow: 'arrow_bottom',
+                        wrapperClasses: 'dropdown'
+                    })
+
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'subscription text field'
+                        })
+                    .wrapper_small
+                        +input({
+                            type: 'email',
+                            placeholder: 'Email',
+                            arrow: 'arrow_right'
+                        })
+
+            .form-elements__column
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'checkbox buttons'
+                        })
+                    .form-item__checkbox-block
+                        +input({
+                            type: 'checkbox',
+                            wrapperClasses: 'checkbox',
+                            label: 'Можно курить'
+                        })
+                        +input({
+                            type: 'checkbox',
+                            wrapperClasses: 'checkbox',
+                            label: 'Можно с питомцами',
+                            checked: true
+                        })
+                        +input({
+                            type: 'checkbox',
+                            wrapperClasses: 'checkbox',
+                            label: 'Можно пригласить гостей (до 10 человек)',
+                            checked: true,
+                        })
+
+
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'radio buttons'
+                        })
+                    .form-item__radiobuttons-block
+                        +input({
+                            type: 'radio',
+                            wrapperClasses: 'radiobutton',
+                            name: 'gender',
+                            label: 'Мужчина',
+                            checked: true
+                        })
+                        +input({
+                            type: 'radio',
+                            wrapperClasses: 'radiobutton',
+                            name: 'gender',
+                            label: 'Женщина'
+                        })
+
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'toggle'
+                        })
+                    .wrapper
+                        +input({
+                            type: 'checkbox',
+                            wrapperClasses: 'toggle',
+                            label: 'Получать спецпредложения',
+                            checked: true
+                        })
+                        +input({
+                            type: 'checkbox',
+                            wrapperClasses: 'toggle',
+                            label: 'Получать спецпредложения',
+                        })
+
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'like button'
+                        })
+                    .form-item__like-button
+                        +input({
+                            type: 'button',
+                            wrapperClasses: 'like-button',
+                            buttonType: 'like',
+                            value: '2'
+                        })
+                        +input({
+                            type: 'button',
+                            wrapperClasses: 'like-button',
+                            buttonType: 'like',
+                            value: '12',
+                            like: 'like'
+                        })
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'rate button'
+                        })
+                    .form-item__rate-button
+                        +rate({
+                            checked: 4
+                        })
+                        +rate({
+                            checked: 5
+                        })
+
+
+            .form-elements__column
+                .form-item
+                    .form-item__range-slider
+                        +range-slider({
+                            title: 'range slider'
+                        })
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'buttons'
+                        })
+
+                    .form-item__buttons
+                        .form-item__buttons-wrapper
+                            +button({
+                                value: 'click me',
+                                class: 'background'
+                            })
+                            +button({
+                                value: 'click me',
+                                class: 'background',
+                                disable: true
+                            })
+                        .form-item__buttons-wrapper
+                            +button({
+                                value: 'click me',
+                                class: 'border'
+                            })
+                            +button({
+                                value: 'click me',
+                                class: 'border',
+                                disable: true
+                            })
+                        .form-item__buttons-wrapper
+                            +button({
+                                value: 'click me',
+                                class: 'link'
+                            })
+                            +button({
+                                value: 'click me',
+                                class: 'link',
+                                disable: true
+                            })
+                    +button({
+                        value: 'перейти к оплате',
+                        class: 'background',
+                        arrow: 'arrow_right'
+                    })
+
+                .form-item
+                    .form-item__title-button
+                        +title({
+                            title: 'pagination'
+                        })
+                    +page({
+                        items: [
+                            {
+                                value: 1,
+                                classes: 'active'
+                            }, {
+                                value: 2
+                            }, {
+                                value: 3
+                            }, {
+                                value: '...'
+                            }, {
+                                value: 15
+                            }, {
+                                classes: 'next'
+                            }
+                        ]
+                    })
+
+
+        form.form-elements
+            .form-elements__column
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'dropdown'
+                        })
+                    +input({
+                        type: 'button',
+                        value: '19 авг - 23 авг',
+                        arrow: 'arrow_bottom',
+                        wrapperClasses: 'dropdown',
+                        buttonType: 'dropdown'
+                    })
+
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'dropdown'
+                        })
+                    +input({
+                        type: 'button',
+                        value: '2 спальни, 2 кровати...',
+                        arrow: 'arrow_bottom',
+                        wrapperClasses: 'dropdown',
+                        buttonType: 'dropdown',
+                        show: 'show',
+                        counts: 'rooms',
+                        items: [
+                            {
+                                value: 'спальни',
+                                number: 2
+                            }, {
+                                value: 'кровати',
+                                number: 2
+                            }, {
+                                value: 'ванные комнаты',
+                                number: 0
+                            }
+                        ]
+                    })
+
+                .form-item
+                    +input({
+                        type: 'button',
+                        value: 'expandable checkbox list',
+                        wrapperClasses: 'checkbox-list',
+                        buttonType: 'checkbox'
+                    })
+
+                .form-item
+                    +input({
+                        type: 'button',
+                        value: 'expandable checkbox list',
+                        wrapperClasses: 'checkbox-list',
+                        buttonType: 'checkbox',
+                        show: 'show',
+                        items: [
+                            {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Завтрак'
+                            }, {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Письменный стол',
+                                checked: true
+                            }, {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Стул для кормления',
+                                checked: true
+                            }, {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Кроватка',
+                                checked: true
+                            }, {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Телевизор'
+                            }, {
+                                type: 'checkbox',
+                                wrapperClasses: 'checkbox',
+                                label: 'Шампунь'
+                            }
+                        ]
+                    })
+
+            .form-elements__column
+                .form-item
+                    .form-item__title-input
+                        +title({
+                            title: 'dropdown'
+                        })
+                    +input({
+                        type: 'button',
+                        value: 'Сколько гостей',
+                        arrow: 'arrow_bottom',
+                        wrapperClasses: 'dropdown',
+                        buttonType: 'dropdown',
+                        show: 'show',
+                        counts: 'guestsNumbers',
+                        button_apply: true,
+                        button_clear: true,
+                        items: [
+                            {
+                                value: 'взрослые',
+                                number: 0
+                            }, {
+                                value: 'дети',
+                                number: 0
+                            }, {
+                                value: 'младенцы',
+                                number: 0
+                            }
+                        ]
+                    })
+
+                .form__element
+                    +title({
+                        title: 'rich checkbox buttons'
+                    })
+                    .wrapper.wrapper_small
+                        +input({
+                            type: 'checkbox',
+                            classes: 'checkbox',
+                            label: 'Широкий коридор',
+                            text: 'Ширина коридоров в номере           не менее 91 см.'
+                        })
+                        +input({
+                            type: 'checkbox',
+                            classes: 'checkbox',
+                            label: 'Помощник для инвалидов',
+                            text: 'На 1 этаже вас встретит специалист  и проводит до номера.',
+                            checked: true
+                        })
+
+            .form-elements__column
+                .form__element
+                    +title({
+                        title: 'dropdown'
+                    })
+                    div
+                        include ../../components/input/dropdown-guests-data
                         +input({
                             type: 'button',
                             value: 'Сколько гостей',
                             arrow: 'arrow_bottom',
+                            classes: 'dropdown',
                             button_type: 'dropdown',
-                            classes: 'dropdown'
+                            show: 'show',
+                            button_apply: true,
+                            button_clear: true,
+                            counts: 'guestsNumbers',
+                            items: locals.dropdownItems
                         })
 
-                    .form__element
-                        +title({
-                            title: 'masked text field'
+                .form__element
+                    +title({
+                        title: 'bullet list'
+                    })
+                    .wrapper.wrapper_small
+                        include ../../components/bulletList/bullet-list-data
+                        +bulletList({
+                            items: locals.bulletListItems
                         })
-                        +input({
-                            type: 'text',
-                            placeholder: 'ДД.ММ.ГГГГ'
-                        })
-
-                    .form__element.wrapper__column
-                        .column__dropdown
-                            +title({
-                                title: 'dropdown'
-                            })
-                            +input({
-                                type: 'button',
-                                value: 'ДД.ММ.ГГГГ',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-                        .column__dropdown
-                            +title({
-                                title: 'dropdown'
-                            })
-                            +input({
-                                type: 'button',
-                                value: '19.08.2019',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'filter date dropdown'
-                        })
-                        .wrapper_small
-                            +input({
-                                type: 'button',
-                                value: '19 авг - 23 авг',
-                                button_type: 'dropdown',
-                                arrow: 'arrow_bottom'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'subscription text field'
-                        })
-                        .wrapper_small
-                            +input({
-                                type: 'email',
-                                placeholder: 'Email',
-                                arrow: 'arrow_right'
-                            })
-
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'checkbox buttons'
-                        })
-                        .wrapper.wrapper__checkbox
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно курить'
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно с питомцами',
-                                checked: true
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Можно пригласить гостей (до 10 человек)',
-                                checked: true
-                            })
-
-
-                    .form__element
-                        +title({
-                            title: 'radio buttons'
-                        })
-                        .wrapper.wrapper__radiobutton
-                            +input({
-                                type: 'radio',
-                                classes: 'radiobutton',
-                                name: 'radio',
-                                label: 'Мужчина',
-                                checked: true
-                            })
-                            +input({
-                                type: 'radio',
-                                classes: 'radiobutton',
-                                name: 'radio',
-                                label: 'Женщина'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'toggle'
-                        })
-                        .wrapper
-                            +input({
-                                type: 'checkbox',
-                                classes: 'toggle',
-                                label: 'Получать спецпредложения',
-                                checked: true
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'toggle',
-                                label: 'Получать спецпредложения',
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'like button'
-                        })
-                        .wrapper.wrapper__like-button
-                            +input({
-                                type: 'button',
-                                classes: 'like-button',
-                                button_type: 'like',
-                                value: '2'
-                            })
-                            +input({
-                                type: 'button',
-                                classes: 'like-button',
-                                button_type: 'like',
-                                value: '12',
-                                like: 'like'
-                            })
-                    .form__element
-                        +title({
-                            title: 'rate button'
-                        })
-                        .wrapper.wrapper__rate-button
-                            +rate({
-                                id: 'rate-button_left',
-                                checked: 4
-                            })
-                            +rate({
-                                id: 'rate-button_right',
-                                checked: 5
-                            })
-
-                .form__column
-                    .form__element
-                        .wrapper.wrapper_small
-                            +range-slider({
-                                title: 'range slider'
-                            })
-                    .form__element
-                        +title({
-                            title: 'buttons'
-                        })
-                        .wrapper
-                            .wrapper__button
-                                +button({
-                                    value: 'click me',
-                                    classes: 'background'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'background',
-                                    disable: true
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'border'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'border',
-                                    disable: true
-                                })
-                            .wrapper__button_link
-                                +button({
-                                    value: 'click me',
-                                    classes: 'link'
-                                })
-                                +button({
-                                    value: 'click me',
-                                    classes: 'link',
-                                    disable: true
-                                })
-                            +button({
-                                value: 'перейти к оплате',
-                                classes: 'background',
-                                arrow: 'arrow_right'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'pagination'
-                        })
-                        .wrapper.wrapper__pagination
-                            include ../../components/pagination/pagination-data
-                            +page({
-                                items: locals.paginationItems
-                            })
-
-        section
-            form.form
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        .wrapper_small
-                            include ../../components/input/dropdown-rooms-data
-                            +input({
-                                type: 'button',
-                                value: '19 авг - 23 авг',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown'
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        .wrapper_small
-                            include ../../components/input/dropdown-rooms-data
-                            +input({
-                                type: 'button',
-                                value: '2 спальни, 2 кровати...',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                counts: 'rooms',
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        .wrapper_small
-                            +input({
-                                type: 'button',
-                                value: 'expandable checkbox list',
-                                classes: 'checkbox-list',
-                                button_type: 'checkbox'
-                            })
-
-                    .form__element
-                        .wrapper_small
-                            include ../../components/input/checkbox-list-data
-                            +input({
-                                type: 'button',
-                                value: 'expandable checkbox list',
-                                classes: 'checkbox-list',
-                                button_type: 'checkbox',
-                                show: 'show',
-                                items: locals.checkboxListItems
-                            })
-
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        div
-                            include ../../components/input/dropdown-guests-data
-                            +input({
-                                type: 'button',
-                                value: 'Сколько гостей',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                counts: 'guestsNumbers',
-                                button_apply: true,
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'rich checkbox buttons'
-                        })
-                        .wrapper.wrapper_small
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Широкий коридор',
-                                text: 'Ширина коридоров в номере           не менее 91 см.'
-                            })
-                            +input({
-                                type: 'checkbox',
-                                classes: 'checkbox',
-                                label: 'Помощник для инвалидов',
-                                text: 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                                checked: true
-                            })
-
-                .form__column
-                    .form__element
-                        +title({
-                            title: 'dropdown'
-                        })
-                        div
-                            include ../../components/input/dropdown-guests-data
-                            +input({
-                                type: 'button',
-                                value: 'Сколько гостей',
-                                arrow: 'arrow_bottom',
-                                classes: 'dropdown',
-                                button_type: 'dropdown',
-                                show: 'show',
-                                button_apply: true,
-                                button_clear: true,
-                                counts: 'guestsNumbers',
-                                items: locals.dropdownItems
-                            })
-
-                    .form__element
-                        +title({
-                            title: 'bullet list'
-                        })
-                        .wrapper.wrapper_small
-                            include ../../components/bulletList/bullet-list-data
-                            +bulletList({
-                                items: locals.bulletListItems
-                            })
 
         section
             form.form
