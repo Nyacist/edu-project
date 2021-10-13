@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+  <link href="main.css?87cb943a132c023a570a" rel="stylesheet"></head>
+  <body>
+    <section>
+      <header>
+        <div class="container_horizontal header">
+          <div class="header__logo"><a href="./"><img src="roomPreview/Logo.png"></a></div>
+          <div class="header__menu">
+            <div class="menu__burger"><span></span></div>
+            <div class="menu">
+              <nav>
+                <ul>
+                  <li class="menu__element"><a class=" menu__element_select" href="#">О нас</a>
+                  </li>
+                  <li class="menu__element  menu__dropdown"><a class=" menu__dropdown-button menu__dropdown-arrow" href="javascript:void(0);">Услуги</a>
+                    <ul class="menu__dropdown-block">
+                      <li><a href="#">услуга 1</a></li>
+                      <li><a href="#">услуга 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__element"><a href="#">Вакансии</a>
+                  </li>
+                  <li class="menu__element"><a href="#">Новости</a>
+                  </li>
+                  <li class="menu__element  menu__dropdown"><a class=" menu__dropdown-button menu__dropdown-arrow" href="javascript:void(0);">Соглашения</a>
+                    <ul class="menu__dropdown-block">
+                      <li><a href="#">соглашение 1</a></li>
+                      <li><a href="#">соглашение 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__enter">
+              <div class="header__buttons">
+                <div class="btn">
+                  <button class="btn_default">
+                    <h3>войти</h3>
+                  </button>
+                </div>
+                <div class="btn">
+                  <button class="btn_default">
+                    <h3>зарегистрироваться</h3>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section>
+      <div class="room__img">
+        <div class="room__img-main"><img src="roomPreview/room888lux-1.png"></div>
+        <div class="room__img-sub">
+          <div class="room__img-sub_top"><img src="roomPreview/room888lux-2.png"></div>
+          <div class="room__img-sub_bottom"><img src="roomPreview/room888lux-3.png"></div>
+        </div>
+      </div>
+      <div class="room__main">
+        <div class="room__info">
+          <div class="room__about">
+            <div class="comfort__element">
+              <div class="comfort__img_emoticon"></div>
+              <div class="comfort__description">
+                <h3>Комфорт</h3>
+                <label>Шумопоглощающие стены</label>
+              </div>
+              <hr>
+            </div>
+            <div class="comfort__element">
+              <div class="comfort__img_location-city"></div>
+              <div class="comfort__description">
+                <h3>Удобство</h3>
+                <label>Окно в каждой из спален</label>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="room__rating">
+            <div class="room__rating-diagram">
+              <canvas id="myChart" width="120" height="120"></canvas>
+            </div>
+            <div class="room__rating-vote"><span>
+                <h1>260</h1></span><span>голосов</span></div>
+            <div class="room__rating-legend">
+              <ul>
+                <li>Великолепно</li>
+                <li>Хорошо</li>
+                <li>Удовлетворительно</li>
+                <li>Разочарован</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="card">
+            <div class="card__element room__title">
+              <div class="room__number">
+                <h3>№
+                  <h1>888</h1><span> люкс</span>
+                </h3>
+              </div>
+              <div class="room__cost">
+                <h3>9 990₽ <span>в сутки</span></h3>
+              </div>
+            </div>
+            <div class="card__element wrapper__column">
+              <div class="column__dropdown">
+                <div class="element-title">
+                  <label>
+                    <h3>прибытие</h3>
+                  </label>
+                </div>
+                <div class="input">
+                  <div class=" arrow_bottom">
+                  </div>
+                </div>
+              </div>
+              <div class="column__dropdown">
+                <div class="element-title">
+                  <label>
+                    <h3>выезд</h3>
+                  </label>
+                </div>
+                <div class="input">
+                  <div class=" arrow_bottom">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__element">
+              <div class="element-title">
+                <label>
+                  <h3>гости</h3>
+                </label>
+              </div>
+              <div>
+                <div class="input">
+                  <div class=" arrow_bottom">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__element price">
+              <div class="price__element">
+                <div class="price__name"><span>9 990₽ х 4 суток</span></div>
+                <div class="price__cost"><span>39 960₽</span></div>
+              </div>
+              <div class="price__element">
+                <div class="price__name"><span>Сбор за услуги: скидка 2 179₽</span>
+                  <div class="price__info"></div>
+                </div>
+                <div class="price__cost"><span>0₽</span></div>
+              </div>
+              <div class="price__element">
+                <div class="price__name"><span>Сбор за доп. услуги</span>
+                  <div class="price__info"></div>
+                </div>
+                <div class="price__cost"><span>300₽</span></div>
+              </div>
+            </div>
+            <div class="card__element total">
+              <h2>Итого</h2>
+              <div class="total__line"></div>
+              <h2>38 081₽</h2>
+            </div>
+            <div class="card__element card__button">
+              <div class="btn  btn__arrow_right">
+                <button class="btn_default">
+                  <h3>забронировать</h3>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div class="footer">
+          <div class="footer__wrapper container_horizontal">
+            <div class="footer__logo"><img src="roomPreview/Logo.png"><span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span></div>
+            <div class="footer__nav">
+              <div class="footer__column">
+                <h3 class="footer__title">навигация</h3>
+                <ul>
+                  <li><a href="javascript:void(0);">О нас</a></li>
+                  <li><a href="javascript:void(0);">Новости</a></li>
+                  <li><a href="javascript:void(0);">Служба поддержки</a></li>
+                  <li><a href="javascript:void(0);">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h3 class="footer__title">о нас</h3>
+                <ul>
+                  <li><a href="javascript:void(0);">О сервисе</a></li>
+                  <li><a href="javascript:void(0);">Наша команда</a></li>
+                  <li><a href="javascript:void(0);">Вакансии</a></li>
+                  <li><a href="javascript:void(0);">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h3 class="footer__title">служба поддержки</h3>
+                <ul>
+                  <li><a href="javascript:void(0);">Соглашения</a></li>
+                  <li><a href="javascript:void(0);">Сообщества</a></li>
+                  <li><a href="javascript:void(0);">Связь с нами</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__subscription">
+              <h3 class="footer__title">подписка</h3>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <div class="input">
+                <div class=" arrow_right">
+                  <input class="input__element" type="email" placeholder="Email">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright container_horizontal">
+            <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="footer__social-networks">
+              <svg width="0px" height="0px">
+                <defs>
+                  <linearGradient id="lgrad" x1="50%" y1="100%" x2="50%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(188,156,255);stop-opacity:1.00"></stop>
+                    <stop offset="100%" style="stop-color:rgb(139,164,249);stop-opacity:1.00"></stop>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)"></rect>
+              </svg><i class="fab fa-twitter"></i><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  <script defer src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fortawesome_fontawesome-free_js-824814.js?87cb943a132c023a570a"></script><script defer src="main.js?87cb943a132c023a570a"></script></body>
+</html>

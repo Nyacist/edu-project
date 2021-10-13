@@ -1,9 +1,0 @@
-
-mixin bulletList(options)
-    if !options
-        - options = {}
-
-    .bullet-list
-        ul
-        each item in options.items
-            li= item.value
