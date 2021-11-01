@@ -4,24 +4,25 @@ import * as $ from "jquery";
 
 //like
 
+let likeClick = (e) => {
+    let sign = $(e.target).attr('data-action');
+    let numberOfLikes = $(e.target).val();
+
+    if(sign == 'like'){
+        numberOfLikes--;
+        $(e.target).attr('data-action', '');
+    }
+    else{
+        numberOfLikes++;
+        $(e.target).attr('data-action', 'like');
+    }
+    $(e.target).parent().toggleClass('like-button__enable');
+    $(e.target).val(numberOfLikes);
+}
+
 for (let like of document.querySelectorAll('.like-button')) {
-    like.addEventListener('click', function (e) {
-        let sign = e.target.getAttribute('data-action');
-        let numberOfLikes = e.target.value;
-        if (sign == 'like') {
-            numberOfLikes--;
-            e.target.setAttribute('data-action', '');
-        }
-        else {
-            numberOfLikes++;
-            e.target.setAttribute('data-action', 'like');
-        }
-
-        like.classList.toggle('like-button__enable');
-        e.target.value = numberOfLikes;
-    })
-};
-
+    like.addEventListener('click', (e) => {likeClick(e);} )
+}
 
 
 //dropdown

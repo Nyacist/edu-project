@@ -5,42 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde7b768-d2a2-431a-98b2-93d2049b1969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room840.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/room/room888lux-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/room/_room.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/room/room.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/room/room.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg/Room details.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/roomPreview/room888lux-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elementTitle/_elementTitle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elementTitle/elementTitle.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/enter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Material-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/formElements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/headersAndFooters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/room.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/enter-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/landing-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/room840.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/room888lux-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/room888lux-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/roomPreview/room888lux-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fortawesome_fontawesome-free_js-824814.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/input.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/_pagination.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/pagination-data.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/pagination.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/pagination.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rangeSlider/_rangeSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/_rateButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rateButton/rateButton.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cards/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/_cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cards/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cards/cards.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cards/cards.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/formElements/formElements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +242,9 @@
       <workItem from="1633593594052" duration="1803000" />
       <workItem from="1633941338469" duration="15000" />
       <workItem from="1633956643204" duration="1606000" />
+      <workItem from="1634132572045" duration="196000" />
+      <workItem from="1634132848602" duration="458000" />
+      <workItem from="1635768372567" duration="2189000" />
     </task>
     <servers />
   </component>
@@ -270,5 +265,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/input/input.js</url>
+          <line>101</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

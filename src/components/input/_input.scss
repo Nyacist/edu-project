@@ -393,8 +393,6 @@
     border: $dark-shade-25 solid 1px;
     border-radius: 15px;
     background-color: transparent;
-    max-width: 30px;
-    max-height: 30px;
     width: 30px;
     height: 30px;
     font-size: 18px;
@@ -422,10 +420,10 @@
     margin-bottom: 6px;
   }
 
-  .dropdown__button{
-
+  &__button{
     background: transparent;
     border: none;
+    padding: 0;
 
     &_right{
       display: flex;
